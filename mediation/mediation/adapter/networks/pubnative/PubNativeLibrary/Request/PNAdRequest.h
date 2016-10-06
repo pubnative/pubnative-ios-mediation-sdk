@@ -39,6 +39,11 @@ typedef NS_ENUM(NSInteger, PNAdRequestType)
          withParameters:(PNAdRequestParameters *)parameters
           andCompletion:(PNAdRequestCompletionBlock)completionBlock;
 
++ (instancetype)request:(PNAdRequestType)type
+         withParameters:(PNAdRequestParameters *)parameters
+                 extras:(NSDictionary*)extras
+          andCompletion:(PNAdRequestCompletionBlock)completionBlock;
+
 - (void)startRequest;
 
 @end

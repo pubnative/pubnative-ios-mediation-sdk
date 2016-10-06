@@ -13,7 +13,7 @@
 
 NSString * const kPubnativeInsightDataModelConnectionTypeWiFi       = @"wifi";
 NSString * const kPubnativeInsightDataModelConnectionTypeCellular   = @"cellular";
-NSString * const kPubnativeInsightDataModelSdkVersion               = @"1.0.0";
+NSString * const kPubnativeInsightDataModelSdkVersion               = @"1.0.1";
 
 @implementation PubnativeInsightDataModel
 

@@ -35,6 +35,7 @@
 @property (nonatomic, strong) PNAdRequestParameters         *parameters;
 @property (nonatomic, strong) PNAdRequestCompletionBlock    completionBlock;
 @property (nonatomic, strong) PNAPIModel                    *apiModel;
+@property (nonatomic, strong) NSDictionary                  *extras;
 
 @end
 
@@ -57,16 +58,23 @@
          withParameters:(PNAdRequestParameters *)parameters
           andCompletion:(PNAdRequestCompletionBlock)completionBlock
 {
-    PNAdRequest *request = nil;
+    return [PNAdRequest request:type
+                 withParameters:parameters
+                         extras:nil
+                  andCompletion:completionBlock];
+}
+
++ (instancetype)request:(PNAdRequestType)type
+         withParameters:(PNAdRequestParameters *)parameters
+                 extras:(NSDictionary*)extras
+          andCompletion:(PNAdRequestCompletionBlock)completionBlock
+{
+    PNAdRequest *request = [[PNAdRequest alloc] init];
     
-    if(parameters)
-    {
-        request = [[PNAdRequest alloc] init];
-    
-        request.type = type;
-        request.parameters = parameters;
-        request.completionBlock = completionBlock;
-    }
+    request.type = type;
+    request.parameters = parameters;
+    request.extras = extras;
+    request.completionBlock = completionBlock;
     
     return request;
 }
@@ -98,10 +106,17 @@
     if(apiModel && apiURL)
     {
         __weak PNAdRequest *weakSelf = self;
+        
+        NSMutableDictionary *params = [NSMutableDictionary dictionary];
+        if (self.parameters == nil) {
+            self.parameters = [PNAdRequestParameters requestParameters];
+        }
         [self.parameters fillWithDefaults];
+        [params addEntriesFromDictionary:[[self.parameters dictionaryValue] mutableCopy]];
+        [params addEntriesFromDictionary:self.extras];
         self.apiModel = [apiModel initWithURL:apiURL
                                        method:kPNAdConstantMethodGET
-                                       params:[self.parameters dictionaryValue]
+                                       params:params
                                       headers:nil
                                   cachePolicy:NSURLRequestReloadIgnoringCacheData
                                       timeout:kPNAdConstantRequestDefaultTimeout

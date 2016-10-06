@@ -33,35 +33,32 @@ NSString * const kPubnativeLibraryNetworkAdapterAppTokenKey = @"apptoken";
 {
     if (data) {
         
-        NSString *appToken = [data objectForKey:kPubnativeLibraryNetworkAdapterAppTokenKey];
+        NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
         
-        if (appToken && [appToken length] > 0) {
-            [self createRequestWithAppToken:appToken extras:extras];
-        } else {
-            NSError *error = [NSError errorWithDomain:@"PubnativeLibraryNetworkAdapter.doRequest - Invalid apptoken provided"
-                                                 code:0
-                                             userInfo:nil];
-            [self invokeDidFail:error];
+        // Server overrides manual set up
+        if(extras) {
+            [parameters addEntriesFromDictionary:extras];
+        }
+        if(data){
+            [parameters addEntriesFromDictionary:data];
         }
         
+        [self createRequestWithParameters:parameters];
+        
     } else {
-        NSError *error = [NSError errorWithDomain:@"PubnativeLibraryNetworkAdapter.doRequest - apptoken not avaliable"
+        NSError *error = [NSError errorWithDomain:@"PubnativeLibraryNetworkAdapter.doRequest - data not availabel"
                                              code:0
                                          userInfo:nil];
         [self invokeDidFail:error];
     }
 }
 
-- (void)createRequestWithAppToken:(NSString*)appToken extras:(NSDictionary<NSString*, NSString*>*)extras
+- (void)createRequestWithParameters:(NSDictionary*)parameters
 {
-    PNAdRequestParameters *parameters = [PNAdRequestParameters requestParameters];
-    parameters.app_token = appToken;
-    // TODO: add extras
-    
     __weak typeof(self) weakSelf = self;
     self.request = [PNAdRequest request:PNAdRequest_Native
-                         withParameters:parameters
-                    
+                         withParameters:nil
+                                 extras:parameters
                           andCompletion:^(NSArray *ads, NSError *error) {
                               
                               if(error) {
