@@ -66,7 +66,7 @@ Here is a sample on how to use It.
 For Swift:
 ```swift
 let request = PubnativeNetworkRequest()
-request.startWithAppToken("<APP_TOKEN>", "<PLACEMENT_NAME>", delegate: self)
+request.startWithAppToken("<APP_TOKEN>", placementName: "<PLACEMENT_NAME>", delegate: self)
 ```
 
 For Objective-C:

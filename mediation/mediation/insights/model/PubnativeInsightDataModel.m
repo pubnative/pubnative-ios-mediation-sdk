@@ -13,7 +13,7 @@
 
 NSString * const kPubnativeInsightDataModelConnectionTypeWiFi       = @"wifi";
 NSString * const kPubnativeInsightDataModelConnectionTypeCellular   = @"cellular";
-NSString * const kPubnativeInsightDataModelSdkVersion               = @"1.0.1";
+NSString * const kPubnativeInsightDataModelSdkVersion               = @"1.0.2";
 
 @implementation PubnativeInsightDataModel
 
@@ -178,7 +178,7 @@ NSString * const kPubnativeInsightDataModelSdkVersion               = @"1.0.1";
         }
     }
     if (!self.device_name) {
-        self.device_name = [[UIDevice currentDevice] name];
+        self.device_name = [[UIDevice currentDevice] model];
     }
     if (self.retry) {
         self.retry = @0;

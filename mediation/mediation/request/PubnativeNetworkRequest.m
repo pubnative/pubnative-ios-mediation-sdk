@@ -104,7 +104,7 @@ NSString * const kPubnativeNetworkRequestStoredConfigKey = @"net.pubnative.media
     } else {
         [extras setObject:kPubnativeInsightDataModelConnectionTypeCellular forKey:@"connection_type"];
     }
-    [extras setObject:[[UIDevice currentDevice] name] forKey:@"device_name"];
+    [extras setObject:[[UIDevice currentDevice] model] forKey:@"device_name"];
     return extras;
 }
 
