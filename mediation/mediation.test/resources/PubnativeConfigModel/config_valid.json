@@ -1,0 +1,81 @@
+{
+    "globals": {
+        "refresh": 10,
+        "impression_timeout": 1800,
+        "config_url": "http://ml.pubnative.net/ml/v1/config",
+        "impression_beacon": "http://ml.pubnative.net/ml/v1/imp",
+        "click_beacon": "http://ml.pubnative.net/ml/v1/clk",
+        "request_beacon": "http://ml.pubnative.net/ml/v1/req"
+    },
+    "request_params": {},
+    "networks": {
+        "facebook#985985301423089_1106232046065080": {
+            "params": {
+                "placement_id": "985985301423089_1106232046065080"
+            },
+            "adapter": "FacebookNetworkAdapter",
+            "timeout": 4000,
+            "crash_report": true
+        },
+        "pubnative": {
+            "params": {
+                "apptoken": "e3886645aabbf0d5c06f841a3e6d77fcc8f9de4469d538ab8a96cb507d0f2660"
+            },
+            "adapter": "PubnativeLibraryNetworkAdapter",
+            "timeout": 8000,
+            "crash_report": true
+        }
+    },
+    "placements": {
+        "facebook_only": {
+            "ad_format_code": "icon",
+            "priority_rules": [
+                               {
+                               "id": 192,
+                               "network_code": "facebook#985985301423089_1106232046065080",
+                               "params": null,
+                               "segment_ids": []
+                               }
+                               ],
+            "delivery_rule": {
+                "imp_cap_hour": 0,
+                "imp_cap_day": 0,
+                "pacing_cap_hour": 0,
+                "pacing_cap_minute": 0,
+                "no_ads": false,
+                "segment_ids": []
+            }
+        },
+        "pubnative_only": {
+            "ad_format_code": "icon",
+            "priority_rules": [
+                               {
+                               "id": 65,
+                               "network_code": "pubnative",
+                               "params": null,
+                               "segment_ids": []
+                               }
+                               ],
+            "delivery_rule": {
+                "imp_cap_hour": 0,
+                "imp_cap_day": 0,
+                "pacing_cap_hour": 0,
+                "pacing_cap_minute": 0,
+                "no_ads": false,
+                "segment_ids": []
+            }
+        },
+        "waterfall": {
+            "ad_format_code": "icon",
+            "priority_rules": [],
+            "delivery_rule": {
+                "imp_cap_hour": 0,
+                "imp_cap_day": 0,
+                "pacing_cap_hour": 0,
+                "pacing_cap_minute": 0,
+                "no_ads": false,
+                "segment_ids": []
+            }
+        }
+    }
+}

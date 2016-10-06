@@ -1,0 +1,7 @@
+"status" : "ok",
+"config" : {
+      "key1":"value1",
+      "key2":0,
+      "key3":[]
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "globals": {
+        "refresh": 10,
+        "impression_timeout": 1800,
+        "config_url": "http://ml.pubnative.net/ml/v1/config",
+        "impression_beacon": "http://ml.pubnative.net/ml/v1/imp",
+        "click_beacon": "http://ml.pubnative.net/ml/v1/clk",
+        "request_beacon": "http://ml.pubnative.net/ml/v1/req"
+    },
+    "request_params": {},
+    "networks": {},
+    "placements": {}
+}
