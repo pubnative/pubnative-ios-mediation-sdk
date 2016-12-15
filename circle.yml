@@ -18,17 +18,17 @@ test:
                 -r html --output $CIRCLE_TEST_REPORTS/report.html
                 -r json-compilation-database --output $CIRCLE_ARTIFACTS/test_compilation_database.json
     post:
-        - bundle exec slather coverage
-            --simple-output
-            --circleci
-            --coveralls
-            --workspace mediation.xcworkspace
-            --scheme mediation
-            --ignore "dependencies/*"
-            --ignore "library/library.test/*"
-            --ignore "library/library.demo/*"
-            --ignore "../*"
-            mediation/mediation.xcodeproj
+#     - bundle exec slather coverage
+#         --simple-output
+#         --circleci
+#         --coveralls
+#         --workspace mediation.xcworkspace
+#         --scheme mediation
+#         --ignore "dependencies/*"
+#         --ignore "library/library.test/*"
+#         --ignore "library/library.demo/*"
+#         --ignore "../*"
+#         mediation/mediation.xcodeproj
         - xcodebuild
             -workspace mediation.xcworkspace
             -sdk iphonesimulator
@@ -38,11 +38,11 @@ test:
             | xcpretty
                 -c
                 -r json-compilation-database --output compile_commands.json
-        - ./ci/oclint-0.10.3/bin/oclint-json-compilation-database -- -report-type text -o $CIRCLE_ARTIFACTS/oclint.txt || true
-        - ./ci/oclint-0.10.3/bin/oclint-json-compilation-database -- -report-type html -o $CIRCLE_ARTIFACTS/oclint.html || true
-        - ./ci/oclint-0.10.3/bin/oclint-json-compilation-database -- -report-type xml -o $CIRCLE_ARTIFACTS/oclint.xml || true
-        - ./ci/oclint-0.10.3/bin/oclint-json-compilation-database -- -report-type json -o $CIRCLE_ARTIFACTS/oclint.json || true
-        - ./ci/oclint-0.10.3/bin/oclint-json-compilation-database -- -report-type pmd -o $CIRCLE_ARTIFACTS/oclint_pmd.xml || true
+#     - ./ci/oclint-0.10.3/bin/oclint-json-compilation-database -- -report-type text -o $CIRCLE_ARTIFACTS/oclint.txt || true
+#     - ./ci/oclint-0.10.3/bin/oclint-json-compilation-database -- -report-type html -o $CIRCLE_ARTIFACTS/oclint.html || true
+#     - ./ci/oclint-0.10.3/bin/oclint-json-compilation-database -- -report-type xml -o $CIRCLE_ARTIFACTS/oclint.xml || true
+#     - ./ci/oclint-0.10.3/bin/oclint-json-compilation-database -- -report-type json -o $CIRCLE_ARTIFACTS/oclint.json || true
+#     - ./ci/oclint-0.10.3/bin/oclint-json-compilation-database -- -report-type pmd -o $CIRCLE_ARTIFACTS/oclint_pmd.xml || true
 
 
 #---------------------- TODO:

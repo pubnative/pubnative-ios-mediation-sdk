@@ -75,10 +75,10 @@ NSString * const kPubnativeInsightsManagerFailedQueueKey    = @"PubnativeInsight
     if([PubnativeInsightsManager sharedInstance].idle){
         [PubnativeInsightsManager sharedInstance].idle = NO;
         PubnativeInsightRequestModel *model = [PubnativeInsightsManager dequeueRequestModel];
-        if(model){
-            [PubnativeInsightsManager sendRequest:model];
-        } else {
+        if(model == nil){
             [PubnativeInsightsManager sharedInstance].idle = YES;
+        } else {
+            [PubnativeInsightsManager sendRequest:model];
         }
     }
 }
@@ -91,8 +91,10 @@ NSString * const kPubnativeInsightsManagerFailedQueueKey    = @"PubnativeInsight
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:modelDictionary
                                                    options:0
                                                      error:&error];
-    if(error){
+    if (error) {
         NSLog(@"PubnativeInsightsManager - request model parsing error: %@", error);
+        [PubnativeInsightsManager sharedInstance].idle = YES;
+        [PubnativeInsightsManager doNextRequest];
     } else {
         __block PubnativeInsightRequestModel *requestModelBlock = model;
         [PubnativeHttpRequest requestWithURL:url
@@ -132,18 +134,23 @@ NSString * const kPubnativeInsightsManagerFailedQueueKey    = @"PubnativeInsight
 + (NSString*)requestUrlWithModel:(PubnativeInsightRequestModel*)model
 {
     NSString *result = nil;
-    if (model) {
+    if (model && model.url && model.url.length > 0) {
         NSURLComponents *components = [[NSURLComponents alloc] initWithString:model.url];
-        if(model.params){
-            
-            NSMutableArray *queryItems = [NSMutableArray array];
-            for (NSString *key in model.params) {
-                
-                NSString *value = model.params[key];
-                NSURLQueryItem *item = [NSURLQueryItem queryItemWithName:key value:value];
-                [queryItems addObject:item];
+        if (components) {
+            if (model.params){
+                NSMutableArray *queryItems = [NSMutableArray array];
+                for (NSString *key in model.params) {
+                    if(key && key.length > 0){
+                        NSString *value = model.params[key];
+                        if(value && value.length > 0) {
+                            NSString *queryItem = [NSString stringWithFormat:@"%@=%@",key,value];
+                            [queryItems addObject:queryItem];
+                        }
+                    }
+                }
+                NSString *componentsString = [queryItems componentsJoinedByString:@"&"];
+                [components setQuery:[componentsString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLHostAllowedCharacterSet]]];
             }
-            [components setQueryItems:queryItems];
         }
         result = [components.URL absoluteString];
     }
