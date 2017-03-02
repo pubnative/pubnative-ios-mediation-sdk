@@ -30,7 +30,4 @@
 @end
 
 @interface PNNativeAPIModel : PNAPIModel <PNNativeAPIModel>
-
-@property (strong, nonatomic) NSArray<PNNativeAdModel>  *ads;
-
 @end

@@ -12,8 +12,6 @@
 		03169CC41D2164B000E4BBCA /* PubnativeInsightCrashModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03169CC31D2164B000E4BBCA /* PubnativeInsightCrashModel.m */; };
 		03169CC71D217CED00E4BBCA /* PubnativeInsightModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03169CC61D217CED00E4BBCA /* PubnativeInsightModel.m */; };
 		03169CCA1D22612300E4BBCA /* PubnativeAdTargetingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03169CC91D22612300E4BBCA /* PubnativeAdTargetingModel.m */; };
-		031714E61D25803A00817AEF /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031714E51D25803A00817AEF /* AdSupport.framework */; };
-		031714E81D25804B00817AEF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031714E71D25804B00817AEF /* SystemConfiguration.framework */; };
 		0351D1F21D2A8129008A6A6C /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0351D1E81D2A8129008A6A6C /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		0351D1F31D2A8129008A6A6C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0351D1E91D2A8129008A6A6C /* AVFoundation.framework */; };
 		0351D1F41D2A8129008A6A6C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0351D1EA1D2A8129008A6A6C /* CoreGraphics.framework */; };
@@ -468,8 +466,6 @@
 				0351D1F91D2A8129008A6A6C /* StoreKit.framework in Frameworks */,
 				0351D1FA1D2A8129008A6A6C /* SystemConfiguration.framework in Frameworks */,
 				0351D1FB1D2A8129008A6A6C /* UIKit.framework in Frameworks */,
-				031714E81D25804B00817AEF /* SystemConfiguration.framework in Frameworks */,
-				031714E61D25803A00817AEF /* AdSupport.framework in Frameworks */,
 				D5C8BA9F1D1AB7450071C9E2 /* libPNmediation.a in Frameworks */,
 				0351D2311D2BF381008A6A6C /* FBAudienceNetwork.framework in Frameworks */,
 				0351D2321D2BF381008A6A6C /* FBSDKCoreKit.framework in Frameworks */,
@@ -1351,7 +1347,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = pubnative;
 				TargetAttributes = {
 					D5BF0EE71D1A8B8B00A05486 = {
@@ -1572,8 +1568,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -1615,8 +1613,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -1634,6 +1634,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
