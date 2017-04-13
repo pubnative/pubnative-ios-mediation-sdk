@@ -127,6 +127,7 @@
     if (self.nativeAd && adView) {
         self.nativeAd.adDelegate = self;
         self.nativeAd.trackingView = adView;
+        self.nativeAd.viewControllerForPresentation = viewController;
     }
 }
 
