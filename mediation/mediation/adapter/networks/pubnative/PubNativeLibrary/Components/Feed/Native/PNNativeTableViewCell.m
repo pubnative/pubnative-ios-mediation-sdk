@@ -63,6 +63,8 @@
 
 - (void)awakeFromNib
 {
+    [super awakeFromNib];
+    
     [self.iconImage.layer setCornerRadius:5];
     [self.iconImage setClipsToBounds:YES];
     [self.downloadButton.layer setCornerRadius:5];

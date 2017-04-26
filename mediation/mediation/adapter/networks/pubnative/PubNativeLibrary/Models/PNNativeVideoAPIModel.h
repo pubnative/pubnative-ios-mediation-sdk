@@ -30,7 +30,4 @@
 @end
 
 @interface PNNativeVideoAPIModel : PNAPIModel <PNNativeVideoAPIModel>
-
-@property (strong, nonatomic) NSArray<PNNativeVideoAdModel>  *ads;
-
 @end
