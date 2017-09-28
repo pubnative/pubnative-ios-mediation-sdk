@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PNAPIAssetGroup9" customModule="Pubnative" customModuleProvider="target">
+            <connections>
+                <outlet property="banner" destination="3Wt-4p-2VD" id="20E-ef-ntR"/>
+                <outlet property="view" destination="cw2-Wx-S7D" id="5DG-mb-eL8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="cw2-Wx-S7D">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Wt-4p-2VD" userLabel="banner">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3Wt-4p-2VD" firstAttribute="leading" secondItem="cw2-Wx-S7D" secondAttribute="leading" id="Bgp-7f-9CO"/>
+                <constraint firstItem="3Wt-4p-2VD" firstAttribute="top" secondItem="cw2-Wx-S7D" secondAttribute="top" id="Fc6-zT-K8A"/>
+                <constraint firstAttribute="trailing" secondItem="3Wt-4p-2VD" secondAttribute="trailing" id="LuB-iT-8wK"/>
+                <constraint firstAttribute="bottom" secondItem="3Wt-4p-2VD" secondAttribute="bottom" id="fPR-U4-M4N"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-78" y="-11"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PNAPIAssetGroup17" customModule="Pubnative" customModuleProvider="target">
+            <connections>
+                <outlet property="adText" destination="4gf-6K-q9h" id="8pS-NQ-GKb"/>
+                <outlet property="adTitle" destination="RkR-Eh-cbz" id="z5h-IX-XiG"/>
+                <outlet property="banner" destination="CVe-z3-ymp" id="78O-nz-lNJ"/>
+                <outlet property="body" destination="J3R-jS-z6V" id="pk8-SR-Coi"/>
+                <outlet property="bodyView" destination="73M-48-yGs" id="omO-fV-yUs"/>
+                <outlet property="cta" destination="eYA-rR-KfQ" id="O86-j9-0KH"/>
+                <outlet property="headerView" destination="4oY-24-XUJ" id="x08-GF-Z40"/>
+                <outlet property="icon" destination="Qu7-My-sFN" id="L3I-Ou-Ejx"/>
+                <outlet property="view" destination="Kxm-wX-3ay" id="bVt-o6-PAO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Kxm-wX-3ay">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4oY-24-XUJ" userLabel="Header View">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="240"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CVe-z3-ymp" userLabel="banner">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="240"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="CVe-z3-ymp" secondAttribute="trailing" id="4rp-1W-Ggh"/>
+                        <constraint firstAttribute="bottom" secondItem="CVe-z3-ymp" secondAttribute="bottom" id="Xo6-gL-t42"/>
+                        <constraint firstItem="CVe-z3-ymp" firstAttribute="leading" secondItem="4oY-24-XUJ" secondAttribute="leading" id="Zhy-fN-73g"/>
+                        <constraint firstItem="CVe-z3-ymp" firstAttribute="top" secondItem="4oY-24-XUJ" secondAttribute="top" id="jQM-Wn-quP"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="73M-48-yGs" userLabel="Body View">
+                    <rect key="frame" x="0.0" y="240" width="480" height="80"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qu7-My-sFN" userLabel="icon">
+                            <rect key="frame" x="8" y="10" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="QEN-gL-UKk"/>
+                                <constraint firstAttribute="width" constant="60" id="irK-dj-9MC"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RkR-Eh-cbz" userLabel="adTitle">
+                            <rect key="frame" x="76" y="10" width="254" height="16"/>
+                            <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus sem eget mauris cursus imperdiet. Proin ut odio non leo porttitor porttitor quis sed felis. Integer non enim imperdiet, pharetra odio sit amet, vehicula dui. Proin quis suscipit sapien.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sponsored" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gf-6K-q9h" userLabel="adText">
+                            <rect key="frame" x="76" y="33" width="57" height="14"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3R-jS-z6V" userLabel="adDescription">
+                            <rect key="frame" x="76" y="56" width="274" height="14"/>
+                            <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus sem eget mauris cursus imperdiet. Proin ut odio non leo porttitor porttitor quis sed felis. Integer non enim imperdiet, pharetra odio sit amet, vehicula dui. Proin quis suscipit sapien. Vivamus vestibulum turpis vitae eleifend sollicitudin. Nam blandit, nulla nec rhoncus venenatis, ante elit hendrerit orci, sed tempor orci diam varius ex. Vestibulum auctor suscipit quam ac ornare. Nullam lacinia mollis dolor, quis vestibulum diam elementum quis. Duis ut suscipit lacus. Aenean dictum non elit et rutrum. Fusce magna eros, tincidunt eu magna in, commodo sagittis ipsum. Pellentesque porta lorem nisl, a scelerisque quam sodales vel. Phasellus quis iaculis ex. Curabitur blandit blandit lorem tincidunt accumsan. Pellentesque a faucibus eros, sed imperdiet enim.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYA-rR-KfQ" userLabel="callToAction">
+                            <rect key="frame" x="382" y="44" width="90" height="26"/>
+                            <color key="backgroundColor" red="0.15686274510000001" green="0.44705882349999998" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="90" id="Jn7-B4-eF0"/>
+                                <constraint firstAttribute="height" constant="26" id="dMk-QY-MQj"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="Lorem Ipsum dolor sit amet">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="eYA-rR-KfQ" firstAttribute="bottom" secondItem="Qu7-My-sFN" secondAttribute="bottom" id="2LX-PG-IJg"/>
+                        <constraint firstAttribute="height" constant="80" id="GaY-ro-gQc"/>
+                        <constraint firstItem="4gf-6K-q9h" firstAttribute="centerY" secondItem="Qu7-My-sFN" secondAttribute="centerY" id="JbD-Bm-G5Q"/>
+                        <constraint firstItem="4gf-6K-q9h" firstAttribute="leading" secondItem="Qu7-My-sFN" secondAttribute="trailing" constant="8" id="KS1-qp-S5S"/>
+                        <constraint firstItem="Qu7-My-sFN" firstAttribute="centerY" secondItem="73M-48-yGs" secondAttribute="centerY" id="L1m-aI-GEk"/>
+                        <constraint firstAttribute="trailing" secondItem="eYA-rR-KfQ" secondAttribute="trailing" constant="8" id="MEY-Ev-hKa"/>
+                        <constraint firstItem="J3R-jS-z6V" firstAttribute="bottom" secondItem="Qu7-My-sFN" secondAttribute="bottom" id="R86-qb-fpg"/>
+                        <constraint firstAttribute="trailing" secondItem="J3R-jS-z6V" secondAttribute="trailing" constant="130" id="XKT-Yk-uzz"/>
+                        <constraint firstItem="Qu7-My-sFN" firstAttribute="leading" secondItem="73M-48-yGs" secondAttribute="leading" constant="8" id="fq5-Vo-fIk"/>
+                        <constraint firstItem="RkR-Eh-cbz" firstAttribute="leading" secondItem="Qu7-My-sFN" secondAttribute="trailing" constant="8" id="lBL-LD-dwh"/>
+                        <constraint firstItem="J3R-jS-z6V" firstAttribute="leading" secondItem="Qu7-My-sFN" secondAttribute="trailing" constant="8" id="pnR-ji-OnJ"/>
+                        <constraint firstAttribute="trailing" secondItem="RkR-Eh-cbz" secondAttribute="trailing" constant="150" id="qnW-bz-K6z"/>
+                        <constraint firstItem="RkR-Eh-cbz" firstAttribute="top" secondItem="Qu7-My-sFN" secondAttribute="top" id="s3G-4X-gaD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4oY-24-XUJ" firstAttribute="leading" secondItem="Kxm-wX-3ay" secondAttribute="leading" id="JaS-gr-QZE"/>
+                <constraint firstAttribute="bottom" secondItem="73M-48-yGs" secondAttribute="bottom" id="L1y-k8-O0O"/>
+                <constraint firstAttribute="trailing" secondItem="73M-48-yGs" secondAttribute="trailing" id="RP7-LE-tKd"/>
+                <constraint firstAttribute="trailing" secondItem="4oY-24-XUJ" secondAttribute="trailing" id="Veq-AV-GSr"/>
+                <constraint firstItem="73M-48-yGs" firstAttribute="top" secondItem="4oY-24-XUJ" secondAttribute="bottom" id="c7t-PC-tWK"/>
+                <constraint firstItem="73M-48-yGs" firstAttribute="leading" secondItem="Kxm-wX-3ay" secondAttribute="leading" id="gwH-sw-wVG"/>
+                <constraint firstItem="4oY-24-XUJ" firstAttribute="top" secondItem="Kxm-wX-3ay" secondAttribute="top" id="pz8-Vv-E32"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <point key="canvasLocation" x="-79" y="-99"/>
+        </view>
+    </objects>
+</document>

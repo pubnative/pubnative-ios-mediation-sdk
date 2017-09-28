@@ -2,14 +2,14 @@ machine:
     timezone:
         Europe/Berlin
     xcode:
-        version: "7.3"
+        version: 8.3.3
 
 test:
     override:
         - xcodebuild
-            -workspace mediation.xcworkspace
-            -sdk iphonesimulator
-            -scheme mediation
+            -workspace sdk.xcworkspace
+            -scheme sdk.framework
+            -destination 'platform=iOS Simulator,OS=10.1,name=iPhone 7'
             clean test
             | tee $CIRCLE_ARTIFACTS/test_xcodebuild.log
             | xcpretty
@@ -18,35 +18,10 @@ test:
                 -r html --output $CIRCLE_TEST_REPORTS/report.html
                 -r json-compilation-database --output $CIRCLE_ARTIFACTS/test_compilation_database.json
     post:
-#     - bundle exec slather coverage
-#         --simple-output
-#         --circleci
-#         --coveralls
-#         --workspace mediation.xcworkspace
-#         --scheme mediation
-#         --ignore "dependencies/*"
-#         --ignore "library/library.test/*"
-#         --ignore "library/library.demo/*"
-#         --ignore "../*"
-#         mediation/mediation.xcodeproj
-        - xcodebuild
-            -workspace mediation.xcworkspace
-            -sdk iphonesimulator
-            -scheme mediation
-            clean build
-            | tee $CIRCLE_ARTIFACTS/build_xcodebuild.log
-            | xcpretty
-                -c
-                -r json-compilation-database --output compile_commands.json
-#     - ./ci/oclint-0.10.3/bin/oclint-json-compilation-database -- -report-type text -o $CIRCLE_ARTIFACTS/oclint.txt || true
-#     - ./ci/oclint-0.10.3/bin/oclint-json-compilation-database -- -report-type html -o $CIRCLE_ARTIFACTS/oclint.html || true
-#     - ./ci/oclint-0.10.3/bin/oclint-json-compilation-database -- -report-type xml -o $CIRCLE_ARTIFACTS/oclint.xml || true
-#     - ./ci/oclint-0.10.3/bin/oclint-json-compilation-database -- -report-type json -o $CIRCLE_ARTIFACTS/oclint.json || true
-#     - ./ci/oclint-0.10.3/bin/oclint-json-compilation-database -- -report-type pmd -o $CIRCLE_ARTIFACTS/oclint_pmd.xml || true
-
-
-#---------------------- TODO:
-#   master:
-#        branch: master
-#        commands:
-#            - Create library, tag and release on GitHub
+        - bundle exec slather
+deployment:
+    deployable:
+        branch: /(development|beta|master)/
+        commands:
+            - ./scripts/generate.sh
+            - ./scripts/publish.sh

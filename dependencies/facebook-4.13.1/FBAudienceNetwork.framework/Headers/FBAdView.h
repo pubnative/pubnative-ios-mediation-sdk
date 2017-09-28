@@ -70,8 +70,8 @@ FB_CLASS_EXPORT
  instance, and you cannot re-enable the refresh for this instance. A new created FBAdView will still
  use the default behavior.
 
- This method is designed for ad network mediation. We still recommend you to set the placement
- refresh interval as 'None' if you're using one of the ad network mediation.
+ This method is designed for ad network sdk. We still recommend you to set the placement
+ refresh interval as 'None' if you're using one of the ad network sdk.
  */
 - (void)disableAutoRefresh;
 

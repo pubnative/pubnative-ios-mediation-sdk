@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PNAPIAssetGroup8" customModule="Pubnative" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iGe-gu-7fc" id="CvA-9j-5fy"/>
+                <outlet property="webView" destination="YoV-gr-pLu" id="eYU-FT-Bq6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="iGe-gu-7fc">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleAspectFit" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YoV-gr-pLu" userLabel="banner">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="250"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="YoV-gr-pLu" firstAttribute="top" secondItem="iGe-gu-7fc" secondAttribute="top" id="D5i-JT-8S0"/>
+                <constraint firstAttribute="bottom" secondItem="YoV-gr-pLu" secondAttribute="bottom" id="cs0-fK-Qlj"/>
+                <constraint firstItem="YoV-gr-pLu" firstAttribute="leading" secondItem="iGe-gu-7fc" secondAttribute="leading" id="nnC-5n-LOn"/>
+                <constraint firstAttribute="trailing" secondItem="YoV-gr-pLu" secondAttribute="trailing" id="sp2-pW-00v"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="12" y="48"/>
+        </view>
+    </objects>
+</document>

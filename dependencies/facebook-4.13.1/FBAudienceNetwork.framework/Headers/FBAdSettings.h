@@ -92,11 +92,11 @@ FB_CLASS_EXPORT FB_SUBCLASSING_RESTRICTED
  @method
  
  @abstract
- If an ad provided service is mediating Audience Network in their sdk, it is required to set the name of the mediation service
+ If an ad provided service is mediating Audience Network in their sdk, it is required to set the name of the sdk service
  
- @param service Representing the name of the mediation that is mediation Audience Network
+ @param service Representing the name of the sdk that is sdk Audience Network
  */
-+ (void)setMediationService:(NSString *)service;
++ (void)setsdkService:(NSString *)service;
 
 /*!
  @method

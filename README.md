@@ -1,14 +1,10 @@
 ![ScreenShot](PNLogo.png)
 
-[![CircleCI](https://circleci.com/gh/pubnative/pubnative-ios-mediation-sdk.svg?style=shield)](https://circleci.com/gh/pubnative/pubnative-ios-mediation-sdk) [![Coverage Status](https://coveralls.io/repos/github/pubnative/pubnative-ios-mediation-sdk/badge.svg)](https://coveralls.io/github/pubnative/pubnative-ios-mediation-sdk) ![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)
+[![CircleCI](https://circleci.com/gh/pubnative/pubnative-ios-sdk.svg?style=shield)](https://circleci.com/gh/pubnative/pubnative-ios-sdk) [![Coverage Status](https://coveralls.io/repos/github/pubnative/pubnative-ios-sdk/badge.svg)](https://coveralls.io/github/pubnative/pubnative-ios-sdk) ![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)
 
-PubNative is an API-based publisher platform dedicated to native advertising which does not require the integration of an Library.
+# pubnative-ios-sdk
 
-Through PubNative, publishers can request over 20 parameters to enrich their ads and thereby create any number of combinations for unique and truly native ad units.
-
-# pubnative-ios-mediation-sdk
-
-pubnative-ios-mediation-sdk is an Open Source client mediation layer for integrating multiple ad networks inside your app with remote control using the PubNative Dashboard.
+Pubnative SDK is an Open Source advertising solution with remote control using the PubNative Dashboard.
 
 ## Contents
 
@@ -28,7 +24,7 @@ pubnative-ios-mediation-sdk is an Open Source client mediation layer for integra
 <a name="requirements"></a>
 # Requirements
 
-* iOS 7.0+
+* iOS 9.0+
 * An App Token provided in PubNative Dashboard.
 * A Placement Name configured in the PubNative Dashboard
 
@@ -37,12 +33,12 @@ pubnative-ios-mediation-sdk is an Open Source client mediation layer for integra
 
 <a name="install_manual"></a>
 ### Manual
-Clone the repository and drag'n'drop the `mediation/mediation` folder into your app (be sure to check the "Copy items into destination group's folder" option).
+Clone the repository and drag'n'drop the `sdk/sdk` folder into your app (be sure to check the "Copy items into destination group's folder" option).
 
 <a name="usage"></a>
 # Usage
 
-PubNative mediation is a lean yet complete project that allow you request ads from different networks with remote control from the PubNative Dashboard.
+PubNative sdk is a lean yet complete project that allow you request ads from different networks with remote control from the PubNative Dashboard.
 
 Basic integration steps are:
 
@@ -162,7 +158,7 @@ targeting.iap_total = <IAP_TOTAL>; // In app purchase total spent, just open for
 In order to integrate third party networks you need to do the following:
 
 1. Integrate third party SDK as detailed in that SDK integration instructions
-2. Copy the desired adapter network and model (they have to remain in the same package) to your project, our currently supported network adapters can be found [here](https://github.com/pubnative/pubnative-ios-mediation-sdk/tree/documentation/mediation/mediation.adapters)
+2. Copy the desired adapter network and model (they have to remain in the same package) to your project, our currently supported network adapters can be found [here](https://github.com/pubnative/pubnative-ios-sdk/tree/documentation/sdk/sdk.adapters)
 3. Ensure to add the network in Pubnative dashboard priorities
 
 Once this integration steps are accomplished, you'll start receiving ads from those networks too.
