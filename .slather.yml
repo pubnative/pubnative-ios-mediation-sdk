@@ -1,0 +1,12 @@
+coverage_service: coveralls
+ci_service: circleci
+xcodeproj: sdk/sdk.xcodeproj
+scheme: sdk.framework
+workspace: sdk.xcworkspace
+ignore:
+    - "dependencies/**"
+    - "circleci/*"
+    - "sdk/sdk.test/*"
+    - "sdk/sdk.adapters/*"
+    - "sdk/sdk.qa/*"
+    - "../*"

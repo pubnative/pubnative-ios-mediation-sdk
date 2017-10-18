@@ -21,6 +21,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *adText;
 @property (strong, nonatomic) PNVASTPlayerViewController *player;
 @property (strong, nonatomic) NSData *iconData;
+@property (weak, nonatomic) IBOutlet UIView *contentInfoView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *widthConstraint;
 
 @end
 
@@ -44,7 +46,8 @@
     self.cta.layer.cornerRadius = kPNCTACornerRadius;
     [self.cta setTitle:self.model.callToAction forState:UIControlStateNormal];
     self.icon.layer.cornerRadius = kPNCTACornerRadius;
-    
+    [self.contentInfoView addSubview:self.model.contentInfo];
+
     if (self.iconData) {
         [self continueLoadingWithIconData:self.iconData];
     } else {
@@ -77,8 +80,9 @@
 - (void)continueLoadingWithIconData:(NSData *)iconData
 {
     __block PNAPIAssetGroup20 *strongSelf = self;
+    __block NSData *iconDataInBlock = iconData;
     dispatch_async(dispatch_get_main_queue(), ^{
-        UIImage *iconImage = [UIImage imageWithData:iconData];
+        UIImage *iconImage = [UIImage imageWithData:iconDataInBlock];
         if(iconImage == nil) {
             [strongSelf invokeLoadFail:[NSError errorWithDomain:@"Error: cannot get icon image"
                                                            code:0
@@ -88,6 +92,7 @@
             [strongSelf loadVideo];
         }
         strongSelf = nil;
+        iconDataInBlock = nil;
     });
 }
 
@@ -106,6 +111,13 @@
 {
     self.player.view.frame = self.playerContainer.bounds;
     [self.playerContainer addSubview:self.player.view];
+}
+
+- (void)updateContentInfoSize:(NSNotification *)notification
+{
+    NSNumber *contentInfoSize = notification.object;
+    self.widthConstraint.constant = [contentInfoSize floatValue];
+    [self.view layoutIfNeeded];
 }
 
 #pragma mark - Callbacks -
@@ -136,48 +148,6 @@
 - (void)vastPlayerDidComplete:(PNVASTPlayerViewController*)vastPlayer
 {
     // Do nothing
-}
-
-#pragma mark - PNLayoutViewController -
-
-- (void)adBackgroundColor:(UIColor *)color
-{
-    self.view.backgroundColor = color;
-}
-
-- (void)titleTextColor:(UIColor *)color
-{
-    self.adTitle.textColor = color;
-}
-
-- (void)titleFontWithName:(NSString *)fontName size:(CGFloat)size
-{
-    [self.adTitle setFont:[UIFont fontWithName:fontName size:size]];
-}
-
-- (void)descriptionTextColor:(UIColor *)color
-{
-    self.body.textColor = color;
-}
-
-- (void)descriptionFontWithName:(NSString *)fontName size:(CGFloat)size
-{
-    [self.body setFont:[UIFont fontWithName:fontName size:size]];
-}
-
-- (void)callToActionBackgroundColor:(UIColor *)color
-{
-    self.cta.backgroundColor = color;
-}
-
-- (void)callToActionTextColor:(UIColor *)color
-{
-    [self.cta setTitleColor:color forState:UIControlStateNormal];
-}
-
-- (void)callToActionFontWithName:(NSString *)fontName size:(CGFloat)size
-{
-    [self.cta.titleLabel setFont:[UIFont fontWithName:fontName size:size]];
 }
 
 @end

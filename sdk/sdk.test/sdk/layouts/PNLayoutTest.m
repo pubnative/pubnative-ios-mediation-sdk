@@ -15,10 +15,13 @@
 
 @interface PNLayout()
 
+@property (nonatomic, weak) NSObject<PNLayoutLoadDelegate> *loadDelegate;
+
 - (void)startRequestWithConfig:(PNConfigModel*)config;
 - (void)invokeDidFinish;
 - (void)invokeDidFailWithError:(NSError *)error;
-
+- (void)invokeClick;
+- (void)invokeImpression;
 @end
 
 @interface PNLayoutTest : XCTestCase
@@ -40,16 +43,14 @@
 - (void)test_loadWithAppToken_withNilListener_shouldPass
 {
     PNLayout *layout = [[PNLayout alloc] init];
-    layout.loadDelegate = nil;
-    [layout loadWithAppToken:@"validAppToken" placement:@"validPlacement"];
+    [layout loadWithAppToken:@"validAppToken" placement:@"validPlacement" delegate:nil];
 }
 
 - (void)test_loadWithAppToken_withValidAppToken_andWithValidPlacement_shouldPass
 {
     NSObject<PNLayoutLoadDelegate> *delegate = mockProtocol(@protocol(PNLayoutLoadDelegate));
     PNLayout *layout = [[PNLayout alloc] init];
-    layout.loadDelegate = delegate;
-    [layout loadWithAppToken:@"validAppToken" placement:@"validPlacement"];
+    [layout loadWithAppToken:@"validAppToken" placement:@"validPlacement" delegate:delegate];
 }
 
 - (void)test_loadWithAppToken_withEmptyAppToken_shouldCallbackFail
@@ -57,8 +58,7 @@
     NSObject<PNLayoutLoadDelegate> *delegate = mockProtocol(@protocol(PNLayoutLoadDelegate));
     PNError *error = mock([PNError class]);
     PNLayout *layout = [[PNLayout alloc] init];
-    layout.loadDelegate = delegate;
-    [layout loadWithAppToken:@"" placement:@"validPlacement"];
+    [layout loadWithAppToken:@"" placement:@"validPlacement" delegate:delegate];
     [layout invokeDidFailWithError:error];
 }
 
@@ -67,8 +67,7 @@
     NSObject<PNLayoutLoadDelegate> *delegate = mockProtocol(@protocol(PNLayoutLoadDelegate));
     PNError *error = mock([PNError class]);
     PNLayout *layout = [[PNLayout alloc] init];
-    layout.loadDelegate = delegate;
-    [layout loadWithAppToken:nil placement:@"validPlacement"];
+    [layout loadWithAppToken:nil placement:@"validPlacement" delegate:delegate];
     [layout invokeDidFailWithError:error];
 }
 
@@ -77,8 +76,7 @@
     NSObject<PNLayoutLoadDelegate> *delegate = mockProtocol(@protocol(PNLayoutLoadDelegate));
     PNError *error = mock([PNError class]);
     PNLayout *layout = [[PNLayout alloc] init];
-    layout.loadDelegate = delegate;
-    [layout loadWithAppToken:@"validAppToken" placement:@""];
+    [layout loadWithAppToken:@"validAppToken" placement:@"" delegate:delegate];
     [layout invokeDidFailWithError:error];
 }
 
@@ -87,8 +85,7 @@
     NSObject<PNLayoutLoadDelegate> *delegate = mockProtocol(@protocol(PNLayoutLoadDelegate));
     PNError *error = mock([PNError class]);
     PNLayout *layout = [[PNLayout alloc] init];
-    layout.loadDelegate = delegate;
-    [layout loadWithAppToken:@"validAppToken" placement:nil];
+    [layout loadWithAppToken:@"validAppToken" placement:nil delegate:delegate];
     [layout invokeDidFailWithError:error];
 }
 
@@ -124,6 +121,24 @@
     layout.loadDelegate = delegate;
     [layout invokeDidFailWithError:error];
     [verify(delegate)layout:layout didFailLoading:error];
+}
+
+- (void)test_invokeClick_withValidListener_shouldCallback
+{
+    NSObject<PNLayoutTrackDelegate> *delegate = mockProtocol(@protocol(PNLayoutTrackDelegate));
+    PNLayout *layout = [[PNLayout alloc] init];
+    layout.trackDelegate = delegate;
+    [layout invokeClick];
+    [verify(delegate)layoutTrackClick:layout];
+}
+
+- (void)test_invokeImpression_withValidListener_shouldCallback
+{
+    NSObject<PNLayoutTrackDelegate> *delegate = mockProtocol(@protocol(PNLayoutTrackDelegate));
+    PNLayout *layout = [[PNLayout alloc] init];
+    layout.trackDelegate = delegate;
+    [layout invokeImpression];
+    [verify(delegate)layoutTrackImpression:layout];
 }
 
 

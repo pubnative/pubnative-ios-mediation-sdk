@@ -16,6 +16,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *adTitle;
 @property (weak, nonatomic) IBOutlet UILabel *body;
 @property (weak, nonatomic) IBOutlet PNStarRatingView *rating;
+@property (weak, nonatomic) IBOutlet UIView *contentInfoView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *widthConstraint;
 
 @end
 
@@ -29,6 +31,7 @@
     [self.cta setTitle:self.model.callToAction forState:UIControlStateNormal];
     self.rating.value = [self.model.rating floatValue];
     self.icon.layer.cornerRadius = kPNCTACornerRadius;
+    [self.contentInfoView addSubview:self.model.contentInfo];
     
     __block NSURL *iconURL = [NSURL URLWithString:self.model.iconUrl];
     __block PNAPIAssetGroup1 *strongSelf = self;
@@ -55,6 +58,13 @@
         });
         iconURL = nil;
     });
+}
+
+- (void)updateContentInfoSize:(NSNotification *)notification
+{
+    NSNumber *contentInfoSize = notification.object;
+    self.widthConstraint.constant = [contentInfoSize floatValue];
+    [self.view layoutIfNeeded];
 }
 
 - (void)startTracking

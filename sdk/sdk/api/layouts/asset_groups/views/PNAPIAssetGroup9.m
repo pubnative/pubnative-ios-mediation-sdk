@@ -11,6 +11,8 @@
 @interface PNAPIAssetGroup9 ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *banner;
+@property (weak, nonatomic) IBOutlet UIView *contentInfoView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *widthConstraint;
 
 @end
 
@@ -18,6 +20,7 @@
 
 - (void)load
 {
+    [self.contentInfoView addSubview:self.model.contentInfo];
     __block NSURL *bannerURL = [NSURL URLWithString:self.model.standardBannerUrl];
     __block PNAPIAssetGroup9 *strongSelf = self;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -43,6 +46,13 @@
             bannerData = nil;
         });
     });
+}
+
+- (void)updateContentInfoSize:(NSNotification *)notification
+{
+    NSNumber *contentInfoSize = notification.object;
+    self.widthConstraint.constant = [contentInfoSize floatValue];
+    [self.view layoutIfNeeded];
 }
 
 - (void)startTracking

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="b4F-w1-ErK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="b4F-w1-ErK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -362,7 +362,7 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="584" height="360"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AuS-Yh-tO4" userLabel="description">
-                                                                    <rect key="frame" x="8" y="239" width="568" height="57.5"/>
+                                                                    <rect key="frame" x="8" y="239" width="568" height="57"/>
                                                                     <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices, leo non dapibus pharetra, velit ex egestas urna, vel vestibulum est arcu vel libero. Duis dictum augue a nulla tincidunt volutpat. Ut sed nibh at lorem rutrum sodales vel sed odio. Integer egestas, felis nec fringilla accumsan, risus tellus pretium sapien, nec varius lacus ligula eget dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed lacinia leo ac augue posuere convallis. Fusce tristique facilisis est, at iaculis diam finibus eget.</string>
                                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
                                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -424,7 +424,7 @@
                                                                     </constraints>
                                                                 </view>
                                                                 <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkP-9W-ASC">
-                                                                    <rect key="frame" x="12" y="317" width="560" height="35"/>
+                                                                    <rect key="frame" x="12" y="316" width="560" height="35"/>
                                                                     <color key="backgroundColor" red="0.52279043197631836" green="0.00026506732683628798" blue="0.54572534561157227" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="35" id="xNU-Ha-Exd"/>
@@ -459,7 +459,7 @@
                                                             </variation>
                                                         </view>
                                                         <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="hMR-mi-IY4">
-                                                            <rect key="frame" x="273" y="161.5" width="37" height="37"/>
+                                                            <rect key="frame" x="273" y="162" width="37" height="37"/>
                                                             <color key="color" red="0.16078431369999999" green="0.1450980392" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </activityIndicatorView>
                                                     </subviews>

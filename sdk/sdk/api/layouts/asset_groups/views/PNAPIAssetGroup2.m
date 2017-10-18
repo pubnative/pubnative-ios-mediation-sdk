@@ -15,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *adTitle;
 @property (weak, nonatomic) IBOutlet UILabel *adText;
 @property (weak, nonatomic) IBOutlet UILabel *body;
+@property (weak, nonatomic) IBOutlet UIView *contentInfoView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *widthConstraint;
 
 @end
 
@@ -28,7 +30,8 @@
     [self.cta setTitle:self.model.callToAction forState:UIControlStateNormal];
     self.icon.layer.cornerRadius = kPNCTACornerRadius;
     self.adText.layer.cornerRadius = kPNCTACornerRadius;
-    
+    [self.contentInfoView addSubview:self.model.contentInfo];
+
     __block NSURL *iconURL = [NSURL URLWithString:self.model.iconUrl];
     __block PNAPIAssetGroup2 *strongSelf = self;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -56,6 +59,13 @@
     });
 
     
+}
+
+- (void)updateContentInfoSize:(NSNotification *)notification
+{
+    NSNumber *contentInfoSize = notification.object;
+    self.widthConstraint.constant = [contentInfoSize floatValue];
+    [self.view layoutIfNeeded];
 }
 
 - (void)startTracking

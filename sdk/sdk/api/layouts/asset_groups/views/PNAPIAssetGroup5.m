@@ -21,6 +21,8 @@
 @property (weak, nonatomic) IBOutlet UIView *footerView;
 @property (weak, nonatomic) IBOutlet UIButton *cta;
 @property (weak, nonatomic) IBOutlet UILabel *body;
+@property (weak, nonatomic) IBOutlet UIView *contentInfoView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *widthConstraint;
 
 @end
 
@@ -34,7 +36,8 @@
     [self.cta setTitle:self.model.callToAction forState:UIControlStateNormal];
     self.rating.value = [self.model.rating floatValue];
     self.icon.layer.cornerRadius = kPNCTACornerRadius;
-    
+    [self.contentInfoView addSubview:self.model.contentInfo];
+
     __block NSURL *iconURL = [NSURL URLWithString:self.model.iconUrl];
     __block NSURL *bannerURL = [NSURL URLWithString:self.model.bannerUrl];
     __block PNAPIAssetGroup5 *strongSelf = self;
@@ -71,6 +74,13 @@
         iconURL = nil;
         bannerURL = nil;
     });
+}
+
+- (void)updateContentInfoSize:(NSNotification *)notification
+{
+    NSNumber *contentInfoSize = notification.object;
+    self.widthConstraint.constant = [contentInfoSize floatValue];
+    [self.view layoutIfNeeded];
 }
 
 - (void)startTracking

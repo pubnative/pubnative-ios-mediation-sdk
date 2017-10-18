@@ -8,13 +8,13 @@
 
 #import "LargePubnativeLibraryNetworkAdapter.h"
 #import "PNOrientationManager.h"
-#import "PNLargeLibraryAdapterViewController.h"
 #import "PNLargeLayoutContainerViewController.h"
 #import "PubnativeLibraryCPICache.h"
 #import "PNAdModel.h"
 #import "PNSettings.h"
 #import "PNAPILayout.h"
 #import "PNError.h"
+#import "UIApplication+TopViewController.h"
 
 
 @interface LargePubnativeLibraryNetworkAdapter () <PNAPILayoutFetchDelegate, PNAPILayoutLoadDelegate, PNAPIAdModelDelegate>
@@ -82,10 +82,7 @@
     [self addCloseButton];
     [self startTracking];
     
-    self.currentWindow = [UIApplication sharedApplication].keyWindow;
-    [UIApplication sharedApplication].delegate.window = [[UIWindow alloc] init];
-    [UIApplication sharedApplication].delegate.window.rootViewController = self.containerViewController;
-    [[UIApplication sharedApplication].delegate.window makeKeyAndVisible];
+    [[UIApplication sharedApplication].topViewController presentViewController:self.containerViewController animated:NO completion:nil];
     
     [self invokeDidShow];
 }
@@ -109,8 +106,7 @@
     
     [self stopTracking];
     
-    [UIApplication sharedApplication].delegate.window = self.currentWindow;
-    [[UIApplication sharedApplication].delegate.window makeKeyAndVisible];
+    [[UIApplication sharedApplication].topViewController dismissViewControllerAnimated:self.containerViewController completion:nil];
     
     [self invokeDidHide];
 }

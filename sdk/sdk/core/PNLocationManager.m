@@ -55,7 +55,11 @@
         if (status == kCLAuthorizationStatusAuthorizedAlways
             || status == kCLAuthorizationStatusAuthorizedWhenInUse) {
             
-            [[PNLocationManager sharedInstance].manager requestLocation];
+            if ([[PNLocationManager sharedInstance].manager respondsToSelector:@selector(requestLocation)]) {
+                [[PNLocationManager sharedInstance].manager requestLocation];
+            } else {
+                NSLog(@"Location tracking is not supported in this OS version. Dropping call.");
+            }
         }
     }
 }

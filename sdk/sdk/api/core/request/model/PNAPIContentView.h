@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+extern NSString * const kPNAPIContentViewSizeChanged;
+
 @interface PNAPIContentView : UIView
 
 @property (nonatomic, strong)NSString *text;

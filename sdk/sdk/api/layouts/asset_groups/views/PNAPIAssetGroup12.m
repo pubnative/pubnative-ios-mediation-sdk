@@ -11,6 +11,8 @@
 @interface PNAPIAssetGroup12 () <UIWebViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
+@property (weak, nonatomic) IBOutlet UIView *contentInfoView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *widthConstraint;
 
 @end
 
@@ -18,9 +20,17 @@
 
 - (void)load
 {
+    [self.contentInfoView addSubview:self.model.contentInfo];
     self.webView.delegate = self;
     self.webView.scrollView.scrollEnabled = false;
     [self.webView loadHTMLString:self.model.htmlUrl baseURL:nil];
+}
+
+- (void)updateContentInfoSize:(NSNotification *)notification
+{
+    NSNumber *contentInfoSize = notification.object;
+    self.widthConstraint.constant = [contentInfoSize floatValue];
+    [self.view layoutIfNeeded];
 }
 
 - (void)startTracking

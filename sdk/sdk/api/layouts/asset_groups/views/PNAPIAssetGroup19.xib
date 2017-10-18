@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -16,12 +16,14 @@
                 <outlet property="adTitle" destination="0Yt-Wb-jRQ" id="0MA-gV-dCD"/>
                 <outlet property="body" destination="GC0-u2-CIT" id="pc5-ij-i0I"/>
                 <outlet property="bodyView" destination="1fh-IM-OBA" id="865-pr-ugL"/>
+                <outlet property="contentInfoView" destination="C5g-KZ-TSM" id="x8y-zS-gIU"/>
                 <outlet property="cta" destination="l79-Dc-qbA" id="EeA-gQ-Wvp"/>
                 <outlet property="headerView" destination="byr-bm-guq" id="S2O-Sq-7Kh"/>
                 <outlet property="icon" destination="zf4-5d-6nl" id="Gih-dN-94O"/>
                 <outlet property="playerContainer" destination="kCH-pi-kJP" id="KXA-dt-xCQ"/>
                 <outlet property="rating" destination="bID-eX-Ofp" id="2hg-Ur-ylo"/>
                 <outlet property="view" destination="mFC-19-MZB" id="Scs-Lz-Nkx"/>
+                <outlet property="widthConstraint" destination="1GL-PI-oex" id="6ON-fW-jTJ"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -36,10 +38,20 @@
                             <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C5g-KZ-TSM" userLabel="contentInfoView">
+                            <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="15" id="1GL-PI-oex"/>
+                                <constraint firstAttribute="height" constant="15" id="eaj-ay-LeE"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
+                        <constraint firstItem="C5g-KZ-TSM" firstAttribute="top" secondItem="kCH-pi-kJP" secondAttribute="top" id="9mD-QW-353"/>
                         <constraint firstItem="kCH-pi-kJP" firstAttribute="top" secondItem="byr-bm-guq" secondAttribute="top" id="H1c-4r-U2a"/>
+                        <constraint firstItem="C5g-KZ-TSM" firstAttribute="leading" secondItem="kCH-pi-kJP" secondAttribute="leading" id="HAU-2h-Uki"/>
                         <constraint firstAttribute="width" secondItem="byr-bm-guq" secondAttribute="height" multiplier="320:160" id="IyM-c0-ZJp"/>
                         <constraint firstAttribute="bottom" secondItem="kCH-pi-kJP" secondAttribute="bottom" id="LZ6-Lj-HYh"/>
                         <constraint firstItem="kCH-pi-kJP" firstAttribute="leading" secondItem="byr-bm-guq" secondAttribute="leading" id="axx-tK-e7c"/>

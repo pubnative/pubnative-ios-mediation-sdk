@@ -98,25 +98,27 @@
         
         NSURLSession * session = [NSURLSession sharedSession];
         if(self.userAgent == nil){
-            UIWebView* webView = [[UIWebView alloc] initWithFrame:CGRectZero];
-            self.userAgent = [webView stringByEvaluatingJavaScriptFromString:@"navigator.userAgent"];
+            // Perform on main thread/queue
+            dispatch_async(dispatch_get_main_queue(), ^{
+                UIWebView* webView = [[UIWebView alloc] initWithFrame:CGRectZero];
+                self.userAgent = [webView stringByEvaluatingJavaScriptFromString:@"navigator.userAgent"];
+                session.configuration.HTTPAdditionalHeaders = @{@"User-Agent": self.userAgent};
+                NSURLRequest* request = [NSURLRequest requestWithURL:url
+                                                         cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
+                                                     timeoutInterval:1.0];
+                
+                [[session dataTaskWithRequest:request
+                            completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+                                
+                                // Send the request only, no response or errors
+                                if(error == nil) {
+                                    NSLog(@"VAST - tracking url %@ error: %@", response.URL, error);
+                                } else {
+                                    NSLog(@"VAST - tracking url %@ response: %@", response.URL, [NSString stringWithUTF8String:[data bytes]]);
+                                }
+                            }] resume];
+            });
         }
-        session.configuration.HTTPAdditionalHeaders = @{@"User-Agent": self.userAgent};
-        
-        NSURLRequest* request = [NSURLRequest requestWithURL:url
-                                                 cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
-                                             timeoutInterval:1.0];
-        
-        [[session dataTaskWithRequest:request
-                    completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-                        
-            // Send the request only, no response or errors
-            if(error == nil) {
-                NSLog(@"VAST - tracking url %@ error: %@", response.URL, error);
-            } else {
-                NSLog(@"VAST - tracking url %@ response: %@", response.URL, [NSString stringWithUTF8String:[data bytes]]);
-            }
-        }] resume];
     });
 }
 

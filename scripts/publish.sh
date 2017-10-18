@@ -18,10 +18,10 @@ fastlane gym --include_bitcode true \
              --include_symbols true \
              --clean \
              --workspace sdk.xcworkspace \
-             --scheme sdk.demo \
+             --scheme sdk.qa \
              --archive_path $ARCHIVE_PATH \
              --output_directory $OUTPUT_FOLDER \
              --export_options $OPTIONS_PLIST
 
 # Upload generated IPA to Fabric
-./scripts/submit $FABRIC_API_KEY $FABRIC_API_SECRET -ipaPath $OUTPUT_FOLDER/sdk.demo.ipa
+./scripts/submit $FABRIC_API_KEY $FABRIC_API_SECRET -ipaPath $OUTPUT_FOLDER/sdk.qa.ipa

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -17,10 +17,12 @@
                 <outlet property="banner" destination="ZJ0-0X-M4h" id="gIk-Od-86D"/>
                 <outlet property="body" destination="guG-Fv-ePe" id="JKN-0R-z98"/>
                 <outlet property="bodyView" destination="FKZ-p5-IaH" id="rm0-Al-sO0"/>
+                <outlet property="contentInfoView" destination="pKn-U6-3ge" id="xhj-ZV-Hlu"/>
                 <outlet property="cta" destination="sC4-bf-UjU" id="R0k-4t-Cn7"/>
                 <outlet property="headerView" destination="M9t-Py-2Tw" id="eSm-Qc-5Ew"/>
                 <outlet property="icon" destination="vOq-eC-1Qf" id="UKe-Hd-Js0"/>
                 <outlet property="view" destination="fyX-YY-hxl" id="3zT-0f-vOk"/>
+                <outlet property="widthConstraint" destination="oaG-7s-fmz" id="nUf-cW-btP"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -35,13 +37,23 @@
                             <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pKn-U6-3ge" userLabel="contentInfoView">
+                            <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="a7V-qb-xsV"/>
+                                <constraint firstAttribute="width" constant="15" id="oaG-7s-fmz"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="ZJ0-0X-M4h" secondAttribute="trailing" id="Gct-2b-9x7"/>
                         <constraint firstItem="ZJ0-0X-M4h" firstAttribute="top" secondItem="M9t-Py-2Tw" secondAttribute="top" id="H4C-ZV-Qg3"/>
                         <constraint firstItem="ZJ0-0X-M4h" firstAttribute="leading" secondItem="M9t-Py-2Tw" secondAttribute="leading" id="JFB-W2-3d6"/>
+                        <constraint firstItem="pKn-U6-3ge" firstAttribute="leading" secondItem="ZJ0-0X-M4h" secondAttribute="leading" id="Pet-L8-mc0"/>
                         <constraint firstAttribute="width" secondItem="M9t-Py-2Tw" secondAttribute="height" multiplier="320:160" id="Yug-Ab-WQH"/>
+                        <constraint firstItem="pKn-U6-3ge" firstAttribute="top" secondItem="ZJ0-0X-M4h" secondAttribute="top" id="dMN-nC-qIK"/>
                         <constraint firstAttribute="bottom" secondItem="ZJ0-0X-M4h" secondAttribute="bottom" id="unD-t2-55g"/>
                     </constraints>
                 </view>

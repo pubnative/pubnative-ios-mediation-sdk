@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PNAPIAssetGroup11" customModule="Pubnative" customModuleProvider="target">
             <connections>
                 <outlet property="banner" destination="fZT-Un-seD" id="elo-uv-A1F"/>
+                <outlet property="contentInfoView" destination="0OC-RR-TqT" id="Dky-aB-3QH"/>
                 <outlet property="view" destination="dNp-Nm-69g" id="pk0-Lc-c2d"/>
+                <outlet property="widthConstraint" destination="8ZK-RS-SHl" id="DRa-n3-1DR"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -24,13 +26,23 @@
                     <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0OC-RR-TqT" userLabel="contentInfoView">
+                    <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="1Vo-S0-C3g"/>
+                        <constraint firstAttribute="width" constant="15" id="8ZK-RS-SHl"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="fZT-Un-seD" secondAttribute="trailing" id="2Dn-hM-2pe"/>
                 <constraint firstItem="fZT-Un-seD" firstAttribute="top" secondItem="dNp-Nm-69g" secondAttribute="top" id="JV1-eQ-QIY"/>
                 <constraint firstAttribute="bottom" secondItem="fZT-Un-seD" secondAttribute="bottom" id="X4g-S2-2Hb"/>
+                <constraint firstItem="0OC-RR-TqT" firstAttribute="top" secondItem="fZT-Un-seD" secondAttribute="top" id="XFU-iv-nOe"/>
                 <constraint firstItem="fZT-Un-seD" firstAttribute="leading" secondItem="dNp-Nm-69g" secondAttribute="leading" id="XwE-5B-vVi"/>
+                <constraint firstItem="0OC-RR-TqT" firstAttribute="leading" secondItem="fZT-Un-seD" secondAttribute="leading" id="g8H-Qr-Qc6"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>

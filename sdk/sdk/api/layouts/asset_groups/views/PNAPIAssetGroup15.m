@@ -13,6 +13,8 @@
 
 @property (weak, nonatomic) IBOutlet UIView *playerContainer;
 @property (nonatomic, strong) PNVASTPlayerViewController *player;
+@property (weak, nonatomic) IBOutlet UIView *contentInfoView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *widthConstraint;
 
 @end
 
@@ -26,6 +28,7 @@
 
 - (void)load
 {
+    [self.contentInfoView addSubview:self.model.contentInfo];
     [self loadVideo];
 }
 
@@ -44,6 +47,13 @@
     self.player = [[PNVASTPlayerViewController alloc] init];
     self.player.delegate = self;
     [self.player loadWithVastString:self.model.vast];
+}
+
+- (void)updateContentInfoSize:(NSNotification *)notification
+{
+    NSNumber *contentInfoSize = notification.object;
+    self.widthConstraint.constant = [contentInfoSize floatValue];
+    [self.view layoutIfNeeded];
 }
 
 #pragma mark - CALLBACKS -

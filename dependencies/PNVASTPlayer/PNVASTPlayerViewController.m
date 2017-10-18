@@ -26,6 +26,7 @@
 #import "PNVASTMediaFilePicker.h"
 #import "PNVASTEventProcessor.h"
 #import "PNProgressLabel.h"
+#import "UIApplication+TopViewController.h"
 
 NSString * const kPNVASTPlayerStatusKeyPath         = @"status";
 NSString * const kPNVASTPlayerBundleName            = @"player.resources";
@@ -372,16 +373,9 @@ typedef enum : NSUInteger {
 
         self.viewContainer = self.view.superview;
         [self.view removeFromSuperview];
-
-        UIViewController *presentingController = [UIApplication sharedApplication].keyWindow.rootViewController;
-        if(presentingController.presentedViewController)
-        {
-            presentingController = presentingController.presentedViewController;
-        }
-
-        self.view.frame = presentingController.view.frame;
-        [presentingController.view addSubview:self.view];
-
+        self.view.frame = [UIApplication sharedApplication].topViewController.view.frame;
+        [[UIApplication sharedApplication].topViewController.view addSubview:self.view];
+        
     } else {
 
         [self.view removeFromSuperview];

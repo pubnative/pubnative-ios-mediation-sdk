@@ -12,6 +12,19 @@
 
 @implementation PNSmallLayout
 
+- (void)loadWithAppToken:(NSString *)appToken
+               placement:(NSString *)placement
+                delegate:(NSObject<PNLayoutLoadDelegate> *)delegate
+{
+    [self stopTrackingView];
+    if (self.viewController) {
+        [self.viewController.view removeFromSuperview];
+        [self.viewController willMoveToParentViewController:nil];
+        [self.viewController removeFromParentViewController];
+    }
+    [super loadWithAppToken:appToken placement:placement delegate:delegate];
+}
+
 - (PNSmallLayoutViewController*)viewController
 {
     PNSmallLayoutViewController *result = nil;

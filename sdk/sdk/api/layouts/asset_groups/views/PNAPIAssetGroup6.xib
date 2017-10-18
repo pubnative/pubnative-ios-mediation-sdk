@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -16,11 +16,13 @@
                 <outlet property="banner" destination="jAh-Rb-gsp" id="O1J-PQ-5Xc"/>
                 <outlet property="body" destination="Kn2-d4-BaY" id="4LF-s7-YFs"/>
                 <outlet property="bodyView" destination="nOd-DM-wgh" id="Rz5-c2-v9w"/>
+                <outlet property="contentInfoView" destination="c6d-ZA-rXo" id="Yoj-e4-LJ8"/>
                 <outlet property="cta" destination="LVj-ea-46T" id="0fX-Dp-VcQ"/>
                 <outlet property="footerView" destination="gTe-tA-IYB" id="ym3-VI-6Oo"/>
                 <outlet property="headerView" destination="OgM-9K-DpZ" id="TP6-K5-mzj"/>
                 <outlet property="icon" destination="Omo-GI-BEy" id="B9j-1B-z8G"/>
                 <outlet property="view" destination="Lfd-o5-26o" id="jLh-QX-jMt"/>
+                <outlet property="widthConstraint" destination="VIh-su-Oxc" id="GGn-vW-Noi"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -60,15 +62,25 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c6d-ZA-rXo" userLabel="contentInfoView">
+                            <rect key="frame" x="10" y="5" width="15" height="15"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="4eo-E4-fE6"/>
+                                <constraint firstAttribute="width" constant="15" id="VIh-su-Oxc"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
+                        <constraint firstItem="c6d-ZA-rXo" firstAttribute="top" secondItem="Omo-GI-BEy" secondAttribute="top" id="867-Zc-P2q"/>
                         <constraint firstItem="ivi-hA-iyc" firstAttribute="bottom" secondItem="Omo-GI-BEy" secondAttribute="bottom" id="8MG-Ov-DKt"/>
                         <constraint firstItem="Omo-GI-BEy" firstAttribute="leading" secondItem="OgM-9K-DpZ" secondAttribute="leading" constant="10" id="DLe-gt-nmW"/>
                         <constraint firstItem="ivi-hA-iyc" firstAttribute="leading" secondItem="Omo-GI-BEy" secondAttribute="trailing" constant="8" id="GMV-99-Ntn"/>
                         <constraint firstItem="Txz-rG-PNQ" firstAttribute="top" secondItem="Omo-GI-BEy" secondAttribute="top" id="MHf-gJ-SIW"/>
                         <constraint firstItem="Txz-rG-PNQ" firstAttribute="leading" secondItem="Omo-GI-BEy" secondAttribute="trailing" constant="8" id="Oz3-9b-yfr"/>
                         <constraint firstItem="Omo-GI-BEy" firstAttribute="centerY" secondItem="OgM-9K-DpZ" secondAttribute="centerY" id="eqF-Q2-yc4"/>
+                        <constraint firstItem="c6d-ZA-rXo" firstAttribute="leading" secondItem="Omo-GI-BEy" secondAttribute="leading" id="jl6-1a-y0K"/>
                         <constraint firstAttribute="height" constant="50" id="qpZ-17-Vfk"/>
                     </constraints>
                 </view>

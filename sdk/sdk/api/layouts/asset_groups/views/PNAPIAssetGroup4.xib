@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12120"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12121"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PNAPIAssetGroup4" customModule="Pubnative" customModuleProvider="target">
             <connections>
+                <outlet property="contentInfoView" destination="Dkw-BP-WpR" id="bZ2-X8-wxx"/>
                 <outlet property="playerContainer" destination="wdv-TJ-EzZ" id="5Pr-5z-k6t"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="widthConstraint" destination="JrM-QF-XJF" id="d9V-ld-LSC"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -24,11 +26,21 @@
                     <rect key="frame" x="0.0" y="0.0" width="300" height="250"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dkw-BP-WpR" userLabel="contentInfoView">
+                    <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="HSK-a9-ZZM"/>
+                        <constraint firstAttribute="width" constant="15" id="JrM-QF-XJF"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="wdv-TJ-EzZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9zI-ah-GcM"/>
                 <constraint firstAttribute="bottom" secondItem="wdv-TJ-EzZ" secondAttribute="bottom" id="EmD-Hd-cE2"/>
+                <constraint firstItem="Dkw-BP-WpR" firstAttribute="top" secondItem="wdv-TJ-EzZ" secondAttribute="top" id="b6o-uT-MAd"/>
+                <constraint firstItem="Dkw-BP-WpR" firstAttribute="leading" secondItem="wdv-TJ-EzZ" secondAttribute="leading" id="eeL-vB-ByQ"/>
                 <constraint firstAttribute="trailing" secondItem="wdv-TJ-EzZ" secondAttribute="trailing" id="ooe-uA-uuU"/>
                 <constraint firstItem="wdv-TJ-EzZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sBS-Qw-VRv"/>
             </constraints>

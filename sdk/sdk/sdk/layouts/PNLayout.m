@@ -30,6 +30,7 @@ NSString * const kPNLayoutTrackingRequestIDKey      = @"reqid";
 @property (nonatomic, assign) NSTimeInterval startTimestamp;
 @property (nonatomic, strong) NSMutableDictionary<NSString*, NSString*> *requestParameters;
 @property (nonatomic, strong) PNLayoutAdapter *adapter;
+@property (nonatomic, strong) NSObject<PNLayoutLoadDelegate> *loadDelegate;
 
 @end
 
@@ -52,32 +53,37 @@ NSString * const kPNLayoutTrackingRequestIDKey      = @"reqid";
 
 - (void)loadWithAppToken:(NSString *)appToken
                placement:(NSString *)placement
+                delegate:(NSObject<PNLayoutLoadDelegate> *)delegate
 {
-    if (self.loadDelegate == nil) {
-        NSLog(@"PNLayout.loadWithAppToken: - Error: layout load delegate was not set. Have you configured one?");
-    }
-    
-    if (appToken == nil || appToken.length == 0) {
+    if (self.isRunning) {
+        NSError *runningError = [NSError errorWithDomain:@"request is currently running, droping this call" code:0 userInfo:nil];
+        [self invokeDidFailWithError:runningError];
+    } else if (delegate == nil) {
+        NSLog(@"Delegate not specified, droping this call");
+    } else if (appToken == nil || appToken.length == 0) {
         NSLog(@"PNLayout - invalid app token");
         [self invokeDidFailWithError:[PNError errorWithCode:PNError_layout_invalidParameters]];
+    } else if (placement == nil || placement.length == 0) {
+        NSLog(@"PNLayout - invalid placement");
+        [self invokeDidFailWithError:[PNError errorWithCode:PNError_layout_invalidParameters]];
     } else {
-        if (placement == nil || placement.length == 0) {
-            NSLog(@"PNLayout - invalid placement");
-            [self invokeDidFailWithError:[PNError errorWithCode:PNError_layout_invalidParameters]];
-        } else {
-            self.appToken = appToken;
-            self.placementName = placement;
-            self.currentNetworkIndex = -1;
-            self.requestID = [[NSUUID UUID] UUIDString];
-            NSMutableDictionary<NSString*, NSString*> *extras = [NSMutableDictionary dictionary];
-            if(self.requestParameters){
-                [extras setDictionary:self.requestParameters];
-            }
-            [PNConfigManager configWithAppToken:appToken
-                                         extras:extras
-                                       delegate:self];
+        self.config = nil;
+        self.insight = nil;
+        self.adapter = nil;
+        self.appToken = appToken;
+        self.placementName = placement;
+        self.loadDelegate = delegate;
+        self.currentNetworkIndex = -1;
+        self.requestID = [[NSUUID UUID] UUIDString];
+        NSMutableDictionary<NSString*, NSString*> *extras = [NSMutableDictionary dictionary];
+        if(self.requestParameters){
+            [extras setDictionary:self.requestParameters];
         }
-    }
+        self.isRunning = YES;
+        [PNConfigManager configWithAppToken:appToken
+                                     extras:extras
+                                   delegate:self];
+    }    
 }
 
 - (void)startRequestWithConfig:(PNConfigModel*)config
@@ -105,7 +111,7 @@ NSString * const kPNLayoutTrackingRequestIDKey      = @"reqid";
             [self invokeDidFailWithError:error];
             
         }  else if (placement.priority_rules.count == 0) {
-        
+            
             NSError *error = [NSError errorWithDomain:[NSString stringWithFormat:@"Error: no networks configured for placement %@", self.placementName]
                                                  code:0
                                              userInfo:nil];
@@ -142,20 +148,7 @@ NSString * const kPNLayoutTrackingRequestIDKey      = @"reqid";
     data.placement_name = self.placementName;
     data.ad_format_code = placementModel.ad_format_code;
     self.insight.data = data;
-    [self startRequest];
-}
-
-- (void)startRequest
-{
-    BOOL needsNewAd = YES;
-    if(needsNewAd) {
-        [self doNextNetworkRequest];
-    } else {
-        NSError *error = [NSError errorWithDomain:[NSString stringWithFormat:@"Error: (pacing_cap) too many ads for placement %@", self.placementName]
-                                             code:0
-                                         userInfo:nil];
-        [self invokeDidFailWithError:error];
-    }
+    [self doNextNetworkRequest];
 }
 
 - (void)doNextNetworkRequest
@@ -224,6 +217,7 @@ NSString * const kPNLayoutTrackingRequestIDKey      = @"reqid";
 - (void)invokeDidFinish
 {
     NSObject<PNLayoutLoadDelegate> *delegate = self.loadDelegate;
+    self.isRunning = NO;
     self.loadDelegate = nil;
     if (delegate && [delegate respondsToSelector:@selector(layoutDidFinishLoading:)]) {
         [delegate layoutDidFinishLoading:self];
@@ -233,6 +227,7 @@ NSString * const kPNLayoutTrackingRequestIDKey      = @"reqid";
 - (void)invokeDidFailWithError:(NSError *)error
 {
     NSObject<PNLayoutLoadDelegate> *delegate = self.loadDelegate;
+    self.isRunning = NO;
     self.loadDelegate = nil;
     if (delegate && [delegate respondsToSelector:@selector(layout:didFailLoading:)]) {
         [delegate layout:self didFailLoading:error];
@@ -289,6 +284,8 @@ NSString * const kPNLayoutTrackingRequestIDKey      = @"reqid";
                                                     responseTime:[self.adapter elapsedTime]
                                                            error:error];
     }
+    
+    [self doNextNetworkRequest];
 }
 
 #pragma mark - PNLayoutAdapterFetchDelegate -

@@ -22,6 +22,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *body;
 @property (strong, nonatomic) NSData *bannerData;
 @property (strong, nonatomic) NSData *iconData;
+@property (weak, nonatomic) IBOutlet UIView *contentInfoView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *widthConstraint;
 
 @end
 
@@ -41,6 +43,7 @@
     [self.cta setTitle:self.model.callToAction forState:UIControlStateNormal];
     self.rating.value = [self.model.rating floatValue];
     self.icon.layer.cornerRadius = kPNCTACornerRadius;
+    [self.contentInfoView addSubview:self.model.contentInfo];
     
     if (self.bannerData && self.iconData) {
         [self continueLoadingWithBannerData:self.bannerData andWithIconData:self.iconData];
@@ -67,9 +70,11 @@
 - (void)continueLoadingWithBannerData:(NSData *)bannerData andWithIconData:(NSData *)iconData
 {
     __block PNAPIAssetGroup16 *strongSelf = self;
+    __block NSData *bannerDataInBlock = bannerData;
+    __block NSData *iconDataInBlock = iconData;
     dispatch_async(dispatch_get_main_queue(), ^{
-        UIImage *bannerImage = [UIImage imageWithData:bannerData];
-        UIImage *iconImage = [UIImage imageWithData:iconData];
+        UIImage *bannerImage = [UIImage imageWithData:bannerDataInBlock];
+        UIImage *iconImage = [UIImage imageWithData:iconDataInBlock];
         if(bannerImage == nil) {
             [strongSelf invokeLoadFail:[NSError errorWithDomain:@"Error: cannot get banner image"
                                                      code:0
@@ -84,49 +89,16 @@
             [strongSelf invokeLoadFinish];
         }
         strongSelf = nil;
+        bannerDataInBlock = nil;
+        iconDataInBlock = nil;
     });
 }
 
-#pragma mark - PNLayoutViewController -
-
-- (void)adBackgroundColor:(UIColor *)color
+- (void)updateContentInfoSize:(NSNotification *)notification
 {
-    self.view.backgroundColor = color;
-}
-
-- (void)titleTextColor:(UIColor *)color
-{
-    self.adTitle.textColor = color;
-}
-
-- (void)titleFontWithName:(NSString *)fontName size:(CGFloat)size
-{
-    [self.adTitle setFont:[UIFont fontWithName:fontName size:size]];
-}
-
-- (void)descriptionTextColor:(UIColor *)color
-{
-    self.body.textColor = color;
-}
-
-- (void)descriptionFontWithName:(NSString *)fontName size:(CGFloat)size
-{
-    [self.body setFont:[UIFont fontWithName:fontName size:size]];
-}
-
-- (void)callToActionBackgroundColor:(UIColor *)color
-{
-    self.cta.backgroundColor = color;
-}
-
-- (void)callToActionTextColor:(UIColor *)color
-{
-    [self.cta setTitleColor:color forState:UIControlStateNormal];
-}
-
-- (void)callToActionFontWithName:(NSString *)fontName size:(CGFloat)size
-{
-    [self.cta.titleLabel setFont:[UIFont fontWithName:fontName size:size]];
+    NSNumber *contentInfoSize = notification.object;
+    self.widthConstraint.constant = [contentInfoSize floatValue];
+    [self.view layoutIfNeeded];
 }
 
 @end

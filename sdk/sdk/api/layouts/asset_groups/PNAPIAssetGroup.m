@@ -28,6 +28,11 @@ CGFloat const kPNCTACornerRadius = 4;
                                              owner:self
                                            options:nil][0];
         super.view = view;
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(updateContentInfoSize:)
+                                                     name:kPNAPIContentViewSizeChanged
+                                                   object:nil];
     }
     return self;
 }
@@ -39,6 +44,8 @@ CGFloat const kPNCTACornerRadius = 4;
     }
     self.model = nil;
     self.loadDelegate = nil;
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+
 }
 
 #pragma mark PNAPIAssetGroup
@@ -77,6 +84,11 @@ CGFloat const kPNCTACornerRadius = 4;
 }
 
 - (void)load
+{
+    // Do nothing, this method should be overriden
+}
+
+- (void)updateContentInfoSize:(NSNotification *)notification
 {
     // Do nothing, this method should be overriden
 }

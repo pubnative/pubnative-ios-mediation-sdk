@@ -24,6 +24,7 @@ FOUNDATION_EXPORT const unsigned char PubnativeVersionString[];
 #import <Pubnative/PNAPILayout.h>
 #import <Pubnative/PNAdModelRenderer.h>
 #import <Pubnative/PNAPIRequestParameter.h>
+#import <Pubnative/PNBanner.h>
 
 @interface Pubnative : NSObject
 

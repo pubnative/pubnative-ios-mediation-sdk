@@ -35,47 +35,4 @@
     [nativeAd renderAd:renderer];
 }
 
-- (void)adBackgroundColor:(UIColor *)color
-{
-    self.view.backgroundColor = color;
-}
-
-#pragma mark - Title -
-
-- (void)titleTextColor:(UIColor *)color
-{
-    [self.titleLabel setTextColor:color];
-}
-- (void)titleFontWithName:(NSString *)fontName size:(CGFloat)size
-{
-    [self.titleLabel setFont:[UIFont fontWithName:fontName size:size]];
-}
-
-- (void)descriptionTextColor:(UIColor *)color
-{
-    [self.descriptionLabel setTextColor:color];
-}
-
-- (void)descriptionFontWithName:(NSString *)fontName size:(CGFloat)size
-{
-    [self.descriptionLabel setFont:[UIFont fontWithName:fontName size:size]];
-}
-
-#pragma mark - Call To Action -
-
-- (void)callToActionBackgroundColor:(UIColor *)color
-{
-    [self.callToAction setBackgroundColor:color];
-}
-
-- (void)callToActionTextColor:(UIColor *)color
-{
-    [self.callToAction setTitleColor:color forState:UIControlStateNormal];
-}
-
-- (void)callToActionFontWithName:(NSString *)fontName size:(CGFloat)size
-{
-    [self.callToAction.titleLabel setFont:[UIFont fontWithName:fontName size:size]];
-}
-
 @end

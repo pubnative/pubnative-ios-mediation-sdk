@@ -23,6 +23,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *cta;
 @property (weak, nonatomic) IBOutlet UILabel *body;
 @property (nonatomic, strong) PNVASTPlayerViewController *player;
+@property (weak, nonatomic) IBOutlet UIView *contentInfoView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *widthConstraint;
+
 
 @end
 
@@ -42,6 +45,8 @@
     [self.cta setTitle:self.model.callToAction forState:UIControlStateNormal];
     self.rating.value = [self.model.rating floatValue];
     self.icon.layer.cornerRadius = kPNCTACornerRadius;
+    [self.contentInfoView addSubview:self.model.contentInfo];
+
     
     __block NSURL *iconURL = [NSURL URLWithString:self.model.iconUrl];
     __block PNAPIAssetGroup3 *strongSelf = self;
@@ -75,6 +80,13 @@
     self.player = [[PNVASTPlayerViewController alloc] init];
     self.player.delegate = self;
     [self.player loadWithVastString:self.model.vast];
+}
+
+- (void)updateContentInfoSize:(NSNotification *)notification
+{
+    NSNumber *contentInfoSize = notification.object;
+    self.widthConstraint.constant = [contentInfoSize floatValue];
+    [self.view layoutIfNeeded];
 }
 
 - (void)startTracking

@@ -8,9 +8,11 @@
 
 #import "PNAPIContentView.h"
 #import "PNAPIMeta.h"
+#import "PNOrientationManager.h"
 
-CGFloat const kPNAPIContentViewHeight = 20.0f;
-CGFloat const kPNAPIContentViewWidth = 20.0f;
+NSString * const kPNAPIContentViewSizeChanged = @"kPNAPIContentViewSizeChanged";
+CGFloat const kPNAPIContentViewHeight = 15.0f;
+CGFloat const kPNAPIContentViewWidth = 15.0f;
 NSTimeInterval const kPNAPIContentViewClosingTime = 3.0f;
 
 @interface PNAPIContentView ()
@@ -21,7 +23,7 @@ NSTimeInterval const kPNAPIContentViewClosingTime = 3.0f;
 @property (nonatomic, assign)BOOL               isOpen;
 @property (nonatomic, assign)CGFloat            openSize;
 @property (nonatomic, strong)NSTimer            *closeTimer;
-@property (nonatomic, strong)NSLayoutConstraint *widthConstraint;
+@property (nonatomic, strong)UITapGestureRecognizer         *tapRecognizer;
 
 @end
 
@@ -36,27 +38,28 @@ NSTimeInterval const kPNAPIContentViewClosingTime = 3.0f;
     [self.iconView removeFromSuperview];
     self.iconView = nil;
     self.iconImage = nil;
+    
+    [self.tapRecognizer removeTarget:self action:@selector(handleTap:)];
+    [self removeGestureRecognizer:self.tapRecognizer];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    self.tapRecognizer = nil;
+
 }
 
 - (instancetype)init
 {
     self = [super init];
     if (self) {
-        self.translatesAutoresizingMaskIntoConstraints = NO;
-        self.backgroundColor = [UIColor colorWithWhite:1 alpha:.75f];
+        [self setFrame:CGRectMake(0, 0, kPNAPIContentViewWidth, kPNAPIContentViewHeight)];
+        self.backgroundColor = [UIColor colorWithWhite:1 alpha:1];
         self.clipsToBounds = YES;
         self.layer.cornerRadius = 2.f;
         
         self.isOpen = NO;
-        self.widthConstraint = [NSLayoutConstraint constraintWithItem:self
-                                                            attribute:NSLayoutAttributeWidth
-                                                            relatedBy:NSLayoutRelationEqual
-                                                               toItem:nil
-                                                            attribute:NSLayoutAttributeNotAnAttribute
-                                                           multiplier:0.f
-                                                             constant:kPNAPIContentViewWidth];
-        
+        self.tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
+        [self addGestureRecognizer:self.tapRecognizer];
         self.textView = [[UILabel alloc] init];
+        [self.textView setFont:[self.textView.font fontWithSize:10]];
         self.textView.translatesAutoresizingMaskIntoConstraints = NO;
         
         self.iconView = [[UIImageView alloc] init];
@@ -64,15 +67,7 @@ NSTimeInterval const kPNAPIContentViewClosingTime = 3.0f;
         
         [self addSubview:self.iconView];
         [self addSubview:self.textView];
-        [self addConstraints:@[[NSLayoutConstraint constraintWithItem:self
-                                                            attribute:NSLayoutAttributeHeight
-                                                            relatedBy:NSLayoutRelationEqual
-                                                               toItem:nil
-                                                            attribute:NSLayoutAttributeNotAnAttribute
-                                                           multiplier:1.f
-                                                             constant:kPNAPIContentViewHeight],
-                               self.widthConstraint,
-                               [NSLayoutConstraint constraintWithItem:self.iconView
+        [self addConstraints:@[[NSLayoutConstraint constraintWithItem:self.iconView
                                                             attribute:NSLayoutAttributeHeight
                                                             relatedBy:NSLayoutRelationEqual
                                                                toItem:nil
@@ -128,8 +123,18 @@ NSTimeInterval const kPNAPIContentViewClosingTime = 3.0f;
                                                             attribute:NSLayoutAttributeTop
                                                            multiplier:1.f
                                                              constant:0.f]]];
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(didRotateNotification:)
+                                                     name:kPNOrientationManagerDidChangeOrientation
+                                                   object:nil];
     }
     return self;
+}
+
+- (void)didRotateNotification:(NSNotification *)notification
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:kPNAPIContentViewSizeChanged
+                                                        object:[NSNumber numberWithFloat: self.frame.size.width]];
 }
 
 - (void)layoutSubviews
@@ -175,13 +180,16 @@ NSTimeInterval const kPNAPIContentViewClosingTime = 3.0f;
                                                                }];
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+- (void)handleTap:(UITapGestureRecognizer *)sender
 {
-    if(self.isOpen) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.link]];
-        [self close];
-    } else {
-        [self open];
+    if (sender.state == UIGestureRecognizerStateEnded)
+    {
+        if(self.isOpen) {
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.link]];
+            [self close];
+        } else {
+            [self open];
+        }
     }
 }
 
@@ -189,8 +197,10 @@ NSTimeInterval const kPNAPIContentViewClosingTime = 3.0f;
 {
     self.isOpen = YES;
     [self layoutIfNeeded];
-    self.widthConstraint.constant = self.openSize;
+    self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, self.openSize, self.frame.size.height);
     [self layoutIfNeeded];
+    [[NSNotificationCenter defaultCenter] postNotificationName:kPNAPIContentViewSizeChanged
+                                                        object:[NSNumber numberWithFloat: self.frame.size.width]];
     [self startCloseTimer];
 }
 
@@ -199,8 +209,10 @@ NSTimeInterval const kPNAPIContentViewClosingTime = 3.0f;
     self.isOpen = NO;
     [self stopCloseTimer];
     [self layoutIfNeeded];
-    self.widthConstraint.constant = kPNAPIContentViewWidth;
+    self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, kPNAPIContentViewWidth, self.frame.size.height);
     [self layoutIfNeeded];
+    [[NSNotificationCenter defaultCenter] postNotificationName:kPNAPIContentViewSizeChanged
+                                                        object:[NSNumber numberWithFloat: self.frame.size.width]];
 }
 
 @end

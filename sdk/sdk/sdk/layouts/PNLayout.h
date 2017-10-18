@@ -27,9 +27,11 @@
 
 @interface PNLayout : NSObject
 
-@property (nonatomic, weak) NSObject<PNLayoutLoadDelegate> *loadDelegate;
 @property (nonatomic, weak) NSObject<PNLayoutTrackDelegate> *trackDelegate;
 
-- (void)loadWithAppToken:(NSString *)appToken placement:(NSString *)placement;
+- (void)loadWithAppToken:(NSString *)appToken
+               placement:(NSString *)placement
+                delegate:(NSObject<PNLayoutLoadDelegate>*)delegate;
+
 
 @end

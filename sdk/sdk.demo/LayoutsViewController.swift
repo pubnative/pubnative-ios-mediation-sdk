@@ -60,37 +60,37 @@ class LayoutsViewController : UIViewController
             switch layoutSize.rawValue {
             case 0:
                 let layout = PNSmallLayout()
-                layout.loadDelegate = self;
-                layout.load(withAppToken: Settings.appToken, placement: "iOS_asset_group_\(placementName!)")
+                layout.load(withAppToken: Settings.appToken, placement: "iOS_asset_group_\(placementName!)", delegate: self)
                 break
             case 1:
                 let layout = PNMediumLayout()
-                layout.loadDelegate = self;
-                layout.load(withAppToken: Settings.appToken, placement: "iOS_asset_group_\(placementName!)")
+                layout.load(withAppToken: Settings.appToken, placement: "iOS_asset_group_\(placementName!)", delegate: self)
                 break
             case 2:
                 let layout = PNLargeLayout ()
-                layout.loadDelegate = self
-                layout.load(withAppToken: Settings.appToken, placement: "iOS_asset_group_\(placementName!)")
+                layout.load(withAppToken: Settings.appToken, placement: "iOS_asset_group_\(placementName!)", delegate: self)
                 break
             default: break
             }
         } else {
+            removeActivityIndicator()
             let alert = UIAlertView (title: "PubNative Demo", message: "Please select both placement name and a size in order to make a request.", delegate: nil, cancelButtonTitle: "OK")
-            activityIndicator.stopAnimating()
-            activityIndicator.removeFromSuperview()
             alert.show()
         }
     }
     
-    func addActivityIndicator ()
+    func addActivityIndicator()
     {
         activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
         activityIndicator.center = self.view.center
         self.view.addSubview(activityIndicator)
     }
     
-    
+    func removeActivityIndicator()
+    {
+        activityIndicator.stopAnimating()
+        activityIndicator.removeFromSuperview()
+    }
     
     func resetLayoutButtons()
     {
@@ -127,8 +127,7 @@ extension LayoutsViewController : PNLayoutLoadDelegate
 {
     func layoutDidFinishLoading(_ layout: PNLayout!)
     {
-        activityIndicator.stopAnimating()
-        activityIndicator.removeFromSuperview()
+        removeActivityIndicator()
         
         switch layoutSize.rawValue {
         case 0:
@@ -160,7 +159,9 @@ extension LayoutsViewController : PNLayoutLoadDelegate
     
     func layout(_ layout: PNLayout!, didFailLoading error: Error!)
     {
-        
+        removeActivityIndicator()
+        let alert = UIAlertView (title: "PubNative Demo", message: "Error: \(error.localizedDescription)", delegate: nil, cancelButtonTitle: "OK")
+        alert.show()
     }
 }
 

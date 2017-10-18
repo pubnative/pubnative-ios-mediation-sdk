@@ -28,5 +28,6 @@ extern CGFloat const kPNCTACornerRadius;
 - (void)invokeLoadFinish;
 - (void)invokeLoadFail:(NSError*)error;
 - (void)load;
+- (void)updateContentInfoSize:(NSNotification *)notification;
 
 @end

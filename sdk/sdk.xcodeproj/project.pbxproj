@@ -7,34 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A0D8F5F1F0B9E0100659CB6 /* PNLargeLayoutAdapterFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A0D8F5D1F0B9E0100659CB6 /* PNLargeLayoutAdapterFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A0D8F5F1F0B9E0100659CB6 /* PNLargeLayoutAdapterFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A0D8F5D1F0B9E0100659CB6 /* PNLargeLayoutAdapterFactory.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5A0D8F601F0B9E0100659CB6 /* PNLargeLayoutAdapterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0D8F5E1F0B9E0100659CB6 /* PNLargeLayoutAdapterFactory.m */; };
 		5A17E85D1EEEE51C008491CA /* LayoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A17E85C1EEEE51C008491CA /* LayoutsViewController.swift */; };
 		5A3F030A1EF8338D00F74EBC /* PNLayoutAdapterFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A3F03081EF8338D00F74EBC /* PNLayoutAdapterFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A3F030B1EF8338D00F74EBC /* PNLayoutAdapterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A3F03091EF8338D00F74EBC /* PNLayoutAdapterFactory.m */; };
-		5A3F03111EF83AEC00F74EBC /* PNMediumLayoutAdapterFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A3F030F1EF83AEC00F74EBC /* PNMediumLayoutAdapterFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A3F03111EF83AEC00F74EBC /* PNMediumLayoutAdapterFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A3F030F1EF83AEC00F74EBC /* PNMediumLayoutAdapterFactory.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5A3F03121EF83AEC00F74EBC /* PNMediumLayoutAdapterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A3F03101EF83AEC00F74EBC /* PNMediumLayoutAdapterFactory.m */; };
 		5A48F9F31EEA98B500C6FEFC /* PNLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A48F9F11EEA98B500C6FEFC /* PNLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A48F9F41EEA98B500C6FEFC /* PNLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A48F9F21EEA98B500C6FEFC /* PNLayout.m */; };
-		5A4D77B41EFABB3600E79064 /* PNSmallLayoutAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A4D77B21EFABB3600E79064 /* PNSmallLayoutAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A4D77B41EFABB3600E79064 /* PNSmallLayoutAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A4D77B21EFABB3600E79064 /* PNSmallLayoutAdapter.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5A4D77B51EFABB3600E79064 /* PNSmallLayoutAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4D77B31EFABB3600E79064 /* PNSmallLayoutAdapter.m */; };
-		5A4D77B81EFABE8100E79064 /* PNSmallLibraryAdapterViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A4D77B61EFABE8000E79064 /* PNSmallLibraryAdapterViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A4D77B81EFABE8100E79064 /* PNSmallLibraryAdapterViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A4D77B61EFABE8000E79064 /* PNSmallLibraryAdapterViewController.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5A4D77B91EFABE8100E79064 /* PNSmallLibraryAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4D77B71EFABE8100E79064 /* PNSmallLibraryAdapterViewController.m */; };
-		5A4D77BA1EFAC29300E79064 /* PNSmallLayoutRequestView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ADF62BC1EEAFAF6009AD349 /* PNSmallLayoutRequestView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A4D77BA1EFAC29300E79064 /* PNSmallLayoutRequestView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ADF62BC1EEAFAF6009AD349 /* PNSmallLayoutRequestView.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5A4D77BB1EFAC2A000E79064 /* PNSmallLayoutRequestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADF62BD1EEAFAF6009AD349 /* PNSmallLayoutRequestView.m */; };
-		5A4F5C561EFA7DDC002CB522 /* SmallPubnativeLibraryNetworkAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ADE1D971EF280440097136E /* SmallPubnativeLibraryNetworkAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A4F5C561EFA7DDC002CB522 /* SmallPubnativeLibraryNetworkAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ADE1D971EF280440097136E /* SmallPubnativeLibraryNetworkAdapter.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5A62F7351EF136E100FA5C99 /* PNSmallLayoutContainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A62F7321EF136E100FA5C99 /* PNSmallLayoutContainerViewController.xib */; };
-		5A67E9701F055392002C6128 /* PNAPIAssetGroupOriented.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A67E96E1F055392002C6128 /* PNAPIAssetGroupOriented.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A6662631F5EE04100C24227 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6662621F5EE04100C24227 /* Parameters.swift */; };
+		5A67E9701F055392002C6128 /* PNAPIAssetGroupOriented.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A67E96E1F055392002C6128 /* PNAPIAssetGroupOriented.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5A67E9711F055392002C6128 /* PNAPIAssetGroupOriented.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A67E96F1F055392002C6128 /* PNAPIAssetGroupOriented.m */; };
+		5A6861921F668512008A6300 /* NativeAdRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6861911F668512008A6300 /* NativeAdRequestModel.swift */; };
 		5A6F6B5D1F161B5A007A7870 /* PNLayoutTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6F6B5C1F161B5A007A7870 /* PNLayoutTest.m */; };
 		5A6F6B601F162D6C007A7870 /* PNLayoutAdapterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6F6B5F1F162D6C007A7870 /* PNLayoutAdapterTest.m */; };
 		5A6F6B641F16357D007A7870 /* PNLayoutAdapterFactoryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6F6B631F16357D007A7870 /* PNLayoutAdapterFactoryTest.m */; };
-		5A7A5D001EF16F8900AF8DE9 /* PNSmallLayoutAdapterFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A7A5CFE1EF16F8900AF8DE9 /* PNSmallLayoutAdapterFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A7A5D001EF16F8900AF8DE9 /* PNSmallLayoutAdapterFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A7A5CFE1EF16F8900AF8DE9 /* PNSmallLayoutAdapterFactory.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5A7A5D011EF16F8900AF8DE9 /* PNSmallLayoutAdapterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7A5CFF1EF16F8900AF8DE9 /* PNSmallLayoutAdapterFactory.m */; };
 		5A7D668C1F16624600CDA4C8 /* PNAPILayoutTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D668B1F16624600CDA4C8 /* PNAPILayoutTest.m */; };
+		5A89FC5E1F5EABCD002A020C /* NativeRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A89FC5D1F5EABCD002A020C /* NativeRequestViewController.swift */; };
+		5A89FC601F5EABE3002A020C /* LayoutsRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A89FC5F1F5EABE3002A020C /* LayoutsRequestViewController.swift */; };
+		5A8A88D91F62DDF900559037 /* PNStarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4418B791EECAC470047A2A2 /* PNStarRatingView.m */; };
 		5A99EA651F2F2B6B002E2993 /* PNAdModelRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A99EA631F2F2B6B002E2993 /* PNAdModelRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A99EA661F2F2B6B002E2993 /* PNAdModelRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A99EA641F2F2B6B002E2993 /* PNAdModelRenderer.m */; };
-		5A99EA681F2F2FC7002E2993 /* PNAdModel+Native.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A99EA671F2F2FC7002E2993 /* PNAdModel+Native.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A99EA681F2F2FC7002E2993 /* PNAdModel+Native.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A99EA671F2F2FC7002E2993 /* PNAdModel+Native.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5A99EA691F2F3F41002E2993 /* PNStarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4418B791EECAC470047A2A2 /* PNStarRatingView.m */; };
 		5AADC19C1EFAA48D007116CC /* SmallPubnativeLibraryNetworkAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADE1D981EF280440097136E /* SmallPubnativeLibraryNetworkAdapter.m */; };
 		5AB8CB2E1F0A565E002DFC59 /* Pubnative.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F413A21EEA00DA002F0337 /* Pubnative.framework */; };
@@ -44,20 +49,23 @@
 		5ABE1BB21F040961002F1F95 /* PNAPIAssetGroup17Landscape.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ABE1BB11F040961002F1F95 /* PNAPIAssetGroup17Landscape.xib */; };
 		5ABE1BB41F040AAA002F1F95 /* PNAPIAssetGroup19Landscape.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ABE1BB31F040AAA002F1F95 /* PNAPIAssetGroup19Landscape.xib */; };
 		5ABE1BB81F040BE0002F1F95 /* PNAPIAssetGroup20Landscape.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ABE1BB71F040BE0002F1F95 /* PNAPIAssetGroup20Landscape.xib */; };
-		5ABF51981F0BB64400D31795 /* PNLargeLayoutContainerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ABF51951F0BB64400D31795 /* PNLargeLayoutContainerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5ABE930B1F67DDB100199510 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ABE93091F67DDB100199510 /* Fabric.framework */; };
+		5ABE930C1F67DDB100199510 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ABE930A1F67DDB100199510 /* Crashlytics.framework */; };
+		5ABF51981F0BB64400D31795 /* PNLargeLayoutContainerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ABF51951F0BB64400D31795 /* PNLargeLayoutContainerViewController.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5ABF51991F0BB64400D31795 /* PNLargeLayoutContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABF51961F0BB64400D31795 /* PNLargeLayoutContainerViewController.m */; };
 		5ABF519A1F0BB64400D31795 /* PNLargeLayoutContainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ABF51971F0BB64400D31795 /* PNLargeLayoutContainerViewController.xib */; };
 		5ABF519D1F0BB91700D31795 /* PNLargeLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ABF519B1F0BB91700D31795 /* PNLargeLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5ABF519E1F0BB91700D31795 /* PNLargeLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABF519C1F0BB91700D31795 /* PNLargeLayout.m */; };
-		5ABF51A11F0BC7F400D31795 /* PNLargeLibraryAdapterViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ABF519F1F0BC7F400D31795 /* PNLargeLibraryAdapterViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5ABF51A21F0BC7F400D31795 /* PNLargeLibraryAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABF51A01F0BC7F400D31795 /* PNLargeLibraryAdapterViewController.m */; };
-		5ABF51A91F0BE4C400D31795 /* PNLargeLayoutAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ABF51A71F0BE4C400D31795 /* PNLargeLayoutAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5ABF51A11F0BC7F400D31795 /* (null) in Headers */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (Private, ); }; };
+		5ABF51A91F0BE4C400D31795 /* PNLargeLayoutAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ABF51A71F0BE4C400D31795 /* PNLargeLayoutAdapter.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5ABF51AA1F0BE4C400D31795 /* PNLargeLayoutAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABF51A81F0BE4C400D31795 /* PNLargeLayoutAdapter.m */; };
-		5AC14E501F0CF211005692F0 /* LargePubnativeLibraryNetworkAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AC14E4E1F0CF211005692F0 /* LargePubnativeLibraryNetworkAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5AC14E501F0CF211005692F0 /* LargePubnativeLibraryNetworkAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AC14E4E1F0CF211005692F0 /* LargePubnativeLibraryNetworkAdapter.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5AC14E511F0CF211005692F0 /* LargePubnativeLibraryNetworkAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC14E4F1F0CF211005692F0 /* LargePubnativeLibraryNetworkAdapter.m */; };
-		5AC14E541F0D2D4A005692F0 /* PNLargeLayoutRequestView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AC14E521F0D2D4A005692F0 /* PNLargeLayoutRequestView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5AC14E541F0D2D4A005692F0 /* PNLargeLayoutRequestView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AC14E521F0D2D4A005692F0 /* PNLargeLayoutRequestView.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5AC14E551F0D2D4A005692F0 /* PNLargeLayoutRequestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC14E531F0D2D4A005692F0 /* PNLargeLayoutRequestView.m */; };
 		5AC62C141F21061000D24177 /* PNLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AC62C131F20E26B00D24177 /* PNLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5ACB49D01F57FC85009C8B0B /* UIApplication+TopViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ACB49CE1F57FC85009C8B0B /* UIApplication+TopViewController.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		5ACB49D11F57FC85009C8B0B /* UIApplication+TopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ACB49CF1F57FC85009C8B0B /* UIApplication+TopViewController.m */; };
 		5AD3029C1F176DD4002530F1 /* PNAPIAssetGroupFactoryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD3029B1F176DD4002530F1 /* PNAPIAssetGroupFactoryTest.m */; };
 		5AD302A01F177FD4002530F1 /* PNAPIAssetGroupTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD3029F1F177FD4002530F1 /* PNAPIAssetGroupTest.m */; };
 		5AD302A31F17A3DC002530F1 /* SmallPubnativeLibraryNetworkAdapterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD302A21F17A3DC002530F1 /* SmallPubnativeLibraryNetworkAdapterTest.m */; };
@@ -67,38 +75,54 @@
 		5AD3ECEE1F0151A900605704 /* PNLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD3ECEC1F0151A900605704 /* PNLayoutViewController.m */; };
 		5AD3ECF11F01520F00605704 /* PNSmallLayoutViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AD3ECEF1F01520F00605704 /* PNSmallLayoutViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5AD3ECF21F01520F00605704 /* PNSmallLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD3ECF01F01520F00605704 /* PNSmallLayoutViewController.m */; };
-		5AD84EFE1EFBB5130035B0C0 /* PNSmallLayoutContainerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AD84EFC1EFBB5130035B0C0 /* PNSmallLayoutContainerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5AD3F8CE1F5D9D72001E0C6B /* SelectAdFormatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD3F8CD1F5D9D72001E0C6B /* SelectAdFormatViewController.swift */; };
+		5AD84EFE1EFBB5130035B0C0 /* PNSmallLayoutContainerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AD84EFC1EFBB5130035B0C0 /* PNSmallLayoutContainerViewController.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5AD84EFF1EFBB5130035B0C0 /* PNSmallLayoutContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD84EFD1EFBB5130035B0C0 /* PNSmallLayoutContainerViewController.m */; };
+		5AD9CDC31F4303820004F01A /* PNBanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AD9CDC11F4303820004F01A /* PNBanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5AD9CDC41F4303820004F01A /* PNBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD9CDC21F4303820004F01A /* PNBanner.m */; };
 		5ADD25931F2241450012407F /* PNCloseIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADD25911F2241450012407F /* PNCloseIcon.png */; };
 		5ADD25941F2241450012407F /* PNCloseIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ADD25921F2241450012407F /* PNCloseIcon@2x.png */; };
 		5ADD25971F22594B0012407F /* PNOrientationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ADD25951F22594B0012407F /* PNOrientationManager.h */; };
 		5ADD25981F22594B0012407F /* PNOrientationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADD25961F22594B0012407F /* PNOrientationManager.m */; };
 		5ADD7F931EFD46DF00DAF2BD /* PNMediumLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ADD7F911EFD46DF00DAF2BD /* PNMediumLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5ADD7F941EFD46DF00DAF2BD /* PNMediumLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADD7F921EFD46DF00DAF2BD /* PNMediumLayout.m */; };
-		5ADD7F971EFD49C200DAF2BD /* PNMediumLayoutAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ADD7F951EFD49C200DAF2BD /* PNMediumLayoutAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5ADD7F971EFD49C200DAF2BD /* PNMediumLayoutAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ADD7F951EFD49C200DAF2BD /* PNMediumLayoutAdapter.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5ADD7F981EFD49C200DAF2BD /* PNMediumLayoutAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADD7F961EFD49C200DAF2BD /* PNMediumLayoutAdapter.m */; };
-		5ADD7F9C1EFD4F6500DAF2BD /* PNMediumLayoutContainerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ADD7F991EFD4F6500DAF2BD /* PNMediumLayoutContainerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5ADD7F9C1EFD4F6500DAF2BD /* PNMediumLayoutContainerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ADD7F991EFD4F6500DAF2BD /* PNMediumLayoutContainerViewController.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5ADD7F9D1EFD4F6500DAF2BD /* PNMediumLayoutContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADD7F9A1EFD4F6500DAF2BD /* PNMediumLayoutContainerViewController.m */; };
 		5ADD7F9E1EFD4F6500DAF2BD /* PNMediumLayoutContainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ADD7F9B1EFD4F6500DAF2BD /* PNMediumLayoutContainerViewController.xib */; };
-		5ADD7FA11EFD55F200DAF2BD /* PNMediumLibraryAdapterViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ADD7F9F1EFD55F200DAF2BD /* PNMediumLibraryAdapterViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5ADD7FA11EFD55F200DAF2BD /* PNMediumLibraryAdapterViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ADD7F9F1EFD55F200DAF2BD /* PNMediumLibraryAdapterViewController.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5ADD7FA21EFD55F200DAF2BD /* PNMediumLibraryAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADD7FA01EFD55F200DAF2BD /* PNMediumLibraryAdapterViewController.m */; };
-		5ADD7FA51EFD5A2300DAF2BD /* MediumPubnativeLibraryNetworkAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ADD7FA31EFD5A2300DAF2BD /* MediumPubnativeLibraryNetworkAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5ADD7FA51EFD5A2300DAF2BD /* MediumPubnativeLibraryNetworkAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ADD7FA31EFD5A2300DAF2BD /* MediumPubnativeLibraryNetworkAdapter.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5ADD7FA61EFD5A2300DAF2BD /* MediumPubnativeLibraryNetworkAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADD7FA41EFD5A2300DAF2BD /* MediumPubnativeLibraryNetworkAdapter.m */; };
 		5ADF62B11EEACE4C009AD349 /* PNLayoutAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ADF62AF1EEACE4C009AD349 /* PNLayoutAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5ADF62B21EEACE4C009AD349 /* PNLayoutAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADF62B01EEACE4C009AD349 /* PNLayoutAdapter.m */; };
 		5ADF62B91EEAE37F009AD349 /* PNSmallLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ADF62B71EEAE37F009AD349 /* PNSmallLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5ADF62BA1EEAE37F009AD349 /* PNSmallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADF62B81EEAE37F009AD349 /* PNSmallLayout.m */; };
+		5AE232A61F5D4694006EEE00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE232A51F5D4694006EEE00 /* AppDelegate.swift */; };
+		5AE232AB1F5D4694006EEE00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AE232A91F5D4694006EEE00 /* Main.storyboard */; };
+		5AE232AD1F5D4694006EEE00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AE232AC1F5D4694006EEE00 /* Assets.xcassets */; };
+		5AE232B01F5D4694006EEE00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AE232AE1F5D4694006EEE00 /* LaunchScreen.storyboard */; };
+		5AE232B51F5D46A1006EEE00 /* Pubnative.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F413A21EEA00DA002F0337 /* Pubnative.framework */; };
+		5AE232B61F5D46A1006EEE00 /* Pubnative.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4F413A21EEA00DA002F0337 /* Pubnative.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5AE232BB1F5D4A55006EEE00 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE232BA1F5D4A55006EEE00 /* MainViewController.swift */; };
+		5AE232BD1F5D4C3E006EEE00 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE232BC1F5D4C3E006EEE00 /* Settings.swift */; };
+		5AE232BF1F5D5754006EEE00 /* UIButton+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE232BE1F5D5754006EEE00 /* UIButton+BackgroundColor.swift */; };
+		5AE232C11F5D92C7006EEE00 /* TargetingParameterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE232C01F5D92C7006EEE00 /* TargetingParameterCell.swift */; };
+		5AEBC8E91F3C557F00D03F68 /* PNSmallLayoutTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEBC8E81F3C557F00D03F68 /* PNSmallLayoutTest.m */; };
+		5AEBC8EB1F3C599000D03F68 /* PNMediumLayoutTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEBC8EA1F3C599000D03F68 /* PNMediumLayoutTest.m */; };
+		5AEBC8ED1F3C5DE900D03F68 /* PNLargeLayoutTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEBC8EC1F3C5DE900D03F68 /* PNLargeLayoutTest.m */; };
 		5AEC22201F025292008A1047 /* PNMediumLayoutViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AEC221E1F025292008A1047 /* PNMediumLayoutViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5AEC22211F025292008A1047 /* PNMediumLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEC221F1F025292008A1047 /* PNMediumLayoutViewController.m */; };
-		5AEC22241F025887008A1047 /* PNMediumLayoutRequestView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AEC22221F025887008A1047 /* PNMediumLayoutRequestView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5AEC22241F025887008A1047 /* PNMediumLayoutRequestView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AEC22221F025887008A1047 /* PNMediumLayoutRequestView.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5AEC22251F025887008A1047 /* PNMediumLayoutRequestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AEC22231F025887008A1047 /* PNMediumLayoutRequestView.m */; };
 		B40055521EEC65E400F91945 /* PNAPILayout.h in Headers */ = {isa = PBXBuildFile; fileRef = B40055501EEC65E400F91945 /* PNAPILayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B40055531EEC65E400F91945 /* PNAPILayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B40055511EEC65E400F91945 /* PNAPILayout.m */; };
 		B40055561EEC660500F91945 /* PNAPILayoutViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B40055541EEC660500F91945 /* PNAPILayoutViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B40055571EEC660500F91945 /* PNAPILayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B40055551EEC660500F91945 /* PNAPILayoutViewController.m */; };
-		B400555B1EEC664F00F91945 /* PNAPIAssetGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = B40055591EEC664F00F91945 /* PNAPIAssetGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B400555B1EEC664F00F91945 /* PNAPIAssetGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = B40055591EEC664F00F91945 /* PNAPIAssetGroup.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B400555C1EEC664F00F91945 /* PNAPIAssetGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = B400555A1EEC664F00F91945 /* PNAPIAssetGroup.m */; };
-		B400555F1EEC666300F91945 /* PNAPIAssetGroupFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = B400555D1EEC666300F91945 /* PNAPIAssetGroupFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B400555F1EEC666300F91945 /* PNAPIAssetGroupFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = B400555D1EEC666300F91945 /* PNAPIAssetGroupFactory.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B40055601EEC666300F91945 /* PNAPIAssetGroupFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B400555E1EEC666300F91945 /* PNAPIAssetGroupFactory.m */; };
 		B4418B5E1EEC9CBD0047A2A2 /* PNAPIAssetGroup1.h in Headers */ = {isa = PBXBuildFile; fileRef = B4418B481EEC9CBD0047A2A2 /* PNAPIAssetGroup1.h */; };
 		B4418B5F1EEC9CBD0047A2A2 /* PNAPIAssetGroup1.m in Sources */ = {isa = PBXBuildFile; fileRef = B4418B491EEC9CBD0047A2A2 /* PNAPIAssetGroup1.m */; };
@@ -122,7 +146,7 @@
 		B4418B711EEC9CBD0047A2A2 /* PNAPIAssetGroup7.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4418B5B1EEC9CBD0047A2A2 /* PNAPIAssetGroup7.xib */; };
 		B4418B721EEC9CBD0047A2A2 /* PNAPIAssetGroup8.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4418B5C1EEC9CBD0047A2A2 /* PNAPIAssetGroup8.xib */; };
 		B4418B731EEC9CBD0047A2A2 /* PNAPIAssetGroup9.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4418B5D1EEC9CBD0047A2A2 /* PNAPIAssetGroup9.xib */; };
-		B4418B9A1EECAC470047A2A2 /* PNPropertyAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = B4418B751EECAC470047A2A2 /* PNPropertyAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4418B9A1EECAC470047A2A2 /* PNPropertyAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = B4418B751EECAC470047A2A2 /* PNPropertyAnimation.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4418B9B1EECAC470047A2A2 /* PNPropertyAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B4418B761EECAC470047A2A2 /* PNPropertyAnimation.m */; };
 		B4418B9C1EECAC470047A2A2 /* PNStarRatingView.h in Headers */ = {isa = PBXBuildFile; fileRef = B4418B781EECAC470047A2A2 /* PNStarRatingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4418B9D1EECAC470047A2A2 /* PNStarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4418B791EECAC470047A2A2 /* PNStarRatingView.m */; };
@@ -136,34 +160,34 @@
 		B4418BA51EECAC470047A2A2 /* PNPlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4418B821EECAC470047A2A2 /* PNPlay@2x.png */; };
 		B4418BA61EECAC470047A2A2 /* PnUnMute.png in Resources */ = {isa = PBXBuildFile; fileRef = B4418B831EECAC470047A2A2 /* PnUnMute.png */; };
 		B4418BA71EECAC470047A2A2 /* PnUnMute@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4418B841EECAC470047A2A2 /* PnUnMute@2x.png */; };
-		B4418BA81EECAC470047A2A2 /* PNVASTEventProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = B4418B851EECAC470047A2A2 /* PNVASTEventProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4418BA81EECAC470047A2A2 /* PNVASTEventProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = B4418B851EECAC470047A2A2 /* PNVASTEventProcessor.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4418BA91EECAC470047A2A2 /* PNVASTEventProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = B4418B861EECAC470047A2A2 /* PNVASTEventProcessor.m */; };
-		B4418BAA1EECAC470047A2A2 /* PNVASTMediaFile.h in Headers */ = {isa = PBXBuildFile; fileRef = B4418B871EECAC470047A2A2 /* PNVASTMediaFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4418BAA1EECAC470047A2A2 /* PNVASTMediaFile.h in Headers */ = {isa = PBXBuildFile; fileRef = B4418B871EECAC470047A2A2 /* PNVASTMediaFile.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4418BAB1EECAC470047A2A2 /* PNVASTMediaFile.m in Sources */ = {isa = PBXBuildFile; fileRef = B4418B881EECAC470047A2A2 /* PNVASTMediaFile.m */; };
-		B4418BAC1EECAC470047A2A2 /* PNVASTMediaFilePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = B4418B891EECAC470047A2A2 /* PNVASTMediaFilePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4418BAC1EECAC470047A2A2 /* PNVASTMediaFilePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = B4418B891EECAC470047A2A2 /* PNVASTMediaFilePicker.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4418BAD1EECAC470047A2A2 /* PNVASTMediaFilePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = B4418B8A1EECAC470047A2A2 /* PNVASTMediaFilePicker.m */; };
-		B4418BAE1EECAC470047A2A2 /* PNVASTModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B4418B8B1EECAC470047A2A2 /* PNVASTModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4418BAE1EECAC470047A2A2 /* PNVASTModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B4418B8B1EECAC470047A2A2 /* PNVASTModel.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4418BAF1EECAC470047A2A2 /* PNVASTModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4418B8C1EECAC470047A2A2 /* PNVASTModel.m */; };
-		B4418BB01EECAC470047A2A2 /* PNVASTParser.h in Headers */ = {isa = PBXBuildFile; fileRef = B4418B8D1EECAC470047A2A2 /* PNVASTParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4418BB01EECAC470047A2A2 /* PNVASTParser.h in Headers */ = {isa = PBXBuildFile; fileRef = B4418B8D1EECAC470047A2A2 /* PNVASTParser.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4418BB11EECAC470047A2A2 /* PNVASTParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B4418B8E1EECAC470047A2A2 /* PNVASTParser.m */; };
-		B4418BB21EECAC470047A2A2 /* PNVASTPlayerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B4418B8F1EECAC470047A2A2 /* PNVASTPlayerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4418BB21EECAC470047A2A2 /* PNVASTPlayerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B4418B8F1EECAC470047A2A2 /* PNVASTPlayerViewController.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4418BB31EECAC470047A2A2 /* PNVASTPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4418B901EECAC470047A2A2 /* PNVASTPlayerViewController.m */; };
 		B4418BB41EECAC470047A2A2 /* PNVASTPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4418B911EECAC470047A2A2 /* PNVASTPlayerViewController.xib */; };
-		B4418BB51EECAC470047A2A2 /* PNVASTReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = B4418B921EECAC470047A2A2 /* PNVASTReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4418BB51EECAC470047A2A2 /* PNVASTReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = B4418B921EECAC470047A2A2 /* PNVASTReachability.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4418BB61EECAC470047A2A2 /* PNVASTReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B4418B931EECAC470047A2A2 /* PNVASTReachability.m */; };
-		B4418BB71EECAC470047A2A2 /* PNVASTSchema.h in Headers */ = {isa = PBXBuildFile; fileRef = B4418B941EECAC470047A2A2 /* PNVASTSchema.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B4418BB81EECAC470047A2A2 /* PNVASTXMLUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = B4418B951EECAC470047A2A2 /* PNVASTXMLUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4418BB71EECAC470047A2A2 /* PNVASTSchema.h in Headers */ = {isa = PBXBuildFile; fileRef = B4418B941EECAC470047A2A2 /* PNVASTSchema.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B4418BB81EECAC470047A2A2 /* PNVASTXMLUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = B4418B951EECAC470047A2A2 /* PNVASTXMLUtil.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4418BB91EECAC470047A2A2 /* PNVASTXMLUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B4418B961EECAC470047A2A2 /* PNVASTXMLUtil.m */; };
-		B4418BBA1EECAC470047A2A2 /* PNProgressLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = B4418B981EECAC470047A2A2 /* PNProgressLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4418BBA1EECAC470047A2A2 /* PNProgressLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = B4418B981EECAC470047A2A2 /* PNProgressLabel.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4418BBB1EECAC470047A2A2 /* PNProgressLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4418B991EECAC470047A2A2 /* PNProgressLabel.m */; };
 		B4418BBC1EECAD270047A2A2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0351D1EB1D2A8129008A6A6C /* CoreMedia.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B4418BC01EECAD300047A2A2 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B4418BBE1EECAD300047A2A2 /* libxml2.2.tbd */; };
 		B4418BC11EECAD300047A2A2 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B4418BBF1EECAD300047A2A2 /* libxml2.tbd */; };
 		B4418BC21EECAD430047A2A2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031714E71D25804B00817AEF /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B4418BC31EECAD470047A2A2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0351D1E91D2A8129008A6A6C /* AVFoundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		B4418BCF1EED164F0047A2A2 /* PNReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = B4418BCD1EED164F0047A2A2 /* PNReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4418BCF1EED164F0047A2A2 /* PNReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = B4418BCD1EED164F0047A2A2 /* PNReachability.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4418BD01EED164F0047A2A2 /* PNReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B4418BCE1EED164F0047A2A2 /* PNReachability.m */; };
-		B4418BD31EED17060047A2A2 /* PNSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = B4418BD11EED17060047A2A2 /* PNSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4418BD31EED17060047A2A2 /* PNSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = B4418BD11EED17060047A2A2 /* PNSettings.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4418BD41EED17060047A2A2 /* PNSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = B4418BD21EED17060047A2A2 /* PNSettings.m */; };
 		B4418BD71EED1EBB0047A2A2 /* PNLocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B4418BD51EED1EBB0047A2A2 /* PNLocationManager.h */; };
 		B4418BD81EED1EBB0047A2A2 /* PNLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B4418BD61EED1EBB0047A2A2 /* PNLocationManager.m */; };
@@ -226,7 +250,7 @@
 		B486E1041EEE90C30014CE9A /* PNAPIAssetGroup19.m in Sources */ = {isa = PBXBuildFile; fileRef = B486E0DE1EEE90C30014CE9A /* PNAPIAssetGroup19.m */; };
 		B486E1051EEE90C30014CE9A /* PNAPIAssetGroup20.h in Headers */ = {isa = PBXBuildFile; fileRef = B486E0DF1EEE90C30014CE9A /* PNAPIAssetGroup20.h */; };
 		B486E1061EEE90C30014CE9A /* PNAPIAssetGroup20.m in Sources */ = {isa = PBXBuildFile; fileRef = B486E0E01EEE90C30014CE9A /* PNAPIAssetGroup20.m */; };
-		B4BA9C961F2B7D09001A901B /* PNAdModel+Fetching.h in Headers */ = {isa = PBXBuildFile; fileRef = B4BA9C951F2B7D09001A901B /* PNAdModel+Fetching.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4BA9C961F2B7D09001A901B /* PNAdModel+Fetching.h in Headers */ = {isa = PBXBuildFile; fileRef = B4BA9C951F2B7D09001A901B /* PNAdModel+Fetching.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4CAD0561EEA2C1700359F3D /* response_error.json in Resources */ = {isa = PBXBuildFile; fileRef = B4CAD04D1EEA2C1700359F3D /* response_error.json */; };
 		B4CAD0571EEA2C1700359F3D /* response_ok_empty.json in Resources */ = {isa = PBXBuildFile; fileRef = B4CAD04E1EEA2C1700359F3D /* response_ok_empty.json */; };
 		B4CAD0581EEA2C1700359F3D /* response_ok_invalid.json in Resources */ = {isa = PBXBuildFile; fileRef = B4CAD04F1EEA2C1700359F3D /* response_ok_invalid.json */; };
@@ -252,9 +276,9 @@
 		B4CF38491EEA217A007E8BC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4CF38481EEA217A007E8BC3 /* Assets.xcassets */; };
 		B4CF384C1EEA217A007E8BC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CF384A1EEA217A007E8BC3 /* LaunchScreen.storyboard */; };
 		B4F413F11EEA1A99002F0337 /* Pubnative.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F413A21EEA00DA002F0337 /* Pubnative.framework */; };
-		B4F413F21EEA1AC2002F0337 /* PNAPICryptoUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F413BC1EEA1A0B002F0337 /* PNAPICryptoUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4F413F21EEA1AC2002F0337 /* PNAPICryptoUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F413BC1EEA1A0B002F0337 /* PNAPICryptoUtils.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4F413F31EEA1AC2002F0337 /* PNAPICryptoUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F413BD1EEA1A0B002F0337 /* PNAPICryptoUtils.m */; };
-		B4F413F41EEA1AC2002F0337 /* PNAPIHttpRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F413EB1EEA1A0B002F0337 /* PNAPIHttpRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4F413F41EEA1AC2002F0337 /* PNAPIHttpRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F413EB1EEA1A0B002F0337 /* PNAPIHttpRequest.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4F413F51EEA1AC2002F0337 /* PNAPIHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F413EC1EEA1A0B002F0337 /* PNAPIHttpRequest.m */; };
 		B4F413F61EEA1AC2002F0337 /* PNAPIV3AdModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F413C71EEA1A0B002F0337 /* PNAPIV3AdModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4F413F71EEA1AC2002F0337 /* PNAPIV3AdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F413C81EEA1A0B002F0337 /* PNAPIV3AdModel.m */; };
@@ -262,54 +286,54 @@
 		B4F413F91EEA1AC2002F0337 /* PNAPIV3BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F413CA1EEA1A0B002F0337 /* PNAPIV3BaseModel.m */; };
 		B4F413FA1EEA1AC2002F0337 /* PNAPIV3DataModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F413CB1EEA1A0B002F0337 /* PNAPIV3DataModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4F413FB1EEA1AC2002F0337 /* PNAPIV3DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F413CC1EEA1A0B002F0337 /* PNAPIV3DataModel.m */; };
-		B4F413FC1EEA1AC2002F0337 /* PNAPIV3ResponseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F413CD1EEA1A0B002F0337 /* PNAPIV3ResponseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4F413FC1EEA1AC2002F0337 /* PNAPIV3ResponseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F413CD1EEA1A0B002F0337 /* PNAPIV3ResponseModel.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4F413FD1EEA1AC2002F0337 /* PNAPIV3ResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F413CE1EEA1A0B002F0337 /* PNAPIV3ResponseModel.m */; };
 		B4F413FE1EEA1AC2002F0337 /* PNAPIAdModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F413CF1EEA1A0B002F0337 /* PNAPIAdModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4F413FF1EEA1AC2002F0337 /* PNAPIAdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F413D01EEA1A0B002F0337 /* PNAPIAdModel.m */; };
-		B4F414001EEA1AC2002F0337 /* PNAPIClickCacher.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F413D11EEA1A0B002F0337 /* PNAPIClickCacher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4F414001EEA1AC2002F0337 /* PNAPIClickCacher.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F413D11EEA1A0B002F0337 /* PNAPIClickCacher.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4F414011EEA1AC2002F0337 /* PNAPIClickCacher.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F413D21EEA1A0B002F0337 /* PNAPIClickCacher.m */; };
 		B4F414021EEA1AC2002F0337 /* PNAPIContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F413D31EEA1A0B002F0337 /* PNAPIContentView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4F414031EEA1AC2002F0337 /* PNAPIContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F413D41EEA1A0B002F0337 /* PNAPIContentView.m */; };
-		B4F414041EEA1AC2002F0337 /* PNAPIAsset.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F413D51EEA1A0B002F0337 /* PNAPIAsset.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4F414041EEA1AC2002F0337 /* PNAPIAsset.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F413D51EEA1A0B002F0337 /* PNAPIAsset.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4F414051EEA1AC2002F0337 /* PNAPIAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F413D61EEA1A0B002F0337 /* PNAPIAsset.m */; };
-		B4F414061EEA1AC2002F0337 /* PNAPIMeta.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F413D71EEA1A0B002F0337 /* PNAPIMeta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4F414061EEA1AC2002F0337 /* PNAPIMeta.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F413D71EEA1A0B002F0337 /* PNAPIMeta.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4F414071EEA1AC2002F0337 /* PNAPIMeta.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F413D81EEA1A0B002F0337 /* PNAPIMeta.m */; };
 		B4F414081EEA1AC2002F0337 /* PNAPIRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F413D91EEA1A0B002F0337 /* PNAPIRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4F414091EEA1AC2002F0337 /* PNAPIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F413DA1EEA1A0B002F0337 /* PNAPIRequest.m */; };
 		B4F4140A1EEA1AC2002F0337 /* PNAPIRequestParameter.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F413DB1EEA1A0B002F0337 /* PNAPIRequestParameter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4F4140B1EEA1AC2002F0337 /* PNAPIRequestParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F413DC1EEA1A0B002F0337 /* PNAPIRequestParameter.m */; };
-		B4F4140C1EEA1AC2002F0337 /* PNAPIImpressionTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F413DE1EEA1A0B002F0337 /* PNAPIImpressionTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4F4140C1EEA1AC2002F0337 /* PNAPIImpressionTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F413DE1EEA1A0B002F0337 /* PNAPIImpressionTracker.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4F4140D1EEA1AC2002F0337 /* PNAPIImpressionTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F413DF1EEA1A0B002F0337 /* PNAPIImpressionTracker.m */; };
-		B4F4140E1EEA1AC2002F0337 /* PNAPIImpressionTrackerItem.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F413E01EEA1A0B002F0337 /* PNAPIImpressionTrackerItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4F4140E1EEA1AC2002F0337 /* PNAPIImpressionTrackerItem.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F413E01EEA1A0B002F0337 /* PNAPIImpressionTrackerItem.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4F4140F1EEA1AC2002F0337 /* PNAPIImpressionTrackerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F413E11EEA1A0B002F0337 /* PNAPIImpressionTrackerItem.m */; };
-		B4F414101EEA1AC2002F0337 /* PNAPITrackingManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F413E21EEA1A0B002F0337 /* PNAPITrackingManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4F414101EEA1AC2002F0337 /* PNAPITrackingManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F413E21EEA1A0B002F0337 /* PNAPITrackingManager.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4F414111EEA1AC2002F0337 /* PNAPITrackingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F413E31EEA1A0B002F0337 /* PNAPITrackingManager.m */; };
-		B4F414121EEA1AC2002F0337 /* PNAPITrackingManagerItem.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F413E41EEA1A0B002F0337 /* PNAPITrackingManagerItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4F414121EEA1AC2002F0337 /* PNAPITrackingManagerItem.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F413E41EEA1A0B002F0337 /* PNAPITrackingManagerItem.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4F414131EEA1AC2002F0337 /* PNAPITrackingManagerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F413E51EEA1A0B002F0337 /* PNAPITrackingManagerItem.m */; };
-		B4F414141EEA1AC2002F0337 /* PNAPIVisibilityTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F413E61EEA1A0B002F0337 /* PNAPIVisibilityTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4F414141EEA1AC2002F0337 /* PNAPIVisibilityTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F413E61EEA1A0B002F0337 /* PNAPIVisibilityTracker.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4F414151EEA1AC2002F0337 /* PNAPIVisibilityTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F413E71EEA1A0B002F0337 /* PNAPIVisibilityTracker.m */; };
-		B4F414161EEA1AC2002F0337 /* PNAPIVisibilityTrackerItem.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F413E81EEA1A0B002F0337 /* PNAPIVisibilityTrackerItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4F414161EEA1AC2002F0337 /* PNAPIVisibilityTrackerItem.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F413E81EEA1A0B002F0337 /* PNAPIVisibilityTrackerItem.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4F414171EEA1AC2002F0337 /* PNAPIVisibilityTrackerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F413E91EEA1A0B002F0337 /* PNAPIVisibilityTrackerItem.m */; };
-		B4F414181EEA1AC2002F0337 /* PNAPIDriller.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F413BF1EEA1A0B002F0337 /* PNAPIDriller.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4F414181EEA1AC2002F0337 /* PNAPIDriller.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F413BF1EEA1A0B002F0337 /* PNAPIDriller.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4F414191EEA1AC2002F0337 /* PNAPIDriller.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F413C01EEA1A0B002F0337 /* PNAPIDriller.m */; };
 		B4F4146A1EEA1D8F002F0337 /* PNRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F414401EEA1B49002F0337 /* PNRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B4F4146B1EEA1DAE002F0337 /* PNNetworkAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F414531EEA1B49002F0337 /* PNNetworkAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4F4146B1EEA1DAE002F0337 /* PNNetworkAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F414531EEA1B49002F0337 /* PNNetworkAdapter.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4F4146C1EEA1DAE002F0337 /* PNNetworkAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F414541EEA1B49002F0337 /* PNNetworkAdapter.m */; };
-		B4F4146D1EEA1DAE002F0337 /* PNNetworkAdapterFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F414551EEA1B49002F0337 /* PNNetworkAdapterFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4F4146D1EEA1DAE002F0337 /* PNNetworkAdapterFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F414551EEA1B49002F0337 /* PNNetworkAdapterFactory.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4F4146E1EEA1DAE002F0337 /* PNNetworkAdapterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F414561EEA1B49002F0337 /* PNNetworkAdapterFactory.m */; };
-		B4F414711EEA1DAE002F0337 /* PubnativeLibraryAdModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F4145A1EEA1B49002F0337 /* PubnativeLibraryAdModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4F414711EEA1DAE002F0337 /* PubnativeLibraryAdModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F4145A1EEA1B49002F0337 /* PubnativeLibraryAdModel.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4F414721EEA1DAE002F0337 /* PubnativeLibraryAdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F4145B1EEA1B49002F0337 /* PubnativeLibraryAdModel.m */; };
-		B4F414731EEA1DAE002F0337 /* PubnativeLibraryCPICache.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F4145C1EEA1B49002F0337 /* PubnativeLibraryCPICache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4F414731EEA1DAE002F0337 /* PubnativeLibraryCPICache.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F4145C1EEA1B49002F0337 /* PubnativeLibraryCPICache.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4F414741EEA1DAE002F0337 /* PubnativeLibraryCPICache.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F4145D1EEA1B49002F0337 /* PubnativeLibraryCPICache.m */; };
-		B4F414751EEA1DAE002F0337 /* PubnativeLibraryCPICacheItem.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F4145E1EEA1B49002F0337 /* PubnativeLibraryCPICacheItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4F414751EEA1DAE002F0337 /* PubnativeLibraryCPICacheItem.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F4145E1EEA1B49002F0337 /* PubnativeLibraryCPICacheItem.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4F414761EEA1DAE002F0337 /* PubnativeLibraryCPICacheItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F4145F1EEA1B49002F0337 /* PubnativeLibraryCPICacheItem.m */; };
-		B4F414771EEA1DAE002F0337 /* PubnativeLibraryNetworkAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F414601EEA1B49002F0337 /* PubnativeLibraryNetworkAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4F414771EEA1DAE002F0337 /* PubnativeLibraryNetworkAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F414601EEA1B49002F0337 /* PubnativeLibraryNetworkAdapter.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4F414781EEA1DAE002F0337 /* PubnativeLibraryNetworkAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F414611EEA1B49002F0337 /* PubnativeLibraryNetworkAdapter.m */; };
-		B4F414791EEA1DAE002F0337 /* PNConfigAPIResponseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F4142C1EEA1B49002F0337 /* PNConfigAPIResponseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4F414791EEA1DAE002F0337 /* PNConfigAPIResponseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F4142C1EEA1B49002F0337 /* PNConfigAPIResponseModel.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4F4147A1EEA1DAE002F0337 /* PNConfigAPIResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F4142D1EEA1B49002F0337 /* PNConfigAPIResponseModel.m */; };
 		B4F4147B1EEA1DAE002F0337 /* PNConfigModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F4142E1EEA1B49002F0337 /* PNConfigModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4F4147C1EEA1DAE002F0337 /* PNConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F4142F1EEA1B49002F0337 /* PNConfigModel.m */; };
-		B4F4147D1EEA1DAE002F0337 /* PNConfigRequestModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F414301EEA1B49002F0337 /* PNConfigRequestModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4F4147D1EEA1DAE002F0337 /* PNConfigRequestModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F414301EEA1B49002F0337 /* PNConfigRequestModel.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4F4147E1EEA1DAE002F0337 /* PNConfigRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F414311EEA1B49002F0337 /* PNConfigRequestModel.m */; };
 		B4F4147F1EEA1DAE002F0337 /* PNNetworkModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F414321EEA1B49002F0337 /* PNNetworkModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4F414801EEA1DAE002F0337 /* PNNetworkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F414331EEA1B49002F0337 /* PNNetworkModel.m */; };
@@ -319,7 +343,7 @@
 		B4F414841EEA1DAE002F0337 /* PNPriorityRuleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F414371EEA1B49002F0337 /* PNPriorityRuleModel.m */; };
 		B4F414851EEA1DAE002F0337 /* PNConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F414381EEA1B49002F0337 /* PNConfigManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4F414861EEA1DAE002F0337 /* PNConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F414391EEA1B49002F0337 /* PNConfigManager.m */; };
-		B4F414871EEA1DAE002F0337 /* PNError.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F414281EEA1B49002F0337 /* PNError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4F414871EEA1DAE002F0337 /* PNError.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F414281EEA1B49002F0337 /* PNError.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4F414881EEA1DAE002F0337 /* PNError.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F414291EEA1B49002F0337 /* PNError.m */; };
 		B4F414891EEA1DAE002F0337 /* PNInsightApiResponseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F414441EEA1B49002F0337 /* PNInsightApiResponseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4F4148A1EEA1DAE002F0337 /* PNInsightApiResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F414451EEA1B49002F0337 /* PNInsightApiResponseModel.m */; };
@@ -331,11 +355,11 @@
 		B4F414901EEA1DAE002F0337 /* PNInsightModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F4144B1EEA1B49002F0337 /* PNInsightModel.m */; };
 		B4F414911EEA1DAE002F0337 /* PNInsightNetworkModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F4144C1EEA1B49002F0337 /* PNInsightNetworkModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4F414921EEA1DAE002F0337 /* PNInsightNetworkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F4144D1EEA1B49002F0337 /* PNInsightNetworkModel.m */; };
-		B4F414931EEA1DAE002F0337 /* PNInsightRequestModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F4144E1EEA1B49002F0337 /* PNInsightRequestModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4F414931EEA1DAE002F0337 /* PNInsightRequestModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F4144E1EEA1B49002F0337 /* PNInsightRequestModel.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4F414941EEA1DAE002F0337 /* PNInsightRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F4144F1EEA1B49002F0337 /* PNInsightRequestModel.m */; };
 		B4F414951EEA1DAE002F0337 /* PNInsightsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F414501EEA1B49002F0337 /* PNInsightsManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4F414961EEA1DAE002F0337 /* PNInsightsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F414511EEA1B49002F0337 /* PNInsightsManager.m */; };
-		B4F414971EEA1DAE002F0337 /* PNHttpRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F414661EEA1B49002F0337 /* PNHttpRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4F414971EEA1DAE002F0337 /* PNHttpRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F414661EEA1B49002F0337 /* PNHttpRequest.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B4F414981EEA1DAE002F0337 /* PNHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F414671EEA1B49002F0337 /* PNHttpRequest.m */; };
 		B4F4149B1EEA1DAE002F0337 /* PNJSONModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B4F414631EEA1B49002F0337 /* PNJSONModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4F4149C1EEA1DAE002F0337 /* PNJSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F414641EEA1B49002F0337 /* PNJSONModel.m */; };
@@ -351,6 +375,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		5AB8CB301F0A565E002DFC59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5BF0EE01D1A8B8B00A05486 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4F413A11EEA00DA002F0337;
+			remoteInfo = sdk.framework;
+		};
+		5AE232B71F5D46A1006EEE00 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D5BF0EE01D1A8B8B00A05486 /* Project object */;
 			proxyType = 1;
@@ -374,6 +405,17 @@
 			dstSubfolderSpec = 10;
 			files = (
 				5AB8CB2F1F0A565E002DFC59 /* Pubnative.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE232B91F5D46A1006EEE00 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5AE232B61F5D46A1006EEE00 /* Pubnative.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,14 +475,18 @@
 		5A4D77B61EFABE8000E79064 /* PNSmallLibraryAdapterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PNSmallLibraryAdapterViewController.h; path = adapter/small/PNSmallLibraryAdapterViewController.h; sourceTree = "<group>"; };
 		5A4D77B71EFABE8100E79064 /* PNSmallLibraryAdapterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PNSmallLibraryAdapterViewController.m; path = adapter/small/PNSmallLibraryAdapterViewController.m; sourceTree = "<group>"; };
 		5A62F7321EF136E100FA5C99 /* PNSmallLayoutContainerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PNSmallLayoutContainerViewController.xib; path = adapter/small/PNSmallLayoutContainerViewController.xib; sourceTree = "<group>"; };
+		5A6662621F5EE04100C24227 /* Parameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
 		5A67E96E1F055392002C6128 /* PNAPIAssetGroupOriented.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNAPIAssetGroupOriented.h; sourceTree = "<group>"; };
 		5A67E96F1F055392002C6128 /* PNAPIAssetGroupOriented.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNAPIAssetGroupOriented.m; sourceTree = "<group>"; };
+		5A6861911F668512008A6300 /* NativeAdRequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeAdRequestModel.swift; sourceTree = "<group>"; };
 		5A6F6B5C1F161B5A007A7870 /* PNLayoutTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PNLayoutTest.m; path = layouts/PNLayoutTest.m; sourceTree = "<group>"; };
 		5A6F6B5F1F162D6C007A7870 /* PNLayoutAdapterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PNLayoutAdapterTest.m; path = layouts/adapters/PNLayoutAdapterTest.m; sourceTree = "<group>"; };
 		5A6F6B631F16357D007A7870 /* PNLayoutAdapterFactoryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PNLayoutAdapterFactoryTest.m; path = layouts/adapters/PNLayoutAdapterFactoryTest.m; sourceTree = "<group>"; };
 		5A7A5CFE1EF16F8900AF8DE9 /* PNSmallLayoutAdapterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PNSmallLayoutAdapterFactory.h; path = adapter/small/PNSmallLayoutAdapterFactory.h; sourceTree = "<group>"; };
 		5A7A5CFF1EF16F8900AF8DE9 /* PNSmallLayoutAdapterFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PNSmallLayoutAdapterFactory.m; path = adapter/small/PNSmallLayoutAdapterFactory.m; sourceTree = "<group>"; };
 		5A7D668B1F16624600CDA4C8 /* PNAPILayoutTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PNAPILayoutTest.m; path = layouts/PNAPILayoutTest.m; sourceTree = "<group>"; };
+		5A89FC5D1F5EABCD002A020C /* NativeRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeRequestViewController.swift; sourceTree = "<group>"; };
+		5A89FC5F1F5EABE3002A020C /* LayoutsRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutsRequestViewController.swift; sourceTree = "<group>"; };
 		5A99EA631F2F2B6B002E2993 /* PNAdModelRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNAdModelRenderer.h; sourceTree = "<group>"; };
 		5A99EA641F2F2B6B002E2993 /* PNAdModelRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNAdModelRenderer.m; sourceTree = "<group>"; };
 		5A99EA671F2F2FC7002E2993 /* PNAdModel+Native.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PNAdModel+Native.h"; sourceTree = "<group>"; };
@@ -449,13 +495,13 @@
 		5ABE1BB11F040961002F1F95 /* PNAPIAssetGroup17Landscape.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PNAPIAssetGroup17Landscape.xib; sourceTree = "<group>"; };
 		5ABE1BB31F040AAA002F1F95 /* PNAPIAssetGroup19Landscape.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PNAPIAssetGroup19Landscape.xib; sourceTree = "<group>"; };
 		5ABE1BB71F040BE0002F1F95 /* PNAPIAssetGroup20Landscape.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PNAPIAssetGroup20Landscape.xib; sourceTree = "<group>"; };
+		5ABE93091F67DDB100199510 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		5ABE930A1F67DDB100199510 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		5ABF51951F0BB64400D31795 /* PNLargeLayoutContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PNLargeLayoutContainerViewController.h; path = adapter/large/PNLargeLayoutContainerViewController.h; sourceTree = "<group>"; };
 		5ABF51961F0BB64400D31795 /* PNLargeLayoutContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PNLargeLayoutContainerViewController.m; path = adapter/large/PNLargeLayoutContainerViewController.m; sourceTree = "<group>"; };
 		5ABF51971F0BB64400D31795 /* PNLargeLayoutContainerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PNLargeLayoutContainerViewController.xib; path = adapter/large/PNLargeLayoutContainerViewController.xib; sourceTree = "<group>"; };
 		5ABF519B1F0BB91700D31795 /* PNLargeLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNLargeLayout.h; sourceTree = "<group>"; };
 		5ABF519C1F0BB91700D31795 /* PNLargeLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNLargeLayout.m; sourceTree = "<group>"; };
-		5ABF519F1F0BC7F400D31795 /* PNLargeLibraryAdapterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PNLargeLibraryAdapterViewController.h; path = adapter/large/PNLargeLibraryAdapterViewController.h; sourceTree = "<group>"; };
-		5ABF51A01F0BC7F400D31795 /* PNLargeLibraryAdapterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PNLargeLibraryAdapterViewController.m; path = adapter/large/PNLargeLibraryAdapterViewController.m; sourceTree = "<group>"; };
 		5ABF51A71F0BE4C400D31795 /* PNLargeLayoutAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PNLargeLayoutAdapter.h; path = adapter/large/PNLargeLayoutAdapter.h; sourceTree = "<group>"; };
 		5ABF51A81F0BE4C400D31795 /* PNLargeLayoutAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PNLargeLayoutAdapter.m; path = adapter/large/PNLargeLayoutAdapter.m; sourceTree = "<group>"; };
 		5AC14E4E1F0CF211005692F0 /* LargePubnativeLibraryNetworkAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LargePubnativeLibraryNetworkAdapter.h; path = adapter/large/LargePubnativeLibraryNetworkAdapter.h; sourceTree = "<group>"; };
@@ -463,6 +509,8 @@
 		5AC14E521F0D2D4A005692F0 /* PNLargeLayoutRequestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PNLargeLayoutRequestView.h; path = adapter/large/PNLargeLayoutRequestView.h; sourceTree = "<group>"; };
 		5AC14E531F0D2D4A005692F0 /* PNLargeLayoutRequestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PNLargeLayoutRequestView.m; path = adapter/large/PNLargeLayoutRequestView.m; sourceTree = "<group>"; };
 		5AC62C131F20E26B00D24177 /* PNLayout+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PNLayout+Internal.h"; sourceTree = "<group>"; };
+		5ACB49CE1F57FC85009C8B0B /* UIApplication+TopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+TopViewController.h"; sourceTree = "<group>"; };
+		5ACB49CF1F57FC85009C8B0B /* UIApplication+TopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+TopViewController.m"; sourceTree = "<group>"; };
 		5AD3029B1F176DD4002530F1 /* PNAPIAssetGroupFactoryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PNAPIAssetGroupFactoryTest.m; path = layouts/asset_groups/PNAPIAssetGroupFactoryTest.m; sourceTree = "<group>"; };
 		5AD3029F1F177FD4002530F1 /* PNAPIAssetGroupTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PNAPIAssetGroupTest.m; path = layouts/asset_groups/PNAPIAssetGroupTest.m; sourceTree = "<group>"; };
 		5AD302A21F17A3DC002530F1 /* SmallPubnativeLibraryNetworkAdapterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SmallPubnativeLibraryNetworkAdapterTest.m; path = layouts/adapters/small/SmallPubnativeLibraryNetworkAdapterTest.m; sourceTree = "<group>"; };
@@ -472,8 +520,11 @@
 		5AD3ECEC1F0151A900605704 /* PNLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNLayoutViewController.m; sourceTree = "<group>"; };
 		5AD3ECEF1F01520F00605704 /* PNSmallLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNSmallLayoutViewController.h; sourceTree = "<group>"; };
 		5AD3ECF01F01520F00605704 /* PNSmallLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNSmallLayoutViewController.m; sourceTree = "<group>"; };
+		5AD3F8CD1F5D9D72001E0C6B /* SelectAdFormatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectAdFormatViewController.swift; sourceTree = "<group>"; };
 		5AD84EFC1EFBB5130035B0C0 /* PNSmallLayoutContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PNSmallLayoutContainerViewController.h; path = adapter/small/PNSmallLayoutContainerViewController.h; sourceTree = "<group>"; };
 		5AD84EFD1EFBB5130035B0C0 /* PNSmallLayoutContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PNSmallLayoutContainerViewController.m; path = adapter/small/PNSmallLayoutContainerViewController.m; sourceTree = "<group>"; };
+		5AD9CDC11F4303820004F01A /* PNBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNBanner.h; sourceTree = "<group>"; };
+		5AD9CDC21F4303820004F01A /* PNBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNBanner.m; sourceTree = "<group>"; };
 		5ADD25911F2241450012407F /* PNCloseIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PNCloseIcon.png; sourceTree = "<group>"; };
 		5ADD25921F2241450012407F /* PNCloseIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PNCloseIcon@2x.png"; sourceTree = "<group>"; };
 		5ADD25951F22594B0012407F /* PNOrientationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNOrientationManager.h; sourceTree = "<group>"; };
@@ -497,6 +548,19 @@
 		5ADF62B81EEAE37F009AD349 /* PNSmallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNSmallLayout.m; sourceTree = "<group>"; };
 		5ADF62BC1EEAFAF6009AD349 /* PNSmallLayoutRequestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PNSmallLayoutRequestView.h; path = adapter/small/PNSmallLayoutRequestView.h; sourceTree = "<group>"; };
 		5ADF62BD1EEAFAF6009AD349 /* PNSmallLayoutRequestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PNSmallLayoutRequestView.m; path = adapter/small/PNSmallLayoutRequestView.m; sourceTree = "<group>"; };
+		5AE232A31F5D4694006EEE00 /* sdk.qa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sdk.qa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AE232A51F5D4694006EEE00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5AE232AA1F5D4694006EEE00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5AE232AC1F5D4694006EEE00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5AE232AF1F5D4694006EEE00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5AE232B11F5D4694006EEE00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AE232BA1F5D4A55006EEE00 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5AE232BC1F5D4C3E006EEE00 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		5AE232BE1F5D5754006EEE00 /* UIButton+BackgroundColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+BackgroundColor.swift"; sourceTree = "<group>"; };
+		5AE232C01F5D92C7006EEE00 /* TargetingParameterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetingParameterCell.swift; sourceTree = "<group>"; };
+		5AEBC8E81F3C557F00D03F68 /* PNSmallLayoutTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PNSmallLayoutTest.m; path = layouts/PNSmallLayoutTest.m; sourceTree = "<group>"; };
+		5AEBC8EA1F3C599000D03F68 /* PNMediumLayoutTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PNMediumLayoutTest.m; path = layouts/PNMediumLayoutTest.m; sourceTree = "<group>"; };
+		5AEBC8EC1F3C5DE900D03F68 /* PNLargeLayoutTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PNLargeLayoutTest.m; path = layouts/PNLargeLayoutTest.m; sourceTree = "<group>"; };
 		5AEC221E1F025292008A1047 /* PNMediumLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNMediumLayoutViewController.h; sourceTree = "<group>"; };
 		5AEC221F1F025292008A1047 /* PNMediumLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNMediumLayoutViewController.m; sourceTree = "<group>"; };
 		5AEC22221F025887008A1047 /* PNMediumLayoutRequestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PNMediumLayoutRequestView.h; path = sdk/sdk/layouts/adapter/medium/PNMediumLayoutRequestView.h; sourceTree = SOURCE_ROOT; };
@@ -754,6 +818,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5AE232A01F5D4694006EEE00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AE232B51F5D46A1006EEE00 /* Pubnative.framework in Frameworks */,
+				5ABE930C1F67DDB100199510 /* Crashlytics.framework in Frameworks */,
+				5ABE930B1F67DDB100199510 /* Fabric.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B4CF383C1EEA217A007E8BC3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -908,8 +982,6 @@
 				5ABF51951F0BB64400D31795 /* PNLargeLayoutContainerViewController.h */,
 				5ABF51961F0BB64400D31795 /* PNLargeLayoutContainerViewController.m */,
 				5ABF51971F0BB64400D31795 /* PNLargeLayoutContainerViewController.xib */,
-				5ABF519F1F0BC7F400D31795 /* PNLargeLibraryAdapterViewController.h */,
-				5ABF51A01F0BC7F400D31795 /* PNLargeLibraryAdapterViewController.m */,
 			);
 			name = large;
 			sourceTree = "<group>";
@@ -939,6 +1011,9 @@
 			children = (
 				5A6F6B5E1F162CC3007A7870 /* adapters */,
 				5A6F6B5C1F161B5A007A7870 /* PNLayoutTest.m */,
+				5AEBC8E81F3C557F00D03F68 /* PNSmallLayoutTest.m */,
+				5AEBC8EA1F3C599000D03F68 /* PNMediumLayoutTest.m */,
+				5AEBC8EC1F3C5DE900D03F68 /* PNLargeLayoutTest.m */,
 			);
 			name = layouts;
 			sourceTree = "<group>";
@@ -1029,6 +1104,27 @@
 				5A4D77B71EFABE8100E79064 /* PNSmallLibraryAdapterViewController.m */,
 			);
 			name = small;
+			sourceTree = "<group>";
+		};
+		5AE232A41F5D4694006EEE00 /* sdk.qa */ = {
+			isa = PBXGroup;
+			children = (
+				5AE232A51F5D4694006EEE00 /* AppDelegate.swift */,
+				5AE232A91F5D4694006EEE00 /* Main.storyboard */,
+				5AE232AC1F5D4694006EEE00 /* Assets.xcassets */,
+				5AE232AE1F5D4694006EEE00 /* LaunchScreen.storyboard */,
+				5AE232B11F5D4694006EEE00 /* Info.plist */,
+				5AE232BA1F5D4A55006EEE00 /* MainViewController.swift */,
+				5AD3F8CD1F5D9D72001E0C6B /* SelectAdFormatViewController.swift */,
+				5A89FC5D1F5EABCD002A020C /* NativeRequestViewController.swift */,
+				5A89FC5F1F5EABE3002A020C /* LayoutsRequestViewController.swift */,
+				5A6861911F668512008A6300 /* NativeAdRequestModel.swift */,
+				5AE232BC1F5D4C3E006EEE00 /* Settings.swift */,
+				5A6662621F5EE04100C24227 /* Parameters.swift */,
+				5AE232C01F5D92C7006EEE00 /* TargetingParameterCell.swift */,
+				5AE232BE1F5D5754006EEE00 /* UIButton+BackgroundColor.swift */,
+			);
+			path = sdk.qa;
 			sourceTree = "<group>";
 		};
 		B40055581EEC663400F91945 /* asset_groups */ = {
@@ -1354,6 +1450,10 @@
 				5AEC221F1F025292008A1047 /* PNMediumLayoutViewController.m */,
 				5ABF519B1F0BB91700D31795 /* PNLargeLayout.h */,
 				5ABF519C1F0BB91700D31795 /* PNLargeLayout.m */,
+				5AD9CDC11F4303820004F01A /* PNBanner.h */,
+				5AD9CDC21F4303820004F01A /* PNBanner.m */,
+				5ACB49CE1F57FC85009C8B0B /* UIApplication+TopViewController.h */,
+				5ACB49CF1F57FC85009C8B0B /* UIApplication+TopViewController.m */,
 			);
 			path = layouts;
 			sourceTree = "<group>";
@@ -1679,11 +1779,14 @@
 		D5BF0EDF1D1A8B8B00A05486 = {
 			isa = PBXGroup;
 			children = (
+				5ABE93091F67DDB100199510 /* Fabric.framework */,
+				5ABE930A1F67DDB100199510 /* Crashlytics.framework */,
 				D5BF0F1B1D1A8E4000A05486 /* dependencies */,
 				B4F413A31EEA00DA002F0337 /* sdk */,
 				D5BF0EF91D1A8BA700A05486 /* sdk.test */,
 				D58E81FC1D1AD6CE0092F352 /* sdk.adapters */,
 				B4CF38401EEA217A007E8BC3 /* sdk.demo */,
+				5AE232A41F5D4694006EEE00 /* sdk.qa */,
 				D5BF0EE91D1A8B8B00A05486 /* Products */,
 				B4418BBD1EECAD300047A2A2 /* Frameworks */,
 			);
@@ -1695,6 +1798,7 @@
 				D5BF0EF81D1A8BA700A05486 /* sdk.test.xctest */,
 				B4F413A21EEA00DA002F0337 /* Pubnative.framework */,
 				B4CF383F1EEA217A007E8BC3 /* sdk.demo.app */,
+				5AE232A31F5D4694006EEE00 /* sdk.qa.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1763,133 +1867,165 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AEC22201F025292008A1047 /* PNMediumLayoutViewController.h in Headers */,
+				5AD3ECF11F01520F00605704 /* PNSmallLayoutViewController.h in Headers */,
 				B4F4148F1EEA1DAE002F0337 /* PNInsightModel.h in Headers */,
 				B4F414851EEA1DAE002F0337 /* PNConfigManager.h in Headers */,
 				B486E0F71EEE90C30014CE9A /* PNAPIAssetGroup13.h in Headers */,
 				B4F4149F1EEA1DAE002F0337 /* PNAdTargetingModel.h in Headers */,
-				B4F414061EEA1AC2002F0337 /* PNAPIMeta.h in Headers */,
-				B4F414041EEA1AC2002F0337 /* PNAPIAsset.h in Headers */,
 				B4F4149D1EEA1DAE002F0337 /* PNAdModel.h in Headers */,
 				B486E1011EEE90C30014CE9A /* PNAPIAssetGroup18.h in Headers */,
-				5AEC22201F025292008A1047 /* PNMediumLayoutViewController.h in Headers */,
 				B486E0E31EEE90C30014CE9A /* PNAPIAssetGroup3.h in Headers */,
-				B4418BB01EECAC470047A2A2 /* PNVASTParser.h in Headers */,
 				B4CF381E1EEA1FD7007E8BC3 /* Pubnative.h in Headers */,
-				B4F413F21EEA1AC2002F0337 /* PNAPICryptoUtils.h in Headers */,
+				5AD9CDC31F4303820004F01A /* PNBanner.h in Headers */,
 				B486E1031EEE90C30014CE9A /* PNAPIAssetGroup19.h in Headers */,
 				5AD3ECED1F0151A900605704 /* PNLayoutViewController.h in Headers */,
 				B4418BD71EED1EBB0047A2A2 /* PNLocationManager.h in Headers */,
 				B4F414911EEA1DAE002F0337 /* PNInsightNetworkModel.h in Headers */,
-				5AD84EFE1EFBB5130035B0C0 /* PNSmallLayoutContainerViewController.h in Headers */,
 				B4F4149B1EEA1DAE002F0337 /* PNJSONModel.h in Headers */,
-				B4F414791EEA1DAE002F0337 /* PNConfigAPIResponseModel.h in Headers */,
 				B486E0EB1EEE90C30014CE9A /* PNAPIAssetGroup7.h in Headers */,
-				5ABF51981F0BB64400D31795 /* PNLargeLayoutContainerViewController.h in Headers */,
-				B4F413FC1EEA1AC2002F0337 /* PNAPIV3ResponseModel.h in Headers */,
 				5ABF519D1F0BB91700D31795 /* PNLargeLayout.h in Headers */,
 				B4F4148D1EEA1DAE002F0337 /* PNInsightDataModel.h in Headers */,
 				B486E0B91EEE8F9A0014CE9A /* PNAPIAssetGroup2.h in Headers */,
-				B4F414971EEA1DAE002F0337 /* PNHttpRequest.h in Headers */,
-				5A4D77BA1EFAC29300E79064 /* PNSmallLayoutRequestView.h in Headers */,
 				B4F4147B1EEA1DAE002F0337 /* PNConfigModel.h in Headers */,
 				B486E0ED1EEE90C30014CE9A /* PNAPIAssetGroup8.h in Headers */,
 				5AC62C141F21061000D24177 /* PNLayout+Internal.h in Headers */,
 				5ADD25971F22594B0012407F /* PNOrientationManager.h in Headers */,
-				B4418BB71EECAC470047A2A2 /* PNVASTSchema.h in Headers */,
 				B4418B9C1EECAC470047A2A2 /* PNStarRatingView.h in Headers */,
-				B400555B1EEC664F00F91945 /* PNAPIAssetGroup.h in Headers */,
-				B4F4146D1EEA1DAE002F0337 /* PNNetworkAdapterFactory.h in Headers */,
-				B4F414141EEA1AC2002F0337 /* PNAPIVisibilityTracker.h in Headers */,
 				B4F414081EEA1AC2002F0337 /* PNAPIRequest.h in Headers */,
 				B4F4148B1EEA1DAE002F0337 /* PNInsightCrashModel.h in Headers */,
 				5ADF62B11EEACE4C009AD349 /* PNLayoutAdapter.h in Headers */,
 				B4F414831EEA1DAE002F0337 /* PNPriorityRuleModel.h in Headers */,
 				B4F413FE1EEA1AC2002F0337 /* PNAPIAdModel.h in Headers */,
 				5AD3ECF11F01520F00605704 /* PNSmallLayoutViewController.h in Headers */,
-				B4F414161EEA1AC2002F0337 /* PNAPIVisibilityTrackerItem.h in Headers */,
 				5ADF62B91EEAE37F009AD349 /* PNSmallLayout.h in Headers */,
-				B4F4146B1EEA1DAE002F0337 /* PNNetworkAdapter.h in Headers */,
-				B4418B9A1EECAC470047A2A2 /* PNPropertyAnimation.h in Headers */,
-				B4418BB81EECAC470047A2A2 /* PNVASTXMLUtil.h in Headers */,
-				B4418BAC1EECAC470047A2A2 /* PNVASTMediaFilePicker.h in Headers */,
 				B4F413F61EEA1AC2002F0337 /* PNAPIV3AdModel.h in Headers */,
-				5ADD7FA51EFD5A2300DAF2BD /* MediumPubnativeLibraryNetworkAdapter.h in Headers */,
-				B4F414731EEA1DAE002F0337 /* PubnativeLibraryCPICache.h in Headers */,
 				B486E1051EEE90C30014CE9A /* PNAPIAssetGroup20.h in Headers */,
-				B4F414771EEA1DAE002F0337 /* PubnativeLibraryNetworkAdapter.h in Headers */,
 				5A3F030A1EF8338D00F74EBC /* PNLayoutAdapterFactory.h in Headers */,
 				B4F413FA1EEA1AC2002F0337 /* PNAPIV3DataModel.h in Headers */,
-				B4F414121EEA1AC2002F0337 /* PNAPITrackingManagerItem.h in Headers */,
-				B4F413F41EEA1AC2002F0337 /* PNAPIHttpRequest.h in Headers */,
 				5A48F9F31EEA98B500C6FEFC /* PNLayout.h in Headers */,
-				B4F4140C1EEA1AC2002F0337 /* PNAPIImpressionTracker.h in Headers */,
-				B4418BB21EECAC470047A2A2 /* PNVASTPlayerViewController.h in Headers */,
 				B486E0E71EEE90C30014CE9A /* PNAPIAssetGroup5.h in Headers */,
-				B4F414181EEA1AC2002F0337 /* PNAPIDriller.h in Headers */,
 				B4F414951EEA1DAE002F0337 /* PNInsightsManager.h in Headers */,
 				B4F414891EEA1DAE002F0337 /* PNInsightApiResponseModel.h in Headers */,
+				5ACB49D01F57FC85009C8B0B /* UIApplication+TopViewController.h in Headers */,
 				B4F414001EEA1AC2002F0337 /* PNAPIClickCacher.h in Headers */,
 				B486E0F91EEE90C30014CE9A /* PNAPIAssetGroup14.h in Headers */,
 				5ADD7F931EFD46DF00DAF2BD /* PNMediumLayout.h in Headers */,
+				B4F414731EEA1DAE002F0337 /* PubnativeLibraryCPICache.h in Headers */,
+				B4F414771EEA1DAE002F0337 /* PubnativeLibraryNetworkAdapter.h in Headers */,
 				B4F414711EEA1DAE002F0337 /* PubnativeLibraryAdModel.h in Headers */,
-				B486E0FB1EEE90C30014CE9A /* PNAPIAssetGroup15.h in Headers */,
-				5A4D77B81EFABE8100E79064 /* PNSmallLibraryAdapterViewController.h in Headers */,
-				B400555F1EEC666300F91945 /* PNAPIAssetGroupFactory.h in Headers */,
-				5ADD7F9C1EFD4F6500DAF2BD /* PNMediumLayoutContainerViewController.h in Headers */,
-				5AC14E541F0D2D4A005692F0 /* PNLargeLayoutRequestView.h in Headers */,
-				B4F414931EEA1DAE002F0337 /* PNInsightRequestModel.h in Headers */,
-				B4418BAA1EECAC470047A2A2 /* PNVASTMediaFile.h in Headers */,
 				B4F414751EEA1DAE002F0337 /* PubnativeLibraryCPICacheItem.h in Headers */,
-				B4418BBA1EECAC470047A2A2 /* PNProgressLabel.h in Headers */,
+				5ADD7FA51EFD5A2300DAF2BD /* MediumPubnativeLibraryNetworkAdapter.h in Headers */,
+				5A4F5C561EFA7DDC002CB522 /* SmallPubnativeLibraryNetworkAdapter.h in Headers */,
+				B486E0FB1EEE90C30014CE9A /* PNAPIAssetGroup15.h in Headers */,
 				B4418B5E1EEC9CBD0047A2A2 /* PNAPIAssetGroup1.h in Headers */,
-				B4F4147D1EEA1DAE002F0337 /* PNConfigRequestModel.h in Headers */,
-				B40055561EEC660500F91945 /* PNAPILayoutViewController.h in Headers */,
+				B4418BB01EECAC470047A2A2 /* PNVASTParser.h in Headers */,
+				B4418BB71EECAC470047A2A2 /* PNVASTSchema.h in Headers */,
+				B4418BB81EECAC470047A2A2 /* PNVASTXMLUtil.h in Headers */,
+				B4418BAC1EECAC470047A2A2 /* PNVASTMediaFilePicker.h in Headers */,
+				B4418BB21EECAC470047A2A2 /* PNVASTPlayerViewController.h in Headers */,
+				B4418BAA1EECAC470047A2A2 /* PNVASTMediaFile.h in Headers */,
 				B4418BB51EECAC470047A2A2 /* PNVASTReachability.h in Headers */,
+				B4418BA81EECAC470047A2A2 /* PNVASTEventProcessor.h in Headers */,
+				B4418BAE1EECAC470047A2A2 /* PNVASTModel.h in Headers */,
+				B40055561EEC660500F91945 /* PNAPILayoutViewController.h in Headers */,
+				B4418BD31EED17060047A2A2 /* PNSettings.h in Headers */,
+				B4418BCF1EED164F0047A2A2 /* PNReachability.h in Headers */,
+				B4418B9A1EECAC470047A2A2 /* PNPropertyAnimation.h in Headers */,
+				B4418BBA1EECAC470047A2A2 /* PNProgressLabel.h in Headers */,
+				B4F4146D1EEA1DAE002F0337 /* PNNetworkAdapterFactory.h in Headers */,
+				B4F4146B1EEA1DAE002F0337 /* PNNetworkAdapter.h in Headers */,
 				B486E0FF1EEE90C30014CE9A /* PNAPIAssetGroup17.h in Headers */,
-				5ABF51A11F0BC7F400D31795 /* PNLargeLibraryAdapterViewController.h in Headers */,
+				5A4D77BA1EFAC29300E79064 /* PNSmallLayoutRequestView.h in Headers */,
+				5A7A5D001EF16F8900AF8DE9 /* PNSmallLayoutAdapterFactory.h in Headers */,
+				5A4D77B41EFABB3600E79064 /* PNSmallLayoutAdapter.h in Headers */,
 				B4F414021EEA1AC2002F0337 /* PNAPIContentView.h in Headers */,
+				5AD84EFE1EFBB5130035B0C0 /* PNSmallLayoutContainerViewController.h in Headers */,
+				5A4D77BA1EFAC29300E79064 /* PNSmallLayoutRequestView.h in Headers */,
+				5A4D77B81EFABE8100E79064 /* PNSmallLibraryAdapterViewController.h in Headers */,
+				5A7A5D001EF16F8900AF8DE9 /* PNSmallLayoutAdapterFactory.h in Headers */,
+				5A4D77B41EFABB3600E79064 /* PNSmallLayoutAdapter.h in Headers */,
+				5ADD7F9C1EFD4F6500DAF2BD /* PNMediumLayoutContainerViewController.h in Headers */,
+				5ADD7FA11EFD55F200DAF2BD /* PNMediumLibraryAdapterViewController.h in Headers */,
+				5ADD7F971EFD49C200DAF2BD /* PNMediumLayoutAdapter.h in Headers */,
+				5AEC22241F025887008A1047 /* PNMediumLayoutRequestView.h in Headers */,
+				5A3F03111EF83AEC00F74EBC /* PNMediumLayoutAdapterFactory.h in Headers */,
 				B4F414811EEA1DAE002F0337 /* PNPlacementModel.h in Headers */,
+				B4418BCF1EED164F0047A2A2 /* PNReachability.h in Headers */,
+				B4418B9A1EECAC470047A2A2 /* PNPropertyAnimation.h in Headers */,
+				B4418BBA1EECAC470047A2A2 /* PNProgressLabel.h in Headers */,
+				B4F4146D1EEA1DAE002F0337 /* PNNetworkAdapterFactory.h in Headers */,
+				B4F4146B1EEA1DAE002F0337 /* PNNetworkAdapter.h in Headers */,
 				B486E0E91EEE90C30014CE9A /* PNAPIAssetGroup6.h in Headers */,
 				B486E0FD1EEE90C30014CE9A /* PNAPIAssetGroup16.h in Headers */,
 				B486E0F31EEE90C30014CE9A /* PNAPIAssetGroup11.h in Headers */,
+				5ABF51A11F0BC7F400D31795 /* (null) in Headers */,
 				B486E0EF1EEE90C30014CE9A /* PNAPIAssetGroup9.h in Headers */,
-				5ADD7FA11EFD55F200DAF2BD /* PNMediumLibraryAdapterViewController.h in Headers */,
-				5A67E9701F055392002C6128 /* PNAPIAssetGroupOriented.h in Headers */,
+				5ABF51981F0BB64400D31795 /* PNLargeLayoutContainerViewController.h in Headers */,
+				5AC14E541F0D2D4A005692F0 /* PNLargeLayoutRequestView.h in Headers */,
+				5ABF51A91F0BE4C400D31795 /* PNLargeLayoutAdapter.h in Headers */,
+				5A0D8F5F1F0B9E0100659CB6 /* PNLargeLayoutAdapterFactory.h in Headers */,
+				B4F414931EEA1DAE002F0337 /* PNInsightRequestModel.h in Headers */,
+				B4F414971EEA1DAE002F0337 /* PNHttpRequest.h in Headers */,
 				5A99EA651F2F2B6B002E2993 /* PNAdModelRenderer.h in Headers */,
+				B4F414871EEA1DAE002F0337 /* PNError.h in Headers */,
+				B4F4147D1EEA1DAE002F0337 /* PNConfigRequestModel.h in Headers */,
+				B4F414791EEA1DAE002F0337 /* PNConfigAPIResponseModel.h in Headers */,
 				B486E0E51EEE90C30014CE9A /* PNAPIAssetGroup4.h in Headers */,
 				B4F4147F1EEA1DAE002F0337 /* PNNetworkModel.h in Headers */,
-				5ADD7F971EFD49C200DAF2BD /* PNMediumLayoutAdapter.h in Headers */,
-				B4418BD31EED17060047A2A2 /* PNSettings.h in Headers */,
-				B4418BCF1EED164F0047A2A2 /* PNReachability.h in Headers */,
-				5AEC22241F025887008A1047 /* PNMediumLayoutRequestView.h in Headers */,
-				5A4F5C561EFA7DDC002CB522 /* SmallPubnativeLibraryNetworkAdapter.h in Headers */,
+				5A99EA681F2F2FC7002E2993 /* PNAdModel+Native.h in Headers */,
+				B4BA9C961F2B7D09001A901B /* PNAdModel+Fetching.h in Headers */,
+				B4F414161EEA1AC2002F0337 /* PNAPIVisibilityTrackerItem.h in Headers */,
+				B4F414141EEA1AC2002F0337 /* PNAPIVisibilityTracker.h in Headers */,
+				B4F413FC1EEA1AC2002F0337 /* PNAPIV3ResponseModel.h in Headers */,
+				B4F414121EEA1AC2002F0337 /* PNAPITrackingManagerItem.h in Headers */,
+				B4F414101EEA1AC2002F0337 /* PNAPITrackingManager.h in Headers */,
+				B4F414061EEA1AC2002F0337 /* PNAPIMeta.h in Headers */,
+				B4F4140C1EEA1AC2002F0337 /* PNAPIImpressionTracker.h in Headers */,
 				B4F4140E1EEA1AC2002F0337 /* PNAPIImpressionTrackerItem.h in Headers */,
+				B4F413F41EEA1AC2002F0337 /* PNAPIHttpRequest.h in Headers */,
+				B4F414181EEA1AC2002F0337 /* PNAPIDriller.h in Headers */,
+				B4F413F21EEA1AC2002F0337 /* PNAPICryptoUtils.h in Headers */,
+				B4F414001EEA1AC2002F0337 /* PNAPIClickCacher.h in Headers */,
+				5A67E9701F055392002C6128 /* PNAPIAssetGroupOriented.h in Headers */,
+				B400555F1EEC666300F91945 /* PNAPIAssetGroupFactory.h in Headers */,
+				B400555B1EEC664F00F91945 /* PNAPIAssetGroup.h in Headers */,
+				B4F414041EEA1AC2002F0337 /* PNAPIAsset.h in Headers */,
+				5AC14E501F0CF211005692F0 /* LargePubnativeLibraryNetworkAdapter.h in Headers */,
 				B486E0F51EEE90C30014CE9A /* PNAPIAssetGroup12.h in Headers */,
 				B4F413F81EEA1AC2002F0337 /* PNAPIV3BaseModel.h in Headers */,
-				5AC14E501F0CF211005692F0 /* LargePubnativeLibraryNetworkAdapter.h in Headers */,
 				B4F4140E1EEA1AC2002F0337 /* PNAPIImpressionTrackerItem.h in Headers */,
-				5A3F03111EF83AEC00F74EBC /* PNMediumLayoutAdapterFactory.h in Headers */,
-				5A7A5D001EF16F8900AF8DE9 /* PNSmallLayoutAdapterFactory.h in Headers */,
-				5ABF51A91F0BE4C400D31795 /* PNLargeLayoutAdapter.h in Headers */,
-				B4BA9C961F2B7D09001A901B /* PNAdModel+Fetching.h in Headers */,
 				B4F4148F1EEA1DAE002F0337 /* PNInsightModel.h in Headers */,
-				B4F414101EEA1AC2002F0337 /* PNAPITrackingManager.h in Headers */,
 				B40055521EEC65E400F91945 /* PNAPILayout.h in Headers */,
-				B4418BA81EECAC470047A2A2 /* PNVASTEventProcessor.h in Headers */,
-				5A99EA681F2F2FC7002E2993 /* PNAdModel+Native.h in Headers */,
 				B4F4140A1EEA1AC2002F0337 /* PNAPIRequestParameter.h in Headers */,
-				5A4D77B41EFABB3600E79064 /* PNSmallLayoutAdapter.h in Headers */,
-				B4418BAE1EECAC470047A2A2 /* PNVASTModel.h in Headers */,
-				B4F414871EEA1DAE002F0337 /* PNError.h in Headers */,
 				B4F4146A1EEA1D8F002F0337 /* PNRequest.h in Headers */,
 				B486E0F11EEE90C30014CE9A /* PNAPIAssetGroup10.h in Headers */,
-				5A0D8F5F1F0B9E0100659CB6 /* PNLargeLayoutAdapterFactory.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		5AE232A21F5D4694006EEE00 /* sdk.qa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AE232B41F5D4694006EEE00 /* Build configuration list for PBXNativeTarget "sdk.qa" */;
+			buildPhases = (
+				5AE2329F1F5D4694006EEE00 /* Sources */,
+				5AE232A01F5D4694006EEE00 /* Frameworks */,
+				5AE232A11F5D4694006EEE00 /* Resources */,
+				5AE232B91F5D46A1006EEE00 /* Embed Frameworks */,
+				5ABE93081F67DD7000199510 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AE232B81F5D46A1006EEE00 /* PBXTargetDependency */,
+			);
+			name = sdk.qa;
+			productName = sdk.qa;
+			productReference = 5AE232A31F5D4694006EEE00 /* sdk.qa.app */;
+			productType = "com.apple.product-type.application";
+		};
 		B4CF383E1EEA217A007E8BC3 /* sdk.demo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4CF384E1EEA217A007E8BC3 /* Build configuration list for PBXNativeTarget "sdk.demo" */;
@@ -1955,6 +2091,11 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = pubnative;
 				TargetAttributes = {
+					5AE232A21F5D4694006EEE00 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = J6V7N93E53;
+						ProvisioningStyle = Manual;
+					};
 					B4CF383E1EEA217A007E8BC3 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = J6V7N93E53;
@@ -1988,11 +2129,22 @@
 				B4F413A11EEA00DA002F0337 /* sdk.framework */,
 				D5BF0EF71D1A8BA700A05486 /* sdk.test */,
 				B4CF383E1EEA217A007E8BC3 /* sdk.demo */,
+				5AE232A21F5D4694006EEE00 /* sdk.qa */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5AE232A11F5D4694006EEE00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AE232B01F5D4694006EEE00 /* LaunchScreen.storyboard in Resources */,
+				5AE232AD1F5D4694006EEE00 /* Assets.xcassets in Resources */,
+				5AE232AB1F5D4694006EEE00 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B4CF383D1EEA217A007E8BC3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2068,7 +2220,41 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5ABE93081F67DD7000199510 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run f61a9f30a8156746aae4b1cc84856189a3bf8575 537c5f9f76b46d7a1d200e942627095296d712b141ae62d982d273c1ef1bd9ee";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		5AE2329F1F5D4694006EEE00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A89FC5E1F5EABCD002A020C /* NativeRequestViewController.swift in Sources */,
+				5A6861921F668512008A6300 /* NativeAdRequestModel.swift in Sources */,
+				5AE232BD1F5D4C3E006EEE00 /* Settings.swift in Sources */,
+				5AE232BF1F5D5754006EEE00 /* UIButton+BackgroundColor.swift in Sources */,
+				5AE232A61F5D4694006EEE00 /* AppDelegate.swift in Sources */,
+				5AE232C11F5D92C7006EEE00 /* TargetingParameterCell.swift in Sources */,
+				5AD3F8CE1F5D9D72001E0C6B /* SelectAdFormatViewController.swift in Sources */,
+				5A89FC601F5EABE3002A020C /* LayoutsRequestViewController.swift in Sources */,
+				5AE232BB1F5D4A55006EEE00 /* MainViewController.swift in Sources */,
+				5A6662631F5EE04100C24227 /* Parameters.swift in Sources */,
+				5A8A88D91F62DDF900559037 /* PNStarRatingView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B4CF383B1EEA217A007E8BC3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2121,11 +2307,11 @@
 				B4F4148A1EEA1DAE002F0337 /* PNInsightApiResponseModel.m in Sources */,
 				B4F414171EEA1AC2002F0337 /* PNAPIVisibilityTrackerItem.m in Sources */,
 				5A99EA661F2F2B6B002E2993 /* PNAdModelRenderer.m in Sources */,
-				5ABF51A21F0BC7F400D31795 /* PNLargeLibraryAdapterViewController.m in Sources */,
 				B4F4149E1EEA1DAE002F0337 /* PNAdModel.m in Sources */,
 				5AC14E511F0CF211005692F0 /* LargePubnativeLibraryNetworkAdapter.m in Sources */,
 				B4F414901EEA1DAE002F0337 /* PNInsightModel.m in Sources */,
 				B4F414861EEA1DAE002F0337 /* PNConfigManager.m in Sources */,
+				5ACB49D11F57FC85009C8B0B /* UIApplication+TopViewController.m in Sources */,
 				5ADD7FA21EFD55F200DAF2BD /* PNMediumLibraryAdapterViewController.m in Sources */,
 				B4418BB31EECAC470047A2A2 /* PNVASTPlayerViewController.m in Sources */,
 				B4418BBB1EECAC470047A2A2 /* PNProgressLabel.m in Sources */,
@@ -2186,6 +2372,7 @@
 				B4F413F91EEA1AC2002F0337 /* PNAPIV3BaseModel.m in Sources */,
 				B4F413FD1EEA1AC2002F0337 /* PNAPIV3ResponseModel.m in Sources */,
 				B4F414781EEA1DAE002F0337 /* PubnativeLibraryNetworkAdapter.m in Sources */,
+				5AD9CDC41F4303820004F01A /* PNBanner.m in Sources */,
 				B4F4140B1EEA1AC2002F0337 /* PNAPIRequestParameter.m in Sources */,
 				B4F414031EEA1AC2002F0337 /* PNAPIContentView.m in Sources */,
 				B4F4147A1EEA1DAE002F0337 /* PNConfigAPIResponseModel.m in Sources */,
@@ -2216,9 +2403,12 @@
 				5A7D668C1F16624600CDA4C8 /* PNAPILayoutTest.m in Sources */,
 				B4CF383A1EEA211A007E8BC3 /* PNHttpRequestTest.m in Sources */,
 				B4CF38281EEA203F007E8BC3 /* PubnativeLibraryNetworkAdapterTest.m in Sources */,
+				5AEBC8ED1F3C5DE900D03F68 /* PNLargeLayoutTest.m in Sources */,
 				B4CF382F1EEA2064007E8BC3 /* PNRequestTest.m in Sources */,
+				5AEBC8E91F3C557F00D03F68 /* PNSmallLayoutTest.m in Sources */,
 				5AD302A01F177FD4002530F1 /* PNAPIAssetGroupTest.m in Sources */,
 				5AD302A31F17A3DC002530F1 /* SmallPubnativeLibraryNetworkAdapterTest.m in Sources */,
+				5AEBC8EB1F3C599000D03F68 /* PNMediumLayoutTest.m in Sources */,
 				B4CF382A1EEA205C007E8BC3 /* PNConfigManagerTest.m in Sources */,
 				B4CF38291EEA205C007E8BC3 /* PubnativeLibraryCPICacheTest.m in Sources */,
 				5AD302A71F17B02B002530F1 /* MediumPubnativeLibraryNetworkAdapterTest.m in Sources */,
@@ -2241,6 +2431,11 @@
 			target = B4F413A11EEA00DA002F0337 /* sdk.framework */;
 			targetProxy = 5AB8CB301F0A565E002DFC59 /* PBXContainerItemProxy */;
 		};
+		5AE232B81F5D46A1006EEE00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4F413A11EEA00DA002F0337 /* sdk.framework */;
+			targetProxy = 5AE232B71F5D46A1006EEE00 /* PBXContainerItemProxy */;
+		};
 		B4F413F01EEA1A91002F0337 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B4F413A11EEA00DA002F0337 /* sdk.framework */;
@@ -2249,6 +2444,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		5AE232A91F5D4694006EEE00 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AE232AA1F5D4694006EEE00 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5AE232AE1F5D4694006EEE00 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AE232AF1F5D4694006EEE00 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		B4CF38451EEA217A007E8BC3 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -2268,6 +2479,58 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5AE232B21F5D4694006EEE00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = J6V7N93E53;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = sdk.qa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.pubnative.sdk.qa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "99c3ce32-c706-4807-b0ff-4e3592f01367";
+				PROVISIONING_PROFILE_SPECIFIER = qa.demo;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5AE232B31F5D4694006EEE00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = J6V7N93E53;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = sdk.qa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.pubnative.sdk.qa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "99c3ce32-c706-4807-b0ff-4e3592f01367";
+				PROVISIONING_PROFILE_SPECIFIER = qa.demo;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		B4CF384F1EEA217A007E8BC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2568,6 +2831,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5AE232B41F5D4694006EEE00 /* Build configuration list for PBXNativeTarget "sdk.qa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AE232B21F5D4694006EEE00 /* Debug */,
+				5AE232B31F5D4694006EEE00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B4CF384E1EEA217A007E8BC3 /* Build configuration list for PBXNativeTarget "sdk.demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
