@@ -27,63 +27,63 @@ NSURLRequestCachePolicy const NETWORK_REQUEST_DEFAULT_CACHE_POLICY = NSURLReques
 
 + (void)requestWithURL:(NSString*)urlString httpBody:(NSData *)httpBody timeout:(NSTimeInterval)timeoutInSeconds andCompletionHandler:(PNHttpRequestBlock)completionHandler
 {
-    if(completionHandler){
-        
-        if(urlString && urlString.length > 0) {
-            NSURL *requestURL = [NSURL URLWithString:[urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
-            if(requestURL) {
-                NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:requestURL
-                                                         cachePolicy:NETWORK_REQUEST_DEFAULT_CACHE_POLICY
-                                                     timeoutInterval:timeoutInSeconds];
-                if (httpBody) {
-                    NSString *postLength = [NSString stringWithFormat:@"%lu",(unsigned long)[httpBody length]];
-                    [request setHTTPMethod:@"POST"];
-                    [request setValue:postLength forHTTPHeaderField:@"Content-Length"];
-                    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-                    [request setHTTPBody:httpBody];
-                }
-                
-                PNReachability *reachability = [PNReachability reachabilityForInternetConnection];
-                [reachability startNotifier];
-                if([reachability currentReachabilityStatus] == PNNetworkStatus_NotReachable){
-                    [reachability stopNotifier];
-                    NSError *internetError = [NSError errorWithDomain:@"PNHttpRequest - Error: internet not available" code:0 userInfo:nil];
-                    [PNHttpRequest invokeBlock:completionHandler withResult:nil andError:internetError];
-                } else {
-                    [reachability stopNotifier];
-                    __block PNHttpRequestBlock completeBlock = [completionHandler copy];
-                    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-                        
-                        [NSURLConnection sendAsynchronousRequest:request
-                                                           queue:[NSOperationQueue mainQueue]
-                                               completionHandler:^(NSURLResponse *response, NSData *data, NSError *error)
-                         {
-                             NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
-                             if(error) {
-                                 [PNHttpRequest invokeBlock:completeBlock withResult:nil andError:error];
-                             } else if(httpResponse.statusCode != STATUS_CODE_OK) {
-                                 NSString *statusCodeErrorString = [NSString stringWithFormat:@"PNHttpRequest - Error: response status code %ld error", (long)httpResponse.statusCode];
-                                 NSError *statusCodeError = [NSError errorWithDomain:statusCodeErrorString
-                                                                                code:0
-                                                                            userInfo:nil];
-                                 [PNHttpRequest invokeBlock:completeBlock withResult:nil andError:statusCodeError];
-                             } else {
-                                 NSString *result = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-                                 [PNHttpRequest invokeBlock:completeBlock withResult:result andError:nil];
-                             }
-                         }];
-                    });
-                }
-            } else {
-                NSError *requestError = [NSError errorWithDomain:@"PNHttpRequest - Error: url format error" code:0 userInfo:nil];
-                [PNHttpRequest invokeBlock:completionHandler withResult:nil andError:requestError];
-            }
-        } else {
-            NSError *parameterError = [NSError errorWithDomain:@"PNHttpRequest - Error: url format error" code:0 userInfo:nil];
-            [PNHttpRequest invokeBlock:completionHandler withResult:nil andError:parameterError];
-        }
-    } else {
+    if(!completionHandler){
         NSLog(@"PNHttpRequest - Error: delegate is null, dropping this request call");
+        return;
+    }
+    
+    if(!urlString) {
+        NSError *requestError = [NSError errorWithDomain:@"PNHttpRequest - Error: url format error" code:0 userInfo:nil];
+        [PNHttpRequest invokeBlock:completionHandler withResult:nil andError:requestError];
+        return;
+    }
+    
+    NSURL *requestURL = [NSURL URLWithString:urlString];
+    if(!requestURL) {
+        NSError *requestError = [NSError errorWithDomain:@"PNHttpRequest - Error: url format error" code:0 userInfo:nil];
+        [PNHttpRequest invokeBlock:completionHandler withResult:nil andError:requestError];
+        return;
+    }
+    
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:requestURL
+                                                           cachePolicy:NETWORK_REQUEST_DEFAULT_CACHE_POLICY
+                                                       timeoutInterval:timeoutInSeconds];
+    if (httpBody) {
+        NSString *postLength = [NSString stringWithFormat:@"%lu",(unsigned long)[httpBody length]];
+        [request setHTTPMethod:@"POST"];
+        [request setValue:postLength forHTTPHeaderField:@"Content-Length"];
+        [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+        [request setHTTPBody:httpBody];
+    }
+    
+    PNReachability *reachability = [PNReachability reachabilityForInternetConnection];
+    [reachability startNotifier];
+    if([reachability currentReachabilityStatus] == PNNetworkStatus_NotReachable){
+        [reachability stopNotifier];
+        NSError *internetError = [NSError errorWithDomain:@"PNHttpRequest - Error: internet not available" code:0 userInfo:nil];
+        [PNHttpRequest invokeBlock:completionHandler withResult:nil andError:internetError];
+    } else {
+        [reachability stopNotifier];
+        __block PNHttpRequestBlock completeBlock = [completionHandler copy];
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            
+            [[[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+                NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
+                if(error) {
+                    [PNHttpRequest invokeBlock:completeBlock withResult:nil andError:error];
+                } else if(httpResponse.statusCode != STATUS_CODE_OK) {
+                    NSString *statusCodeErrorString = [NSString stringWithFormat:@"PNHttpRequest - Error: response status code %ld error", (long)httpResponse.statusCode];
+                    NSError *statusCodeError = [NSError errorWithDomain:statusCodeErrorString
+                                                                   code:0
+                                                               userInfo:nil];
+                    [PNHttpRequest invokeBlock:completeBlock withResult:nil andError:statusCodeError];
+                } else {
+                    NSString *result = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+                    [PNHttpRequest invokeBlock:completeBlock withResult:result andError:nil];
+                }
+            }] resume];
+            
+        });
     }
 }
 
@@ -99,4 +99,10 @@ NSURLRequestCachePolicy const NETWORK_REQUEST_DEFAULT_CACHE_POLICY = NSURLReques
     }
 }
 
+-(NSString *_Nonnull)URLEncode: (NSString *)url {
+    NSCharacterSet *set = [[NSCharacterSet characterSetWithCharactersInString:@"!*'\"();:@&=+$,/?%#[]% "] invertedSet];
+    return [url stringByAddingPercentEncodingWithAllowedCharacters:set];
+}
+
 @end
+
