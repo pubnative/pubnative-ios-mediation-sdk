@@ -171,13 +171,7 @@ NSTimeInterval const kPNAPIContentViewClosingTime = 3.0f;
 
 - (void)startCloseTimer
 {
-    self.closeTimer = [NSTimer scheduledTimerWithTimeInterval:kPNAPIContentViewClosingTime
-                                                      repeats:NO
-                                                        block:^(NSTimer * _Nonnull timer) {
-                                                                   if([timer isValid]) {
-                                                                       [self close];
-                                                                   }
-                                                               }];
+    self.closeTimer = [NSTimer scheduledTimerWithTimeInterval:kPNAPIContentViewClosingTime target:self selector:@selector(closeFromTimer) userInfo:nil repeats:NO];
 }
 
 - (void)handleTap:(UITapGestureRecognizer *)sender
@@ -202,6 +196,13 @@ NSTimeInterval const kPNAPIContentViewClosingTime = 3.0f;
     [[NSNotificationCenter defaultCenter] postNotificationName:kPNAPIContentViewSizeChanged
                                                         object:[NSNumber numberWithFloat: self.frame.size.width]];
     [self startCloseTimer];
+}
+
+-(void)closeFromTimer
+{
+    if ([self.closeTimer isValid]) {
+        [self close];
+    }
 }
 
 - (void)close
