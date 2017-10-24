@@ -119,10 +119,12 @@
 
 - (void)fetchAssetsWithDelegate:(NSObject<PNAdModelFetchDelegate>*)delegate
 {
+    NSMutableArray *assets = [NSMutableArray array];
+    if ([self bannerURLString]) [assets addObject:[self bannerURLString]];
+    if ([self iconURLString]) [assets addObject:[self iconURLString]];
+    
     if (delegate) {
-        self.fetchDelegate = delegate;
-        [self fetchAssets:@[[self bannerURLString],
-                            [self iconURLString]]];
+        [self fetchAssets:assets];
     } else {
         NSLog(@"PNAdModel - Error: Fetch asssets with delegate nil, dropping this call");
     }

@@ -10,6 +10,6 @@
 
 @interface UIApplication (TopViewController)
 
-@property (nonatomic, strong) UIViewController *topViewController;
+@property (nonatomic, readonly) UIViewController *topViewController;
 
 @end

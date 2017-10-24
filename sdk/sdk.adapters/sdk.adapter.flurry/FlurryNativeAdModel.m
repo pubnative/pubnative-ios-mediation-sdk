@@ -94,7 +94,7 @@
     return result;
 }
 
-- (NSString*)iconURL
+- (NSString*)iconURLString
 {
     NSString *result = nil;
     if (self.nativeAd &&
@@ -104,7 +104,7 @@
     return result;
 }
 
-- (NSString*)bannerURL
+- (NSString*)bannerURLString
 {
     NSString *result = nil;
     if (self.nativeAd &&
