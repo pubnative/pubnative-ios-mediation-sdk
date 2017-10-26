@@ -39,7 +39,7 @@
 		5A8A88D91F62DDF900559037 /* PNStarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4418B791EECAC470047A2A2 /* PNStarRatingView.m */; };
 		5A99EA651F2F2B6B002E2993 /* PNAdModelRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A99EA631F2F2B6B002E2993 /* PNAdModelRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A99EA661F2F2B6B002E2993 /* PNAdModelRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A99EA641F2F2B6B002E2993 /* PNAdModelRenderer.m */; };
-		5A99EA681F2F2FC7002E2993 /* PNAdModel+Native.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A99EA671F2F2FC7002E2993 /* PNAdModel+Native.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		5A99EA681F2F2FC7002E2993 /* PNAdModel+Native.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A99EA671F2F2FC7002E2993 /* PNAdModel+Native.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A99EA691F2F3F41002E2993 /* PNStarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4418B791EECAC470047A2A2 /* PNStarRatingView.m */; };
 		5AADC19C1EFAA48D007116CC /* SmallPubnativeLibraryNetworkAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADE1D981EF280440097136E /* SmallPubnativeLibraryNetworkAdapter.m */; };
 		5AB8CB2E1F0A565E002DFC59 /* Pubnative.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F413A21EEA00DA002F0337 /* Pubnative.framework */; };
@@ -1907,6 +1907,7 @@
 				B486E0E71EEE90C30014CE9A /* PNAPIAssetGroup5.h in Headers */,
 				B4F414951EEA1DAE002F0337 /* PNInsightsManager.h in Headers */,
 				B4F414891EEA1DAE002F0337 /* PNInsightApiResponseModel.h in Headers */,
+				5A99EA681F2F2FC7002E2993 /* PNAdModel+Native.h in Headers */,
 				5ACB49D01F57FC85009C8B0B /* UIApplication+TopViewController.h in Headers */,
 				B4F414001EEA1AC2002F0337 /* PNAPIClickCacher.h in Headers */,
 				B486E0F91EEE90C30014CE9A /* PNAPIAssetGroup14.h in Headers */,
@@ -1973,7 +1974,6 @@
 				B4F414791EEA1DAE002F0337 /* PNConfigAPIResponseModel.h in Headers */,
 				B486E0E51EEE90C30014CE9A /* PNAPIAssetGroup4.h in Headers */,
 				B4F4147F1EEA1DAE002F0337 /* PNNetworkModel.h in Headers */,
-				5A99EA681F2F2FC7002E2993 /* PNAdModel+Native.h in Headers */,
 				B4BA9C961F2B7D09001A901B /* PNAdModel+Fetching.h in Headers */,
 				B4F414161EEA1AC2002F0337 /* PNAPIVisibilityTrackerItem.h in Headers */,
 				B4F414141EEA1AC2002F0337 /* PNAPIVisibilityTracker.h in Headers */,
