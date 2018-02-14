@@ -9,6 +9,7 @@
 #import "FacebookNetworkAdapter.h"
 #import "FacebookNativeAdModel.h"
 #import "PNError.h"
+#import "PNSettings.h"
 
 NSInteger const kFacebookNetworkAdapter_NoFillErrorCode = 1001;
 
@@ -57,8 +58,7 @@ NSString * const kFacebookNetworkAdapterPlacementIdKey = @"placement_id";
 
 - (void)createRequestWithPlacementId:(NSString*)placementId
 {
-    
-    [FBAdSettings setsdkService:@"Pubnative ML"];
+    [FBAdSettings setMediationService:@"Pubnative ML"];
     [FBAdSettings setIsChildDirected:[PNSettings sharedInstance].coppa];
     // TODO: Add test mode
     // TODO: Add targeting parameters

@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions);
         Pubnative.setTestMode(true)
         Pubnative.initWithAppToken(Settings.appToken)
+        Flurry.startSession("YOUR FLURRY TOKEN HERE")
         if (CLLocationManager.authorizationStatus() == CLAuthorizationStatus.notDetermined) {       
             let manager = CLLocationManager();
             if #available(iOS 8.0, *) {

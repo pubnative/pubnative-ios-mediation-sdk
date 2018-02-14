@@ -23,6 +23,14 @@
 		5A4D77BA1EFAC29300E79064 /* PNSmallLayoutRequestView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ADF62BC1EEAFAF6009AD349 /* PNSmallLayoutRequestView.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5A4D77BB1EFAC2A000E79064 /* PNSmallLayoutRequestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADF62BD1EEAFAF6009AD349 /* PNSmallLayoutRequestView.m */; };
 		5A4F5C561EFA7DDC002CB522 /* SmallPubnativeLibraryNetworkAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ADE1D971EF280440097136E /* SmallPubnativeLibraryNetworkAdapter.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		5A52BFFC203489F600C4B7C5 /* FlurryNativeAdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0351D1C31D2A6376008A6A6C /* FlurryNativeAdModel.m */; };
+		5A52BFFD203489FA00C4B7C5 /* FlurryNetworkAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0351D1C61D2A639D008A6A6C /* FlurryNetworkAdapter.m */; };
+		5A52BFFE20348A0B00C4B7C5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0351D2051D2A8F58008A6A6C /* libz.tbd */; };
+		5A52BFFF20348A1800C4B7C5 /* FacebookNativeAdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E81FF1D1AD6CE0092F352 /* FacebookNativeAdModel.m */; };
+		5A52C00020348A1B00C4B7C5 /* FacebookNetworkAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E82011D1AD6CE0092F352 /* FacebookNetworkAdapter.m */; };
+		5A52C00220348A6200C4B7C5 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A52C00120348A6200C4B7C5 /* FBSDKCoreKit.framework */; };
+		5A52C00420348A7400C4B7C5 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A52C00320348A7300C4B7C5 /* FBAudienceNetwork.framework */; };
+		5A52C00720348B7200C4B7C5 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A52C00620348B7100C4B7C5 /* Bolts.framework */; };
 		5A62F7351EF136E100FA5C99 /* PNSmallLayoutContainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A62F7321EF136E100FA5C99 /* PNSmallLayoutContainerViewController.xib */; };
 		5A6662631F5EE04100C24227 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6662621F5EE04100C24227 /* Parameters.swift */; };
 		5A67E9701F055392002C6128 /* PNAPIAssetGroupOriented.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A67E96E1F055392002C6128 /* PNAPIAssetGroupOriented.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -203,8 +211,6 @@
 		B45721F01EEA22D20043F5C6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0351D1F01D2A8129008A6A6C /* SystemConfiguration.framework */; };
 		B45721F11EEA22D20043F5C6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0351D1F11D2A8129008A6A6C /* UIKit.framework */; };
 		B45721F21EEA22D20043F5C6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031714E71D25804B00817AEF /* SystemConfiguration.framework */; };
-		B45721F31EEA22D80043F5C6 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0351D22C1D2BF352008A6A6C /* FBSDKCoreKit.framework */; };
-		B45721F41EEA22DA0043F5C6 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0351D22B1D2BF352008A6A6C /* FBAudienceNetwork.framework */; };
 		B45721F51EEA22E00043F5C6 /* libFlurry_7.6.4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0351D20D1D2AA6AE008A6A6C /* libFlurry_7.6.4.a */; };
 		B45721F61EEA22E30043F5C6 /* libFlurryAds_7.6.4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0351D21C1D2AA6AE008A6A6C /* libFlurryAds_7.6.4.a */; };
 		B45721FC1EEA23310043F5C6 /* CellRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45721F71EEA23310043F5C6 /* CellRequestModel.swift */; };
@@ -459,8 +465,6 @@
 		0351D21F1D2AA6AE008A6A6C /* FlurryAdTargeting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAdTargeting.h; sourceTree = "<group>"; };
 		0351D2211D2AA6AE008A6A6C /* FlurryAdDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAdDelegate.h; sourceTree = "<group>"; };
 		0351D2221D2AA6AE008A6A6C /* FlurryAds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAds.h; sourceTree = "<group>"; };
-		0351D22B1D2BF352008A6A6C /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
-		0351D22C1D2BF352008A6A6C /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		5A0D8F5D1F0B9E0100659CB6 /* PNLargeLayoutAdapterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PNLargeLayoutAdapterFactory.h; path = adapter/large/PNLargeLayoutAdapterFactory.h; sourceTree = "<group>"; };
 		5A0D8F5E1F0B9E0100659CB6 /* PNLargeLayoutAdapterFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PNLargeLayoutAdapterFactory.m; path = adapter/large/PNLargeLayoutAdapterFactory.m; sourceTree = "<group>"; };
 		5A17E85C1EEEE51C008491CA /* LayoutsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutsViewController.swift; sourceTree = "<group>"; };
@@ -474,6 +478,10 @@
 		5A4D77B31EFABB3600E79064 /* PNSmallLayoutAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PNSmallLayoutAdapter.m; path = adapter/small/PNSmallLayoutAdapter.m; sourceTree = "<group>"; };
 		5A4D77B61EFABE8000E79064 /* PNSmallLibraryAdapterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PNSmallLibraryAdapterViewController.h; path = adapter/small/PNSmallLibraryAdapterViewController.h; sourceTree = "<group>"; };
 		5A4D77B71EFABE8100E79064 /* PNSmallLibraryAdapterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PNSmallLibraryAdapterViewController.m; path = adapter/small/PNSmallLibraryAdapterViewController.m; sourceTree = "<group>"; };
+		5A52C00120348A6200C4B7C5 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		5A52C00320348A7300C4B7C5 /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
+		5A52C00520348B0A00C4B7C5 /* sdk.demo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sdk.demo-Bridging-Header.h"; sourceTree = "<group>"; };
+		5A52C00620348B7100C4B7C5 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		5A62F7321EF136E100FA5C99 /* PNSmallLayoutContainerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PNSmallLayoutContainerViewController.xib; path = adapter/small/PNSmallLayoutContainerViewController.xib; sourceTree = "<group>"; };
 		5A6662621F5EE04100C24227 /* Parameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
 		5A67E96E1F055392002C6128 /* PNAPIAssetGroupOriented.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNAPIAssetGroupOriented.h; sourceTree = "<group>"; };
@@ -832,10 +840,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A52BFFE20348A0B00C4B7C5 /* libz.tbd in Frameworks */,
+				5A52C00720348B7200C4B7C5 /* Bolts.framework in Frameworks */,
 				B45721F51EEA22E00043F5C6 /* libFlurry_7.6.4.a in Frameworks */,
+				5A52C00220348A6200C4B7C5 /* FBSDKCoreKit.framework in Frameworks */,
 				B45721F61EEA22E30043F5C6 /* libFlurryAds_7.6.4.a in Frameworks */,
-				B45721F41EEA22DA0043F5C6 /* FBAudienceNetwork.framework in Frameworks */,
-				B45721F31EEA22D80043F5C6 /* FBSDKCoreKit.framework in Frameworks */,
 				B45721EA1EEA22D20043F5C6 /* CoreGraphics.framework in Frameworks */,
 				B45721EB1EEA22D20043F5C6 /* CoreMedia.framework in Frameworks */,
 				B45721EC1EEA22D20043F5C6 /* Foundation.framework in Frameworks */,
@@ -847,6 +856,7 @@
 				B45721F11EEA22D20043F5C6 /* UIKit.framework in Frameworks */,
 				B45721F21EEA22D20043F5C6 /* SystemConfiguration.framework in Frameworks */,
 				B45721E81EEA22CD0043F5C6 /* AdSupport.framework in Frameworks */,
+				5A52C00420348A7400C4B7C5 /* FBAudienceNetwork.framework in Frameworks */,
 				B45721E91EEA22CF0043F5C6 /* AVFoundation.framework in Frameworks */,
 				B45721E71EEA22CB0043F5C6 /* CoreLocation.framework in Frameworks */,
 			);
@@ -959,13 +969,14 @@
 			path = StaticAPI;
 			sourceTree = "<group>";
 		};
-		0351D22A1D2BF352008A6A6C /* facebook-4.13.1 */ = {
+		0351D22A1D2BF352008A6A6C /* facebook-4.27.0 */ = {
 			isa = PBXGroup;
 			children = (
-				0351D22B1D2BF352008A6A6C /* FBAudienceNetwork.framework */,
-				0351D22C1D2BF352008A6A6C /* FBSDKCoreKit.framework */,
+				5A52C00620348B7100C4B7C5 /* Bolts.framework */,
+				5A52C00320348A7300C4B7C5 /* FBAudienceNetwork.framework */,
+				5A52C00120348A6200C4B7C5 /* FBSDKCoreKit.framework */,
 			);
-			path = "facebook-4.13.1";
+			path = "facebook-4.27.0";
 			sourceTree = "<group>";
 		};
 		5A0D8F5C1F0B9D8600659CB6 /* large */ = {
@@ -1352,6 +1363,7 @@
 				5A17E85C1EEEE51C008491CA /* LayoutsViewController.swift */,
 				B45721FA1EEA23310043F5C6 /* Settings.swift */,
 				B45721FB1EEA23310043F5C6 /* SettingsViewController.swift */,
+				5A52C00520348B0A00C4B7C5 /* sdk.demo-Bridging-Header.h */,
 				B4CF38451EEA217A007E8BC3 /* Main.storyboard */,
 				B4CF38481EEA217A007E8BC3 /* Assets.xcassets */,
 				B4CF384A1EEA217A007E8BC3 /* LaunchScreen.storyboard */,
@@ -1838,7 +1850,7 @@
 				D5BF107B1D1A9D6F00A05486 /* ocmockito-3.0.1 */,
 				D5BF10781D1A9C4F00A05486 /* ochamcrest-5.4.0 */,
 				0351D1C81D2A6433008A6A6C /* flurry-7.6.4 */,
-				0351D22A1D2BF352008A6A6C /* facebook-4.13.1 */,
+				0351D22A1D2BF352008A6A6C /* facebook-4.27.0 */,
 			);
 			name = dependencies;
 			path = ../dependencies;
@@ -2259,11 +2271,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A52C00020348A1B00C4B7C5 /* FacebookNetworkAdapter.m in Sources */,
 				B45721FE1EEA23310043F5C6 /* NativeTableViewController.swift in Sources */,
+				5A52BFFF20348A1800C4B7C5 /* FacebookNativeAdModel.m in Sources */,
 				B4CF38421EEA217A007E8BC3 /* AppDelegate.swift in Sources */,
 				B45721FD1EEA23310043F5C6 /* NativeTableViewCell.swift in Sources */,
 				B45721FC1EEA23310043F5C6 /* CellRequestModel.swift in Sources */,
 				B45721FF1EEA23310043F5C6 /* Settings.swift in Sources */,
+				5A52BFFC203489F600C4B7C5 /* FlurryNativeAdModel.m in Sources */,
+				5A52BFFD203489FA00C4B7C5 /* FlurryNetworkAdapter.m in Sources */,
 				5A99EA691F2F3F41002E2993 /* PNStarRatingView.m in Sources */,
 				5A17E85D1EEEE51C008491CA /* LayoutsViewController.swift in Sources */,
 				B45722001EEA23310043F5C6 /* SettingsViewController.swift in Sources */,
@@ -2548,6 +2564,7 @@
 				PROVISIONING_PROFILE = "6599d27d-2faf-49a3-99ae-8f491aff6795";
 				PROVISIONING_PROFILE_SPECIFIER = sdk.demo;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "sdk.demo/sdk.demo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2570,6 +2587,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "6599d27d-2faf-49a3-99ae-8f491aff6795";
 				PROVISIONING_PROFILE_SPECIFIER = sdk.demo;
+				SWIFT_OBJC_BRIDGING_HEADER = "sdk.demo/sdk.demo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
