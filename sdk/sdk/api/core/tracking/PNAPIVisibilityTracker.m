@@ -54,6 +54,8 @@ NSTimeInterval const kPNAPIVisibilityTrackerPeriod = 0.1f; // 100ms
     self.visibleViews = nil;
     [self.invisibleViews removeAllObjects];
     self.invisibleViews = nil;
+    [self.removedItems removeAllObjects];
+    self.removedItems = nil;
 }
 
 - (instancetype)init
@@ -64,6 +66,7 @@ NSTimeInterval const kPNAPIVisibilityTrackerPeriod = 0.1f; // 100ms
         self.trackedItems = [NSMutableArray array];
         self.visibleViews = [NSMutableArray array];
         self.invisibleViews = [NSMutableArray array];
+        self.removedItems = [NSMutableArray array];
     }
     return self;
 }
@@ -91,11 +94,7 @@ NSTimeInterval const kPNAPIVisibilityTrackerPeriod = 0.1f; // 100ms
 
 - (void)removeView:(UIView*)view
 {
-    NSInteger index = [self indexOfView:view];
-    
-    if(index >= 0) {
-        [self.removedItems removeObjectAtIndex:index];
-    }
+
 }
 
 - (void)clear
